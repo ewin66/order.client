@@ -109,6 +109,7 @@ public class EmsOprLoadBP extends EmsBaseLoadBP {
         ems.setName_srv ( dto.getName());
         ems.setId_orsrv ( mainSrvInfo.getId_orsrv());
 
+        ems.setSd_srvtp(mainSrvInfo.getSd_srvtp());
         
         constructMainModelInfo(ctx, ems, dto, mainSrvInfo,orAppSurgeryAggInfo);
         constructApopEmpInfo(ems, orAppSurgeryAggInfo);

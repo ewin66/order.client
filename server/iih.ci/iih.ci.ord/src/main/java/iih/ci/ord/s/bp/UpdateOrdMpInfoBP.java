@@ -410,6 +410,7 @@ public class UpdateOrdMpInfoBP {
 		Map OrderSrvNumMap = getOrderCountSrv(orderIds);
 		if(ciOrder != null && ciOrder.length >0){
 			for(CiOrderDO order:ciOrder){
+				
 				if(OrderSrvNumMap.get(order.getId_or()) == orsrvNum.get(order.getId_or())){
 						 order.setSd_su_bl(sd_su_bl);
 						 order.setId_su_bl(id_su_bl);
@@ -450,6 +451,10 @@ public class UpdateOrdMpInfoBP {
 		Map OrderSrvNumMap = getOrderCountSrv(orderIds);
 		if(ciOrder != null && ciOrder.length >0){
 			for(CiOrderDO order:ciOrder){
+			 
+		       if(SetOrderEUfeereversetpStatus(order)==FBoolean.TRUE){
+			     order.setEu_feereversetp(BLCGCANCEL);
+				}
 				if(OrderSrvNumMap.get(order.getId_or()) == orsrvNum.get(order.getId_or())){
 						 order.setSd_su_bl(sd_su_bl);
 						 order.setId_su_bl(id_su_bl);
@@ -489,7 +494,30 @@ public class UpdateOrdMpInfoBP {
 		}
 		return FBoolean.FALSE;
 	}
-	
+	/**
+	 *医嘱的记账状态
+	 * @param order
+	 */
+	private FBoolean SetOrderEUfeereversetpStatus(CiOrderDO order)throws BizException{
+		if(order != null && order.getId_or() != null){
+			String  whereStr = " id_or = '"+order.getId_or()+"'";
+			OrdSrvDO[]  ordsrvs = CiOrdAppUtils.getOrSrvQryService().find(whereStr, "id_or", FBoolean.FALSE);
+		   
+			if(ordsrvs != null && ordsrvs.length >0){
+			  int num =0;
+			  for(OrdSrvDO ordsrvdo:ordsrvs){
+				  if(FeeReverseType.BLCGCANCEL.equals(ordsrvdo.getEu_feereversetp())){
+					  num++;
+				  }
+			  }
+			  if(num==ordsrvs.length){
+				  return FBoolean.TRUE; 
+			  }
+			  
+		   }
+		}
+		return FBoolean.FALSE;
+	}
 	
 	 
 	/**
