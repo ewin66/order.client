@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Clazz id="OrdApBuGridView" classname="iih.ci.ord.ciorder.cards.OrdApBuGridView" dllname="iih.ci.ord"  singleton="true"/>
+    
+    <Clazz id="OrdApBuCardView" classname="iih.ci.ord.ciorder.cards.OrdApBuCardView" dllname="iih.ci.ord" singleton="true" />
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+  <Content>
+    <XLayoutPanel>
+      <Top Width="100">
+        <Control ref="OrdApBuGridView"/>
+      </Top>
+      <Center>
+        <Control ref="OrdApBuCardView"/>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

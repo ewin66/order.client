@@ -1,0 +1,11 @@
+#/bin/bash
+BASE_PATH=$(cd `dirname $0`; pwd)
+
+components=("iih.bd_pub" "iih.pi_pub" "iih.ci_pub" "iih.en_pub" "iih.bl_pub" "iih.sc_pub" "iih.mp_pub" "iih.mm_pub")
+#components=("iih.mm_pub")
+for c in ${components[@]}
+do
+	sh $BASE_PATH/$c/sync
+done
+echo "success"
+#TODO 集中显示哪些工程失败

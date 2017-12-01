@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <!-- 住院相关配置 -->
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>
+
+    <!-- 与配置文件中其他类进行交互类 -->
+    <Clazz id="EntHistoryContentEnvet" classname="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryContentEnvet" dllname="iih.ci.ord" />
+    <!-- 住院病历 -->
+    <Clazz id="MrTreeView" classname="iih.ci.mrhelper.mr.view.MrTreeView" dllname="iih.ci.mrhelper"  singleton="true"/>
+    <Clszz id="MrReadCardView" classname=" iih.ci.mr_pub.view.MrReadCardView" dllname="iih.ci.mr_pub" singleton="true"/>
+    <!-- 住院诊断 -->
+    <Clazz id ="EntHistoryIPCiDiagView" classname="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryIPCiDiagView" dllname="iih.ci.ord" />    
+    <!-- 医嘱列表 -->
+    <Clazz id ="EntHistoryOrderItem" classname="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryOrderItem" dllname="iih.ci.ord" />
+    <!-- 检查 -->
+    <Clazz id="CiRptLabView" classname="iih.ci.ord.cilab.view.CiRptLabView" dllname="iih.ci.ord" singleton="true"/>
+    <!-- 检验 -->
+    <Clazz id="CIRptObsView" classname="iih.ci.ord.ciobs.view.CIRptObsView" dllname="iih.ci.ord" singleton="true"/>
+    
+
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init" /> 
+  </States>
+  <Content>
+    <XLayoutPanel>     
+      <Center>
+        <XTabPanelControl alignment="Top" ref="tablayout">
+          <XTabPages>
+            <XTabPage id="1" text="住院病历" visible="true" lazy="false">
+              <XLayoutPanel>
+                <Left Width="200">
+                  <Control ref="MrTreeView" />
+                </Left>
+                <Center>
+                  <Control ref="MrReadCardView" />
+                </Center>
+              </XLayoutPanel>
+            </XTabPage>
+            <XTabPage id="2" text="住院诊断" visible="true" lazy="false">
+              <Control ref="EntHistoryIPCiDiagView" />
+            </XTabPage>
+            <XTabPage id="3" text="住院医嘱" visible="true" lazy="false">
+              <Control ref="EntHistoryOrderItem" />
+            </XTabPage>
+          </XTabPages>
+        </XTabPanelControl>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

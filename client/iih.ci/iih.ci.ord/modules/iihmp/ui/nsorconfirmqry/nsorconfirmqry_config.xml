@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <Clazz id="SrvConfirmAction" classname="iih.ci.ord.ciorder.action.SrvConfirmAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--刷新-->
+    <Clazz id="cancel_action" classname="xap.rui.engine.xactions.standard.CancelAction" dllname="xap.rui.engine">
+    </Clazz>
+
+    <!--<Clazz id="Banner" classname="xap.rui.bizcontrol.bannerview.bannerpatient_2" dllname="xap.rui.bizcontrol" singleton="true"/>-->
+
+    <!--控?件t-->
+    <Clazz id="CiOrdFirmCardView" classname="iih.ci.ord.nsorconfirmqry.view.CiOrdFirmCardView" dllname="iih.ci.ord"/>
+    <Clazz id="emrorderconfirm_view" classname="iih.ci.ord.nsorconfirmqry.view.OrderConfirmView" dllname="iih.ci.ord"/>
+
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+    <State old="NodeSelected" event="Add" new="Edit"/>
+    <State old="Init" event="SelectRow" new="RowSelected"/>
+    <State old="Init" event="SelectNode" new="NodeSelected"/>
+    <State old="Init" event="ShowTwoTreeForm" new="Init"/>
+    <State old="NodeSelected" event="SelectRow" new="RowSelected"/>
+    <State old="RowSelected" event="Add" new="Edit"/>
+    <State old="RowSelected" event="Edit" new="Edit"/>
+    <State old="RowSelected" event="View" new="View"/>
+    <State old="RowSelected" event="SelectNode" new="NodeSelected"/>
+    <State old="Edit" event="Save" new="Init"/>
+    <State old="Init" event="Edit" new="Edit"/>
+    <State old="Edit" event="SaveSuccess" new="Init"/>
+    <State old="Edit" event="SaveAdd" new="Init"/>
+    <State old="Edit" event="Cancel" new="RowSelected"/>
+    <State old="View" event="GoBack" new="RowSelected"/>
+    <State old="Edit" event="GoBack" new="Init"/>
+  </States>
+
+  <Menu>
+    <MenuItem ref="SrvConfirmAction"/>
+    <MenuItem ref="cancel_action"/>
+  </Menu>
+
+  <Content>
+ 
+    <XLayoutPanel>
+      <Top Width="43">
+        <Control ref="CiOrdFirmCardView"/>
+      </Top>
+      <Center>
+        <Control ref="emrorderconfirm_view"/>
+      </Center>
+    </XLayoutPanel>
+
+  </Content>
+</Funclet>

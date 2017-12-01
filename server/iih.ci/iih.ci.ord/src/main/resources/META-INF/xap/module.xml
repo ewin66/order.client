@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xap="http://xap.org/xap" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://xap.org/xap http://xap.org/xap-0.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+	<xap:std-bundle />
+
+	<!--公共 -->
+	<bean id="iCiOrdQryService" class="iih.ci.ord.s.CiOrdQryServiceImpl"></bean>
+	<xap:service ref="iCiOrdQryService" interface="iih.ci.ord.i.ICiOrdQryService" requires="tx">
+        <xap:binding name="jsonrpc" />
+    </xap:service>
+	<bean id="iCiOrdMaintainService" class="iih.ci.ord.s.CiOrdMaintainServiceImpl"></bean>
+       	<xap:service ref="iCiOrdMaintainService" interface="iih.ci.ord.i.ICiOrdMaintainService" requires="tx">
+                                      <xap:binding name="jsonrpc" />
+                            </xap:service>
+	<!-- 医嘱主表 -->
+	<bean id="iCiorderMDOCrudServiceImpl" class="iih.ci.ord.ciorder.s.CiorderMDOCrudServiceImpl"></bean>
+                            <xap:service ref="iCiorderMDOCrudServiceImpl" interface="iih.ci.ord.ciorder.i.ICiorderMDOCudService" requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	<!-- 医嘱 -->
+	<bean id="iCiorderCrudServiceImpl" class="iih.ci.ord.ciorder.s.CiorderCrudServiceImpl"></bean>
+	 
+<!-- 医嘱医疗单qry -->
+	<bean id="iCiOrdQryServiceImpl" class="iih.ci.ord.s.CiOrdQryServiceImpl"></bean>
+
+	<!-- 医嘱医疗单maintain -->
+	<bean id="iCiOrdMaintainServiceImpl" class="iih.ci.ord.s.CiOrdMaintainServiceImpl"></bean>
+	<!-- 医嘱服务项目 -->
+	<bean id="iCiorderSrvDOCrudServiceImpl" class="iih.ci.ord.ciorder.s.CiorderSrvDOCrudServiceImpl"></bean>
+	<!-- 处方单 -->
+	<bean id="iPresCrudServiceImpl" class="iih.ci.ord.pres.s.PresCrudServiceImpl"></bean>
+	<!-- 医嘱物品 -->
+	<bean id="iOrdsrvmmCrudServiceImpl" class="iih.ci.ord.ordsrvmm.s.OrdsrvmmCrudServiceImpl"></bean>
+	<xap:service ref="iOrdsrvmmCrudServiceImpl" interface="iih.ci.ord.ordsrvmm.i.IOrdsrvmmCudService" requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	<!-- 变动用药 -->
+	<bean id="iOrdsrvdoseCrudServiceImpl" class="iih.ci.ord.ordsrvdose.s.OrdsrvdoseCrudServiceImpl"></bean>
+	<!-- 取药用处方单 -->
+	<!-- <bean id="ICipresCrudRService" class="iih.ci.ord.cipres.s.CipresCrudServiceImpl"></bean> -->
+	<!-- 皮试测试结果 -->
+	<bean id="ISkintestCrudService" class="iih.ci.ord.skintest.s.SkintestCrudServiceImpl"></bean>
+	<!-- 医嘱服务套 -->
+	<bean id="IOrdsrvsetCrudService" class="iih.ci.ord.ordsrvset.s.OrdsrvsetCrudServiceImpl"></bean>
+
+	<!-- 医嘱转科申请 -->
+	<bean id="ICiorapptransdeptCudService" class="iih.ci.ord.cior.s.CiorapptransdeptCrudServiceImpl"></bean>
+	<!-- 医嘱检查申请 -->
+	<bean id="ICiorapprisCudService" class="iih.ci.ord.cior.s.CiorapprisCrudServiceImpl"></bean>
+	<!-- 医嘱手术申请 -->
+	<bean id="ICiorappsurgeryMDORService" class="iih.ci.ord.cior.s.CiorappsurgeryMDOCrudServiceImpl"></bean>
+	<!-- 医嘱服务项目 -->
+	<bean id="IOrdSrvDOCrudService" class="iih.ci.ord.ciorder.s.OrdSrvDOCrudServiceImpl"></bean>
+	<xap:service ref="IOrdSrvDOCrudService" interface="iih.ci.ord.ciorder.i.IOrdSrvDOCudService" requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	<!-- 医嘱审核服务 -->
+	<bean id="ICiOrdVerifyService" class="iih.ci.ord.s.CiOrdVerifyServiceImpl"></bean>
+	<!-- 医嘱f服务套 -->
+	<bean id="iOrdsrvsetCrudServiceImpl" class="iih.ci.ord.ordsrvset.s.OrdsrvsetCrudServiceImpl"></bean>
+	<!-- 会诊受邀科室 -->
+	<bean id="iCiordInviteConsDOCrudServiceImpl" class="iih.ci.ord.cior.s.CiordInviteConsDOCrudServiceImpl"></bean>
+	<!-- 检查报告 -->
+	<bean id="iCirptobsCrudServiceImpl" class="iih.ci.ord.cirptobs.s.CirptobsCrudServiceImpl"></bean>
+	<!-- 检验报告 -->
+	<bean id="iCirptlabMDOCrudServiceImpl" class=" iih.ci.ord.cirptlab.s.CirptlabMDOCrudServiceImpl"></bean>
+	<bean id="iCirptlabCrudServiceImpl" class="iih.ci.ord.cirptlab.s.CirptlabCrudServiceImpl"></bean>
+	<bean id="iCiRptLabItmDOCrudServiceImpl" class="iih.ci.ord.cirptlab.s.CiRptLabItmDOCrudServiceImpl"></bean>
+	
+	<!-- 病理报告 -->
+	<bean id="iCirptpathgyCrudServiceImpl" class="iih.ci.ord.cirptpathgy.s.CirptpathgyCrudServiceImpl"></bean>
+	<bean id="iCiRptPathgyServiceImpl" class="iih.ci.ord.cirptpathgy.s.CiRptPathgyServiceImpl"></bean>
+	<!-- 会诊报告 -->
+	<bean id="iConsrptCrudServiceImpl" class="iih.ci.ord.consrpt.s.ConsrptCrudServiceImpl"></bean>
+	<!-- 会诊申请单 -->
+	<bean id="iCiorappconsultCrudServiceImpl" class="iih.ci.ord.cior.s.CiorappconsultCrudServiceImpl"></bean>
+	<!-- 会诊主表 -->
+	<bean id="iCiorappconsultMDOCrudServiceImpl" class="iih.ci.ord.cior.s.CiorappconsultMDOCrudServiceImpl"></bean>
+	<!-- 医嘱关键执行事件及状态 -->
+	<bean id="IOrdmpRService" class="iih.ci.ord.ordmp.s.OrdmpCrudServiceImpl"></bean>
+	
+	<!-- 医嘱检验申请AggDO -->
+	<bean id="iCiorapplisCrudServiceImpl" class="iih.ci.ord.cior.s.CiorapplisCrudServiceImpl"></bean>
+	<!-- 医嘱检查申请AggDO -->
+	<bean id="iCiorapprisCrudServiceImpl" class="iih.ci.ord.cior.s.CiorapprisCrudServiceImpl"></bean>
+	<!-- 医嘱出院申请AggDO数据CRUD服务实现 -->
+	<bean id="iCiorappouthospCrudServiceImpl" class="iih.ci.ord.cior.s.CiorappouthospCrudServiceImpl"></bean>
+	<!-- 病理申请单AggDO数据CRUD服务实现 -->
+	<bean id="iCiorapppathgyCrudServiceImpl" class="iih.ci.ord.cior.s.CiorapppathgyCrudServiceImpl"></bean>
+	<!-- 医嘱转科申请AggDO数据CRUD服务实现 -->
+	<bean id="iCiorapptransdeptCrudServiceImpl" class="iih.ci.ord.cior.s.CiorapptransdeptCrudServiceImpl"></bean>
+	
+	<!-- 备血申请单AggDO数据CRUD服务实现 -->
+	<bean id="iCiorappbtCrudServiceImpl" class="iih.ci.ord.cior.s.CiorappbtCrudServiceImpl"></bean>
+	<bean id="ICiordrptbttestMDOCudService" class="iih.ci.ord.cior.s.CiordrptbttestMDOCrudServiceImpl"></bean>
+	<bean id="iCiOrdBtTestItmDORService" class="iih.ci.ord.cior.s.CiOrdBtTestItmDOCrudServiceImpl"></bean>
+
+	<!-- 医嘱_门诊开立区间 -->
+	<bean id="iCiorseesionCrudServiceImpl" class="iih.ci.ord.cior.s.CiorsessionCrudServiceImpl"></bean>
+	<!-- 医嘱_手术医疗单 -->
+	<bean id="iCiorappsurgeryCrudServiceImpl" class="iih.ci.ord.cior.s.CiorappsurgeryCrudServiceImpl"></bean>
+	<!-- 外挂医嘱表单 -->
+	<bean id="iOrdsheetCrudServiceImpl" class="iih.ci.ord.ciorcof.s.OrdsheetCrudServiceImpl"></bean>
+	<!-- 服务类型对应表单设置 -->
+	<bean id="iSrvvssheetCrudServiceImpl" class="iih.ci.ord.ciorcof.s.SrvvssheetCrudServiceImpl"></bean>
+	<!-- 医嘱服务查询接口 -->
+	<bean id="iCiSrvRefResultServiceImpl" class="iih.ci.ord.s.ICiSrvRefResultServiceImpl"></bean>
+    <!-- 备血申请单 -->
+    <bean id="ICiorappbtMDOCudService" class="iih.ci.ord.cior.s.CiorappbtMDOCrudServiceImpl"></bean>
+	<bean id="ICiRptObsService" class="iih.ci.ord.cirptobs.s.CiRptObsServiceImpl"></bean>
+	<bean id="ICiorreactlogCudService" class="iih.ci.ord.cior.s.CiorreactlogCrudServiceImpl"></bean>
+	<xap:service ref="ICiRptObsService" interface="iih.ci.ord.cirptobs.i.ICiRptObsService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+
+
+	<bean id="ICiRptLabService" class="iih.ci.ord.cirptlab.s.CiRptLabServiceImpl"></bean>
+	<xap:service ref="ICiRptLabService" interface="iih.ci.ord.cirptlab.i.ICiRptLabService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+
+	<bean id="ICiordrptbttestCudService" class="iih.ci.ord.cior.s.CiordrptbttestCrudServiceImpl"></bean>
+	<bean id="ICiorappbuCrudService" class="iih.ci.ord.cior.s.CiorappbuCrudServiceImpl"></bean>
+	<xap:service ref="ICiordrptbttestCudService" interface="iih.ci.ord.cior.i.ICiordrptbttestCudService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	<xap:service ref="ICiordrptbttestCudService" interface="iih.ci.ord.cior.i.ICiordrptbttestRService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	
+	<bean id="ICiRptBtTestService" class="iih.ci.ord.cior.s.CiRptBtTestServiceImpl"></bean>
+	<xap:service ref="ICiRptBtTestService" interface="iih.ci.ord.cior.i.ICiRptBtTestService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	<!-- 临床医嘱代办人 -->
+	<bean id="ICiorsrvagentCudService" class="iih.ci.ord.ciord.s.CiorsrvagentCrudServiceImpl"></bean>
+	<!--  医嘱打印接口  -->
+	<bean id="IOrdprintExtService" class="iih.ci.ord.ordprn.s.OrdprintExtServiceImpl"></bean>
+	<bean id="IOrdprintCudService" class="iih.ci.ord.ordprn.s.OrdprintCrudServiceImpl"></bean>
+	<bean id="IOrdprintRService" class="iih.ci.ord.ordprn.s.OrdprintCrudServiceImpl"></bean>
+	<!-- 检验申请单 -->
+	<bean id="ICiapplissheetCrudServiceImpl" class="iih.ci.ord.app.s.CiapplissheetCrudServiceImpl"></bean>
+	<bean id="ICiapplissheetMDOCrudServiceImpl" class="iih.ci.ord.app.s.CiapplissheetMDOCrudServiceImpl"></bean>
+	<bean id="ICiAppLisSheetOrDOCrudServiceImpl" class="iih.ci.ord.app.s.CiAppLisSheetOrDOCrudServiceImpl"></bean>
+	<!-- 诊疗执行单 -->
+	<bean id="ICiapptreatexecCrudServiceImpl" class="iih.ci.ord.app.s.CiapptreatexecCrudServiceImpl"></bean>
+	<bean id="ICiapptreatexecMDOCrudServiceImpl" class="iih.ci.ord.app.s.CiapptreatexecMDOCrudServiceImpl"></bean>
+	<!-- 费用清单单 -->
+	<bean id="ICiprintCrudServiceImpl" class="iih.ci.ord.ciprn.s.CiprintCrudServiceImpl"></bean>
+	<bean id="ICiPrnItmDOCrudServiceImpl" class="iih.ci.ord.ciprn.s.CiPrnItmDOCrudServiceImpl"></bean>
+	<bean id="ICiprintMDOCrudServiceImpl" class="iih.ci.ord.ciprn.s.CiprintMDOCrudServiceImpl"></bean>
+	<!-- 诊疗申请  -->
+	<bean id="ICiapptreatsheetCrudServiceImpl" class="iih.ci.ord.app.s.CiapptreatsheetCrudServiceImpl"></bean>
+	<bean id="ICiapptreatsheetMDOCrudServiceImpl" class="iih.ci.ord.app.s.CiapptreatsheetMDOCrudServiceImpl"></bean>
+	<bean id="ICiAppTreatExecOrDOCrudServiceImpl" class="iih.ci.ord.app.s.CiAppTreatExecOrDOCrudServiceImpl"></bean>
+	<!-- 检查申请单 -->
+	<bean id="ICiapprissheetCudService" class="iih.ci.ord.app.s.CiapprissheetCrudServiceImpl"></bean>
+	<bean id="ICiapprissheetRService" class="iih.ci.ord.app.s.CiapprissheetCrudServiceImpl"></bean>
+	<!-- 病理申请单 -->
+	<bean id="ICiapppathgysheetCrudServiceImpl" class="iih.ci.ord.app.s.CiapppathgysheetCrudServiceImpl"></bean>
+	<bean id="ICiapppathgysheetMDOCrudServiceImpl" class="iih.ci.ord.app.s.CiapppathgysheetMDOCrudServiceImpl"></bean>
+	<bean id="ICiAppPathgySheetSampDOCrudServiceImpl" class="iih.ci.ord.app.s.CiAppPathgySheetSampDOCrudServiceImpl"></bean>
+	
+	<bean id="ICiprintExtService" class="iih.ci.ord.ciprn.s.CiprintExtServiceImpl"></bean>
+	
+	<!-- 新医疗单维护接口-->
+	<bean id="ICiEmsMainService" class="iih.ci.ord.s.ems.CiEmsMainServiceImpl"></bean>
+	<xap:service ref="ICiEmsMainService" interface="iih.ci.ord.i.ems.ICiEmsMainService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	<!-- 新医嘱维护接口-->
+	<bean id="ICiOrderMainService" class="iih.ci.ord.s.ems.CiOrderMainServiceImpl"></bean>
+	<xap:service ref="ICiOrderMainService" interface="iih.ci.ord.i.ems.ICiOrderMainService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	<!-- 新医疗单缓存维护接口-->
+	<bean id="ICiSysCacheService" class="iih.ci.ord.s.ems.CiSysCacheServiceImpl"></bean>
+	<xap:service ref="ICiSysCacheService" interface="iih.ci.ord.i.ems.ICiSysCacheService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	<!-- 新医嘱第三方服务接口接口-->
+	<bean id="ICiOrderThirdService" class="iih.ci.ord.s.ems.CiOrderThirdServiceImpl"></bean>
+	<xap:service ref="ICiOrderThirdService" interface="iih.ci.ord.i.ems.ICiOrderThirdService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	<!-- 新诊断主服务接口接口-->
+	<bean id="ICiDiagMaintainService" class="iih.ci.ord.s.ems.CiDiagMaintainServiceImpl"></bean>
+	<xap:service ref="ICiDiagMaintainService" interface="iih.ci.ord.i.ems.ICiDiagMaintainService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	
+<!-- 新医嘱模板相关接口-->
+	<bean id="ICiTmplMainService" class="iih.ci.ord.s.ems.CiTmplMainServiceImpl"></bean>
+	<xap:service ref="ICiTmplMainService" interface="iih.ci.ord.i.ems.ICiTmplMainService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	
+	<!-- 医嘱模板相关接口-->		
+	<bean id="iOrTmplApplyService" class="iih.ci.ord.s.ortmpl.OrTmplApplyServiceImpl"></bean>
+	<xap:service ref="iOrTmplApplyService" interface="iih.ci.ord.i.ortmpl.IOrTmplApplyService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	
+	<!-- 新费用清单相关接口-->
+	<bean id="ICiFeeListMainService" class="iih.ci.ord.s.ems.CiFeeListMainServiceImpl"></bean>
+	<xap:service ref="ICiFeeListMainService" interface="iih.ci.ord.i.ems.ICiFeeListMainService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	
+	<!-- 检查、检验报告保存并回写报告单状态 -->
+	<bean id="ICirptExtService" class="iih.ci.ord.cirptlab.s.ICirptExtServiceImpl"></bean>
+	<xap:service ref="ICirptExtService" interface="iih.ci.ord.cirptlab.i.ICirptExtService"
+		requires="tx">
+		<xap:binding name="jsonrpc" />
+	</xap:service>
+	
+	<!-- 判断医师权限接口 -->
+	<bean id="IPsnAuthorityCertifyService" class="iih.ci.ord.s.PsnAuthorityCertifyServiceImpl"></bean>
+	
+<xap:service ref="iih.ci.ord.s.bp.iemsg.reissue.ICiReIssueService" interface="iih.ci.ord.s.bp.iemsg.reissue.ICiReIssueService">
+	<xap:binding name="local"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.s.bp.iemsg.reissue.CiReIssueService"
+		class="iih.ci.ord.s.bp.iemsg.reissue.impl.CiReIssueServiceImpl">
+	</bean>
+	<!-- 临床对病历提供的接口 -->
+<xap:service ref="iih.ci.ord.i.external.ICiOrdMrService" interface="iih.ci.ord.i.external.ICiOrdMrService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.i.external.ICiOrdMrService"
+		class="iih.ci.ord.s.external.CiOrdMrServiceImpl">
+	</bean>
+
+<xap:service ref="iih.ci.ord.i.external.ICiOrdEnService" interface="iih.ci.ord.i.external.ICiOrdEnService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.i.external.ICiOrdEnService"
+		class="iih.ci.ord.s.external.CiOrdEnServiceImpl">
+	</bean>
+
+	<!-- 临床对病历提供当前就诊诊断信息 -->
+	<bean id="ICiEnDiagInfoService" class="iih.ci.ord.diag.CiEnDiagInfoServiceImpl"></bean>
+	<!-- 临床对费用提供的接口 -->
+<xap:service ref="iih.ci.ord.i.external.ICiOrdBlService" interface="iih.ci.ord.i.external.ICiOrdBlService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.i.external.ICiOrdBlService"
+		class="iih.ci.ord.s.external.CiOrdBlServiceImpl">
+	</bean>
+	
+    
+<xap:service ref="iih.ci.ord.i.external.obtain.ICiOrdBlRService" interface="iih.ci.ord.i.external.obtain.ICiOrdBlRService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.i.external.obtain.ICiOrdBlRService"
+		class="iih.ci.ord.s.external.obtain.CiOrdBlRServiceImpl">
+	</bean>
+<xap:service ref="iih.ci.ord.cfg.cirulecfg.i.ICirulecfgCudService" interface="iih.ci.ord.cfg.cirulecfg.i.ICirulecfgCudService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.cfg.cirulecfg.i.ICirulecfgCudService"
+		class="iih.ci.ord.cfg.cirulecfg.s.CirulecfgCrudServiceImpl">
+	</bean>
+<xap:service ref="iih.ci.ord.cfg.cirulecfg.i.ICirulecfgMDORService" interface="iih.ci.ord.cfg.cirulecfg.i.ICirulecfgMDORService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.cfg.cirulecfg.i.ICirulecfgMDORService"
+		class="iih.ci.ord.cfg.cirulecfg.s.CirulecfgMDOCrudServiceImpl">
+	</bean>
+<xap:service ref="iih.ci.ord.cfg.cirulecfg.i.IRuleentityCudService" interface="iih.ci.ord.cfg.cirulecfg.i.IRuleentityCudService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.cfg.cirulecfg.i.IRuleentityCudService"
+		class="iih.ci.ord.cfg.cirulecfg.s.RuleentityCrudServiceImpl">
+	</bean>
+<xap:service ref="iih.ci.ord.i.cfg.rulecfg.ICiRuleCfgMaintainService" interface="iih.ci.ord.i.cfg.rulecfg.ICiRuleCfgMaintainService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.i.cfg.rulecfg.ICiRuleCfgMaintainService"
+		class="iih.ci.ord.s.bp.cfg.rulecfg.CiRuleCfgMaintainServiceImpl">
+	</bean>
+<xap:service ref="iih.ci.ord.cfg.cirulecfg.i.ICiRuleCfgRelRuleCudService" interface="iih.ci.ord.cfg.cirulecfg.i.ICiRuleCfgRelRuleCudService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.cfg.cirulecfg.i.ICiRuleCfgRelRuleCudService"
+		class="iih.ci.ord.cfg.cirulecfg.s.CiRuleCfgRelRuleCrudServiceImpl">
+	</bean>
+	
+	<!--  医保相关服务接口 -->
+<xap:service ref="iih.ci.ord.i.ICiOrdMedicalInsuranceService" interface="iih.ci.ord.i.ICiOrdMedicalInsuranceService">
+	<xap:binding name="jsonrpc"></xap:binding>
+</xap:service>
+	<bean id="iih.ci.ord.i.ICiOrdMedicalInsuranceService"
+		class="iih.ci.ord.s.CiOrdMedicalInsuranceServiceImpl">
+	</bean>
+	<bean id="iih.ci.ord.ciorsrvhp.i.CiorsrvhpCrudService"
+		class="iih.ci.ord.ciorsrvhp.s.CiorsrvhpCrudServiceImpl">
+	</bean>
+</beans>

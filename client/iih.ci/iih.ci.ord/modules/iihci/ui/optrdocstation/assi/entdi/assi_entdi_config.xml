@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <Clazz id="LayoutPanelManager" classname="xap.rui.engine.xlayouts.LayoutPanelManager" dllname="xap.rui.engine" singleton="true">
+    </Clazz>
+    <Clazz id="tablayout1" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine" singleton="true"/>
+
+    <!--内容定义-->
+    <Clazz id="EntDiDeptAssiView" classname="iih.ci.ord.opemergency.assi.entdi.view.EntDiDeptAssiView" dllname="iih.ci.ord"/>
+    <Clazz id="EntDiChronAssiView" classname="iih.ci.ord.opemergency.assi.entdi.view.EntDiChronAssiView" dllname="iih.ci.ord"/>
+    <Clazz id="EntDiSpeciAssiView" classname="iih.ci.ord.opemergency.assi.entdi.view.EntDiSpeciAssiView" dllname="iih.ci.ord"/>
+    <Clazz id="EntDiInfectAssiView" classname="iih.ci.ord.opemergency.assi.entdi.view.EntDiInfectAssiView" dllname="iih.ci.ord"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+  
+  <Content>
+    <PanelManager ref="LayoutPanelManager">
+      <ManagedPanels>
+        <ManagedPanel id="rightDialogPanelManger" lazy="true">
+          <XTabPanelControl alignment="Top" ref="tablayout1">
+            <XTabPages>
+              <XTabPage id="EntDiDeptAssiView" text="科室常用诊断" visible="true" lazy="true">
+                <Control ref="EntDiDeptAssiView"/>
+              </XTabPage>
+              <XTabPage id="EntDiChronAssiView" text="慢性病诊断" visible="true" lazy="true">
+                <Control ref="EntDiChronAssiView"/>
+              </XTabPage>
+              <XTabPage id="EntDiSpeciAssiView" text="特殊病诊断" visible="true" lazy="true">
+                <Control ref="EntDiSpeciAssiView"/>
+              </XTabPage>
+              <XTabPage id="EntDiInfectAssiView" text="传染病诊断" visible="true" lazy="true">
+                <Control ref="EntDiInfectAssiView"/>
+              </XTabPage>
+            </XTabPages>
+          </XTabPanelControl>
+        </ManagedPanel>
+      </ManagedPanels>
+    </PanelManager>
+    
+    
+    
+    
+    
+    
+    
+    <!--<XLayoutPanel>
+      <Center  Padding="4,4,4,4">
+        <XLayoutPanel>
+          <Center Padding="0,4,0,0">
+            <XTabPanelControl alignment="Top" ref="tablayout" >
+              <XTabPages>
+                <XTabPage id="EntDiDeptAssiView" text="科室常用诊断" visible="true" lazy="false" >
+                  <XLayoutPanel>
+                    <Center>
+                      <Control ref="EntDiDeptAssiView" />
+                    </Center>
+                    </XLayoutPanel>
+                </XTabPage>
+                <XTabPage id="EntDiChronAssiView" text="慢性病诊断" visible="true" lazy="false" >
+                  <XLayoutPanel>
+                    <Center>
+                      <Control ref="EntDiChronAssiView" />
+                    </Center>
+                  </XLayoutPanel>
+                </XTabPage>
+                <XTabPage id="EntDiSpeciAssiView" text="特殊病诊断" visible="true" lazy="false" >
+                  <XLayoutPanel>
+                    <Center>
+                      <Control ref="EntDiSpeciAssiView" />
+                    </Center>
+                  </XLayoutPanel>
+                </XTabPage>
+                <XTabPage id="EntDiInfectAssiView" text="传染病诊断" visible="true" lazy="false" >
+                  <XLayoutPanel>
+                    <Center>
+                      <Control ref="EntDiInfectAssiView" />
+                    </Center>
+                  </XLayoutPanel>
+                </XTabPage>
+              </XTabPages>
+            </XTabPanelControl>
+          </Center>
+        </XLayoutPanel>
+      </Center>
+    </XLayoutPanel>-->
+  </Content>
+</Funclet>

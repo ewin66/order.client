@@ -1,0 +1,3125 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Templ type="3" name="病理检查申请单">
+  <rect x="4.23" y="4.23" width="216.72" height="290.72" />
+  <font name="新宋体" size="10.5" style="Regular" bold="False" />
+  <fore_color alpha="255" red="0" green="0" blue="0" />
+  <bkg_color alpha="255" red="255" green="255" blue="255" />
+  <will_print_border>False</will_print_border>
+  <bkg_img dpi="100" save_id="" />
+  <vext_params allow_paging="False" vextarea_fixedctrl_style="2" fixedarea_style="2" vext_area_start="-1" vext_area_end="-1" vext_area_never_end="False" />
+  <templ_gl_params>
+    <doct_order_xml />
+  </templ_gl_params>
+  <Base_Cmpt type="7" name="文本框_RrS">
+    <rect x="81.47" y="2.51" width="48.22" height="7.5" />
+    <font name="新宋体" size="14.25" style="Bold" bold="True" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>标题</data_item_name>
+    <demo_text>北京大学国际医院</demo_text>
+    <data_formula>
+      <vo_class_path />
+      <one_function>
+        <func_param>
+          <data_type_id />
+          <data_type_fpath>System.String</data_type_fpath>
+          <data_dir>2</data_dir>
+          <sht_name>北京大学国际医院</sht_name>
+          <lng_name>北京大学国际医院</lng_name>
+          <sht_note>北京大学国际医院</sht_note>
+          <lng_note>北京大学国际医院</lng_note>
+        </func_param>
+      </one_function>
+    </data_formula>
+    <ext_eles>
+      <text_type>1</text_type>
+      <text_fmtstr />
+      <is_money_num>False</is_money_num>
+      <is_cap_num>False</is_cap_num>
+      <show_money_type>False</show_money_type>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="10" name="图片_TRD">
+    <rect x="4.44" y="2.536667" width="32.77" height="8.97" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>住院号</data_item_name>
+    <demo_text>QX52046896</demo_text>
+    <data_formula>
+      <vo_class_path>ent4bannerdto</vo_class_path>
+      <one_function>
+        <func_name>
+          <data_type_id />
+          <data_type_fpath>java.lang.String</data_type_fpath>
+          <data_dir>1</data_dir>
+          <sht_name>getMData</sht_name>
+          <lng_name />
+          <sht_note>获取元数据的值</sht_note>
+          <lng_note />
+        </func_name>
+        <func_param>
+          <data_type_id>BS000010000100001001</data_type_id>
+          <data_type_fpath>System.String</data_type_fpath>
+          <data_dir>2</data_dir>
+          <sht_name>ent4bannerdto.code_ent</sht_name>
+          <lng_name>ToDo:║LngName</lng_name>
+          <sht_note>就诊号</sht_note>
+          <lng_note>Banner就诊信息\就诊号</lng_note>
+        </func_param>
+      </one_function>
+    </data_formula>
+    <ext_eles>
+      <imgType>13</imgType>
+      <imgSaveId />
+      <willShowCode>True</willShowCode>
+      <rotateAngle>0</rotateAngle>
+      <opacityPct>100</opacityPct>
+      <barcodeX>1</barcodeX>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="10" name="图片_kT8">
+    <rect x="173.55" y="3.11" width="32.77" height="8.97" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>申请单号</data_item_name>
+    <demo_text>QX52046896</demo_text>
+    <data_formula>
+      <vo_class_path>ordappathgydo</vo_class_path>
+      <one_function>
+        <func_name>
+          <data_type_id />
+          <data_type_fpath>java.lang.String</data_type_fpath>
+          <data_dir>1</data_dir>
+          <sht_name>getMData</sht_name>
+          <lng_name />
+          <sht_note>获取元数据的值</sht_note>
+          <lng_note />
+        </func_name>
+        <func_param>
+          <data_type_id>BS000010000100001001</data_type_id>
+          <data_type_fpath>System.String</data_type_fpath>
+          <data_dir>2</data_dir>
+          <sht_name>ordappathgydo.no_applyform</sht_name>
+          <lng_name>ToDo:║LngName</lng_name>
+          <sht_note>病理申请号</sht_note>
+          <lng_note>病理申请单\病理申请号</lng_note>
+        </func_param>
+      </one_function>
+    </data_formula>
+    <ext_eles>
+      <imgType>13</imgType>
+      <imgSaveId />
+      <willShowCode>True</willShowCode>
+      <rotateAngle>0</rotateAngle>
+      <opacityPct>100</opacityPct>
+      <barcodeX>1</barcodeX>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="7" name="文本框_UAi">
+    <rect x="60.52" y="10.26" width="90.76" height="5.17" />
+    <font name="新宋体" size="10.5" style="Bold" bold="True" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>英文标题</data_item_name>
+    <demo_text>PEKING UNIVERSITY  INTERNATIONAL HOSPITAL</demo_text>
+    <data_formula>
+      <vo_class_path />
+      <one_function>
+        <func_param>
+          <data_type_id />
+          <data_type_fpath>System.String</data_type_fpath>
+          <data_dir>2</data_dir>
+          <sht_name>PEKING║UNIVERSITY║║INTERNATIONAL║HOSPITAL</sht_name>
+          <lng_name>PEKING║UNIVERSITY║║INTERNATIONAL║HOSPITAL</lng_name>
+          <sht_note>PEKING║UNIVERSITY║║INTERNATIONAL║HOSPITAL</sht_note>
+          <lng_note>PEKING║UNIVERSITY║║INTERNATIONAL║HOSPITAL</lng_note>
+        </func_param>
+      </one_function>
+    </data_formula>
+    <ext_eles>
+      <text_type>1</text_type>
+      <text_fmtstr />
+      <is_money_num>False</is_money_num>
+      <is_cap_num>False</is_cap_num>
+      <show_money_type>False</show_money_type>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="7" name="文本框_zbC">
+    <rect x="89.73" y="15.79" width="31.93" height="6.65" />
+    <font name="新宋体" size="14.25" style="Bold" bold="True" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>检查申请单</data_item_name>
+    <demo_text>检查申请单</demo_text>
+    <data_formula>
+      <vo_class_path />
+      <one_function>
+        <func_param>
+          <data_type_id />
+          <data_type_fpath>System.String</data_type_fpath>
+          <data_dir>2</data_dir>
+          <sht_name>检查申请单</sht_name>
+          <lng_name>检查申请单</lng_name>
+          <sht_note>检查申请单</sht_note>
+          <lng_note>检查申请单</lng_note>
+        </func_param>
+      </one_function>
+    </data_formula>
+    <ext_eles>
+      <text_type>1</text_type>
+      <text_fmtstr />
+      <is_money_num>False</is_money_num>
+      <is_cap_num>False</is_cap_num>
+      <show_money_type>False</show_money_type>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="7" name="文本框_zc0">
+    <rect x="73.44" y="23.03" width="65.37" height="5.17" />
+    <font name="新宋体" size="10.5" style="Bold" bold="True" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>TEST REQUISTION FORM</data_item_name>
+    <demo_text>TEST REQUISTION FORM</demo_text>
+    <data_formula>
+      <vo_class_path />
+      <one_function>
+        <func_param>
+          <data_type_id />
+          <data_type_fpath>System.String</data_type_fpath>
+          <data_dir>2</data_dir>
+          <sht_name>TEST║REQUISTION║FORM</sht_name>
+          <lng_name>TEST║REQUISTION║FORM</lng_name>
+          <sht_note>TEST║REQUISTION║FORM</sht_note>
+          <lng_note>TEST║REQUISTION║FORM</lng_note>
+        </func_param>
+      </one_function>
+    </data_formula>
+    <ext_eles>
+      <text_type>1</text_type>
+      <text_fmtstr />
+      <is_money_num>False</is_money_num>
+      <is_cap_num>False</is_cap_num>
+      <show_money_type>False</show_money_type>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_B2g">
+    <rect x="4.86" y="32.38" width="46.9" height="11.77" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>申请科室</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="19.04833" />
+        <line pos="48" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="7.976668">
+          <cell type="14" name="单元格_7jlac">
+            <rect x="1.1" y="1.1" width="17.94833" height="6.876668" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>申请科室</data_item_name>
+            <demo_text>申请科室：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>申请科室：</sht_name>
+                  <lng_name>申请科室：</lng_name>
+                  <sht_note>申请科室：</sht_note>
+                  <lng_note>申请科室：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="7.976668" left="1.1" right="19.04833" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_I7Brg">
+            <rect x="19.04833" y="1.1" width="28.95167" height="6.876668" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>name_dep_sign</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ciorderdo</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath />
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>C6944296-49E0-0001-1F73-42F1DEB0E4E0</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ciorderdo.dep_sign_name</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>名称</sht_note>
+                  <lng_note>临床医嘱\签署部门\名称</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="7.976668" left="19.04833" right="48" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="12.87">
+          <cell type="14" name="单元格_7krny">
+            <rect x="1.1" y="7.976668" width="46.9" height="4.893333" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Ordering Department</data_item_name>
+            <demo_text>Ordering Department</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Ordering║Department</sht_name>
+                  <lng_name>Ordering║Department</lng_name>
+                  <sht_note>Ordering║Department</sht_note>
+                  <lng_note>Ordering║Department</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="7.976668" bottom="12.87" left="1.1" right="48" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_ie5">
+    <rect x="53.02" y="32.38" width="30.6" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>病区</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="11.85167" />
+        <line pos="31.7" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="8.215">
+          <cell type="14" name="单元格_VjNrn">
+            <rect x="1.1" y="1.1" width="10.75167" height="7.115" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>病区：</data_item_name>
+            <demo_text>病区：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>病区：</sht_name>
+                  <lng_name>病区：</lng_name>
+                  <sht_note>病区：</sht_note>
+                  <lng_note>病区：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.215" left="1.1" right="11.85167" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_nyYJ8">
+            <rect x="11.85167" y="1.1" width="19.84833" height="7.115" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>name_dep_nur</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ent4bannerdto</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ent4bannerdto.name_dep_nur</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>病区</sht_note>
+                  <lng_note>Banner就诊信息\病区</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.215" left="11.85167" right="31.7" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_QXAa8">
+            <rect x="1.1" y="8.215" width="30.6" height="4.885" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Ward</data_item_name>
+            <demo_text>Ward</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Ward</sht_name>
+                  <lng_name>Ward</lng_name>
+                  <sht_note>Ward</sht_note>
+                  <lng_note>Ward</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="8.215" bottom="13.1" left="1.1" right="31.7" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_bnn">
+    <rect x="85.06" y="32.38" width="39.06" height="11.77" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>床位</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="11.85167" />
+        <line pos="40.16" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="7.791667">
+          <cell type="14" name="单元格_Wf0IK">
+            <rect x="1.1" y="1.1" width="10.75167" height="6.691667" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>床位：</data_item_name>
+            <demo_text>床位：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>床位：</sht_name>
+                  <lng_name>床位：</lng_name>
+                  <sht_note>床位：</sht_note>
+                  <lng_note>床位：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="7.791667" left="1.1" right="11.85167" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_rBpdW">
+            <rect x="11.85167" y="1.1" width="28.30833" height="6.691667" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>name_bed</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ent4bannerdto</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ent4bannerdto.name_bed</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>床号</sht_note>
+                  <lng_note>Banner就诊信息\床号</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="7.791667" left="11.85167" right="40.16" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="12.87">
+          <cell type="14" name="单元格_GCip3">
+            <rect x="1.1" y="7.791667" width="39.06" height="5.078334" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Bed Number</data_item_name>
+            <demo_text>Bed Number</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Bed║Number</sht_name>
+                  <lng_name>Bed║Number</lng_name>
+                  <sht_note>Bed║Number</sht_note>
+                  <lng_note>Bed║Number</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="7.791667" bottom="12.87" left="1.1" right="40.16" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_EoD">
+    <rect x="40.11" y="46.56" width="21.06" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>性别</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="12.275" />
+        <line pos="22.16" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="7.791667">
+          <cell type="14" name="单元格_eXuwU">
+            <rect x="1.1" y="1.1" width="11.175" height="6.691667" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>性别：</data_item_name>
+            <demo_text>性别：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>性别：</sht_name>
+                  <lng_name>性别：</lng_name>
+                  <sht_note>性别：</sht_note>
+                  <lng_note>性别：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="7.791667" left="1.1" right="12.275" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_DhpBv">
+            <rect x="12.275" y="1.1" width="9.885" height="6.691667" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>sex_pat</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ent4bannerdto</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ent4bannerdto.name_sex</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>性别</sht_note>
+                  <lng_note>Banner就诊信息\性别</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="7.791667" left="12.275" right="22.16" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_wHD09">
+            <rect x="1.1" y="7.791667" width="21.06" height="5.308333" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Gender</data_item_name>
+            <demo_text>Gender</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Gender</sht_name>
+                  <lng_name>Gender</lng_name>
+                  <sht_note>Gender</sht_note>
+                  <lng_note>Gender</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="7.791667" bottom="13.1" left="1.1" right="22.16" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_lLl">
+    <rect x="4.65" y="46.56" width="33.77" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>姓名</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="11.81333" />
+        <line pos="34.87" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="8.003334">
+          <cell type="14" name="单元格_4i67H">
+            <rect x="1.1" y="1.1" width="10.71333" height="6.903334" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>姓名：</data_item_name>
+            <demo_text>姓名：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>姓名：</sht_name>
+                  <lng_name>姓名：</lng_name>
+                  <sht_note>姓名：</sht_note>
+                  <lng_note>姓名：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.003334" left="1.1" right="11.81333" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_0okaV">
+            <rect x="11.81333" y="1.1" width="23.05667" height="6.903334" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>name_pat</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ent4bannerdto</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ent4bannerdto.name_pat</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>患者姓名</sht_note>
+                  <lng_note>Banner就诊信息\患者姓名</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.003334" left="11.81333" right="34.87" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_SoiWz">
+            <rect x="1.1" y="8.003334" width="33.77" height="5.096666" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Name</data_item_name>
+            <demo_text>Name</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Name</sht_name>
+                  <lng_name>Name</lng_name>
+                  <sht_note>Name</sht_note>
+                  <lng_note>Name</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="8.003334" bottom="13.1" left="1.1" right="34.87" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_nnB">
+    <rect x="114.87" y="46.77" width="46.25" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>联系电话</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="20.10667" />
+        <line pos="47.35" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="8.003334">
+          <cell type="14" name="单元格_6gkXy">
+            <rect x="1.1" y="1.1" width="19.00667" height="6.903334" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>联系电话：</data_item_name>
+            <demo_text>联系电话：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>联系电话：</sht_name>
+                  <lng_name>联系电话：</lng_name>
+                  <sht_note>联系电话：</sht_note>
+                  <lng_note>联系电话：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.003334" left="1.1" right="20.10667" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_o1XRf">
+            <rect x="20.10667" y="1.1" width="27.24333" height="6.903334" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>telno_pat</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ent4bannerdto</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ent4bannerdto.mob</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>移动电话</sht_note>
+                  <lng_note>Banner就诊信息\移动电话</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.003334" left="20.10667" right="47.35" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_TXYHS">
+            <rect x="1.1" y="8.003334" width="46.25" height="5.096666" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Phone Number</data_item_name>
+            <demo_text>Phone Number</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Phone║Number</sht_name>
+                  <lng_name>Phone║Number</lng_name>
+                  <sht_note>Phone║Number</sht_note>
+                  <lng_note>Phone║Number</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="8.003334" bottom="13.1" left="1.1" right="47.35" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_w2z">
+    <rect x="62.75" y="46.77" width="50.7" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>出生日期</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="19.04833" />
+        <line pos="43.2575" />
+        <line pos="51.8" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="8.215">
+          <cell type="14" name="单元格_vecQc">
+            <rect x="1.1" y="1.1" width="17.94833" height="7.115" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>出生日期：</data_item_name>
+            <demo_text>出生日期：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>出生日期：</sht_name>
+                  <lng_name>出生日期：</lng_name>
+                  <sht_note>出生日期：</sht_note>
+                  <lng_note>出生日期：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.215" left="1.1" right="19.04833" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_5dA1x">
+            <rect x="19.04833" y="1.1" width="24.20917" height="7.115" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>dt_birth_pat</data_item_name>
+            <demo_text>2015-04-02 09:30:45</demo_text>
+            <data_formula>
+              <vo_class_path>ent4bannerdto</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ent4bannerdto.dt_birth</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>出生日期</sht_note>
+                  <lng_note>Banner就诊信息\出生日期</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>3</text_type>
+              <text_fmtstr>yyyy-MM-dd</text_fmtstr>
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.215" left="19.04833" right="43.2575" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_gCHU4">
+            <rect x="43.2575" y="1.1" width="8.5425" height="7.115" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>age</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ent4bannerdto</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ent4bannerdto.age</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>年龄</sht_note>
+                  <lng_note>Banner就诊信息\年龄</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.215" left="43.2575" right="51.8" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_1wviu">
+            <rect x="1.1" y="8.215" width="50.7" height="4.885" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Date of Birth</data_item_name>
+            <demo_text>Date of Birth</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Date║of║Birth</sht_name>
+                  <lng_name>Date║of║Birth</lng_name>
+                  <sht_note>Date║of║Birth</sht_note>
+                  <lng_note>Date║of║Birth</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="8.215" bottom="13.1" left="1.1" right="51.8" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_kM0">
+    <rect x="162.83" y="46.77" width="47.32" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>执行科室</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="19.68333" />
+        <line pos="48.42" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="8.003334">
+          <cell type="14" name="单元格_jHuJf">
+            <rect x="1.1" y="1.1" width="18.58333" height="6.903334" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>执行科室：</data_item_name>
+            <demo_text>执行科室：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>执行科室：</sht_name>
+                  <lng_name>执行科室：</lng_name>
+                  <sht_note>执行科室：</sht_note>
+                  <lng_note>执行科室：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.003334" left="1.1" right="19.68333" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_Dddw9">
+            <rect x="19.68333" y="1.1" width="28.73667" height="6.903334" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>name_dep_mp</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ordsrvdo</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath />
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>C6944296-49E0-0001-1F73-42F1DEB0E4E0</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ordsrvdo.dep_mp_name</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>名称</sht_note>
+                  <lng_note>临床医嘱\医嘱服务项目\执行科室\名称</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.003334" left="19.68333" right="48.42" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_Jl8hB">
+            <rect x="1.1" y="8.003334" width="47.32" height="5.096666" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Testing Department</data_item_name>
+            <demo_text>Testing Department</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Testing║Department</sht_name>
+                  <lng_name>Testing║Department</lng_name>
+                  <sht_note>Testing║Department</sht_note>
+                  <lng_note>Testing║Department</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="8.003334" bottom="13.1" left="1.1" right="48.42" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_1sn">
+    <rect x="51.84" y="61.15" width="158.23" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>3</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>过敏史</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="15.97917" />
+        <line pos="159.33" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="7.791667">
+          <cell type="14" name="单元格_YkAWG">
+            <rect x="1.1" y="1.1" width="14.87917" height="6.691667" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>过敏史：</data_item_name>
+            <demo_text>过敏史：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>过敏史：</sht_name>
+                  <lng_name>过敏史：</lng_name>
+                  <sht_note>过敏史：</sht_note>
+                  <lng_note>过敏史：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="7.791667" left="1.1" right="15.97917" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_axumP">
+            <rect x="1.1" y="7.791667" width="14.87917" height="5.308333" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Allergy</data_item_name>
+            <demo_text>Allergy</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Allergy</sht_name>
+                  <lng_name>Allergy</lng_name>
+                  <sht_note>Allergy</sht_note>
+                  <lng_note>Allergy</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="7.791667" bottom="13.1" left="1.1" right="15.97917" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_NzMhX">
+            <rect x="15.97917" y="1.1" width="143.3508" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>allergyhis</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ent4bannerdto</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ent4bannerdto.allergyhis</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>过敏史</sht_note>
+                  <lng_note>Banner就诊信息\过敏史</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="15.97917" right="159.33" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_zeb">
+    <rect x="4.65" y="61.16" width="44.77" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>检查目的</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="19.895" />
+        <line pos="45.87" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="8.271667">
+          <cell type="14" name="单元格_MFDme">
+            <rect x="1.1" y="1.1" width="18.795" height="7.171667" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>检查目的：</data_item_name>
+            <demo_text>检查目的：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>检查目的：</sht_name>
+                  <lng_name>检查目的：</lng_name>
+                  <sht_note>检查目的：</sht_note>
+                  <lng_note>检查目的：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.271667" left="1.1" right="19.895" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_IlIep">
+            <rect x="19.895" y="1.1" width="25.975" height="7.171667" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>des_pps</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ordappathgydo</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001030</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ordappathgydo.announcements</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>检查要求</sht_note>
+                  <lng_note>病理申请单\检查要求</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.271667" left="19.895" right="45.87" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_YSCjz">
+            <rect x="1.1" y="8.271667" width="44.77" height="4.828334" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Purpose</data_item_name>
+            <demo_text>Purpose</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Purpose</sht_name>
+                  <lng_name>Purpose</lng_name>
+                  <sht_note>Purpose</sht_note>
+                  <lng_note>Purpose</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="8.271667" bottom="13.1" left="1.1" right="45.87" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_Kcf">
+    <rect x="4.65" y="75.55" width="205.42" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>3</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>临床诊断</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="36.50666" />
+        <line pos="206.52" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="8.426667">
+          <cell type="14" name="单元格_mXeA9">
+            <rect x="1.1" y="1.1" width="35.40666" height="7.326667" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>临床诊断：</data_item_name>
+            <demo_text>临床诊断：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>临床诊断：</sht_name>
+                  <lng_name>临床诊断：</lng_name>
+                  <sht_note>临床诊断：</sht_note>
+                  <lng_note>临床诊断：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.426667" left="1.1" right="36.50666" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_iIGTv">
+            <rect x="1.1" y="8.426667" width="35.40666" height="4.673333" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>Clinical Diagnosis</data_item_name>
+            <demo_text>Clinical Diagnosis</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Clinical║Diagnosis</sht_name>
+                  <lng_name>Clinical║Diagnosis</lng_name>
+                  <sht_note>Clinical║Diagnosis</sht_note>
+                  <lng_note>Clinical║Diagnosis</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="8.426667" bottom="13.1" left="1.1" right="36.50666" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_kTxTt">
+            <rect x="36.50666" y="1.1" width="170.0133" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>str_name_di</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ordappathgydo.str_name_di</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>诊断名称拼接</sht_note>
+                  <lng_note>病理申请单\诊断名称拼接</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="36.50666" right="206.52" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_CUL">
+    <rect x="4.65" y="90.16" width="205.43" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>检查项目</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="21.69417" />
+        <line pos="206.53" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="7.1">
+          <cell type="14" name="单元格_gr9Jq">
+            <rect x="1.1" y="1.1" width="20.59417" height="6" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>检查项目：</data_item_name>
+            <demo_text>检查项目：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>检查项目：</sht_name>
+                  <lng_name>检查项目：</lng_name>
+                  <sht_note>检查项目：</sht_note>
+                  <lng_note>检查项目：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="7.1" left="1.1" right="21.69417" />
+            </ext_eles>
+          </cell>
+        </line>
+        <line pos="13.1">
+          <cell type="14" name="单元格_d4C41">
+            <rect x="1.1" y="7.1" width="20.59417" height="6" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>Check Item</data_item_name>
+            <demo_text>Check Item</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>Check║Item</sht_name>
+                  <lng_name>Check║Item</lng_name>
+                  <sht_note>Check║Item</sht_note>
+                  <lng_note>Check║Item</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="7.1" bottom="13.1" left="1.1" right="21.69417" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_L4IkV">
+            <rect x="21.69417" y="1.1" width="184.8358" height="12" />
+            <font name="新宋体" size="14.25" style="Bold" bold="True" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>name_or</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ciorderdo.name_or</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>医嘱名称</sht_note>
+                  <lng_note>临床医嘱\医嘱名称</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="21.69417" right="206.53" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_GWL">
+    <rect x="4.65" y="105.15" width="205.63" height="6.898333" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>病历摘要</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="19.895" />
+        <line pos="206.73" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="7.998333">
+          <cell type="14" name="单元格_9D0m1">
+            <rect x="1.1" y="1.1" width="205.63" height="6.898333" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>3</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>abstract</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ordappathgydo</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ordappathgydo.des_sympsign</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>病情描述</sht_note>
+                  <lng_note>病理申请单\病情描述</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="7.998333" left="1.1" right="206.73" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_IYW">
+    <rect x="98.62" y="203.66" width="111.87" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>固定液</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="16.29667" />
+        <line pos="112.97" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="13.1">
+          <cell type="14" name="单元格_TKJal">
+            <rect x="1.1" y="1.1" width="15.19667" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>固定液</data_item_name>
+            <demo_text>固定液：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>固定液：</sht_name>
+                  <lng_name>固定液：</lng_name>
+                  <sht_note>固定液：</sht_note>
+                  <lng_note>固定液：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="1.1" right="16.29667" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_g5XJH">
+            <rect x="16.29667" y="1.1" width="96.67333" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>3</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>fixative</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ordappathgysampdo</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ordappathgysampdo.fixative</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>固定液</sht_note>
+                  <lng_note>病理申请单\病理标本\固定液</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="16.29667" right="112.97" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_WLv">
+    <rect x="4.44" y="203.67" width="92.4" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>取材部位</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="20.31833" />
+        <line pos="93.5" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="13.1">
+          <cell type="14" name="单元格_I5xsb">
+            <rect x="1.1" y="1.1" width="19.21833" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>取材部位</data_item_name>
+            <demo_text>取材部位：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>取材部位：</sht_name>
+                  <lng_name>取材部位：</lng_name>
+                  <sht_note>取材部位：</sht_note>
+                  <lng_note>取材部位：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="1.1" right="20.31833" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_VHlqt">
+            <rect x="20.31833" y="1.1" width="73.18167" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>3</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>body</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ordappathgysampdo</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ordappathgysampdo.body_coll</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>采集部位</sht_note>
+                  <lng_note>病理申请单\病理标本\采集部位</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="20.31833" right="93.5" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_Ew0">
+    <rect x="4.44" y="216.72" width="206.27" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>临床诊断病理</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="20.42416" />
+        <line pos="207.37" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="13.1">
+          <cell type="14" name="单元格_chIKL">
+            <rect x="1.1" y="1.1" width="19.32416" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>临床诊断病理</data_item_name>
+            <demo_text>临床诊断：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>临床诊断：</sht_name>
+                  <lng_name>临床诊断：</lng_name>
+                  <sht_note>临床诊断：</sht_note>
+                  <lng_note>临床诊断：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="1.1" right="20.42416" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_0Nmzh">
+            <rect x="20.42416" y="1.1" width="186.9458" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>3</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>str_name_di_pathgy</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ordappathgydo</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>java.lang.String</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001001</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ordappathgydo.str_name_di</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>诊断名称拼接</sht_note>
+                  <lng_note>病理申请单\诊断名称拼接</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="20.42416" right="207.37" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_wzs">
+    <rect x="98.62" y="229.87" width="111.87" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>送检医生</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="20.63583" />
+        <line pos="112.97" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="13.1">
+          <cell type="14" name="单元格_j70gv">
+            <rect x="1.1" y="1.1" width="19.53583" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>送检医生</data_item_name>
+            <demo_text>送检医生：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>送检医生：</sht_name>
+                  <lng_name>送检医生：</lng_name>
+                  <sht_note>送检医生：</sht_note>
+                  <lng_note>送检医生：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="1.1" right="20.63583" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_6ElHt">
+            <rect x="20.63583" y="1.1" width="92.33417" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>senddoc</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path />
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="20.63583" right="112.97" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_tox">
+    <rect x="4.65" y="229.97" width="91.98" height="12" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>送检日期</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="20.42417" />
+        <line pos="93.08" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="13.1">
+          <cell type="14" name="单元格_8ADvT">
+            <rect x="1.1" y="1.1" width="19.32417" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>送检日期</data_item_name>
+            <demo_text>送检日期：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>送检日期：</sht_name>
+                  <lng_name>送检日期：</lng_name>
+                  <sht_note>送检日期：</sht_note>
+                  <lng_note>送检日期：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="1.1" right="20.42417" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_1VTsB">
+            <rect x="20.42417" y="1.1" width="72.65583" height="12" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>senddt</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path />
+            </data_formula>
+            <ext_eles>
+              <text_type>3</text_type>
+              <text_fmtstr>yyyy-MM-dd</text_fmtstr>
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="13.1" left="20.42417" right="93.08" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_Hkb">
+    <rect x="4.65" y="267.66" width="206.91" height="7.13" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>同意签字</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="50.68" />
+        <line pos="148.9433" />
+        <line pos="208.01" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="8.23">
+          <cell type="14" name="单元格_k51nU">
+            <rect x="1.1" y="1.1" width="49.58" height="7.130001" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>是否同意</data_item_name>
+            <demo_text>是否同意：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>是否同意：</sht_name>
+                  <lng_name>是否同意：</lng_name>
+                  <sht_note>是否同意：</sht_note>
+                  <lng_note>是否同意：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.23" left="1.1" right="50.68" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_k51nU">
+            <rect x="50.68" y="1.1" width="98.2633" height="7.130001" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>患者本人或亲属签字</data_item_name>
+            <demo_text>患者本人或亲属签字：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>患者本人或亲属签字：</sht_name>
+                  <lng_name>患者本人或亲属签字：</lng_name>
+                  <sht_note>患者本人或亲属签字：</sht_note>
+                  <lng_note>患者本人或亲属签字：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.23" left="50.68" right="148.9433" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_k51nU">
+            <rect x="148.9433" y="1.1" width="59.06671" height="7.130001" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>日期</data_item_name>
+            <demo_text>年      月      日</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>年║║║║║║月║║║║║║日</sht_name>
+                  <lng_name>年║║║║║║月║║║║║║日</lng_name>
+                  <sht_note>年║║║║║║月║║║║║║日</sht_note>
+                  <lng_note>年║║║║║║月║║║║║║日</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.23" left="148.9433" right="208.01" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_I3p">
+    <rect x="134.19" y="279.31" width="56.63" height="8.39" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>签字</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="12.48667" />
+        <line pos="57.73" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="9.490001">
+          <cell type="14" name="单元格_FpwAG">
+            <rect x="1.1" y="1.1" width="11.38667" height="8.39" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>签字</data_item_name>
+            <demo_text>签字：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>签字：</sht_name>
+                  <lng_name>签字：</lng_name>
+                  <sht_note>签字：</sht_note>
+                  <lng_note>签字：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="9.490001" left="1.1" right="12.48667" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_SmUo9">
+            <rect x="12.48667" y="1.1" width="45.24333" height="8.39" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>签字内容</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path />
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="9.490001" left="12.48667" right="57.73" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_fyh">
+    <rect x="67.51" y="279.66" width="60.02" height="7.97" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>申请日期</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="19.68333" />
+        <line pos="61.12" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="9.07">
+          <cell type="14" name="单元格_0IruQ">
+            <rect x="1.1" y="1.1" width="18.58333" height="7.97" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>申请日期</data_item_name>
+            <demo_text>申请日期：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>申请日期：</sht_name>
+                  <lng_name>申请日期：</lng_name>
+                  <sht_note>申请日期：</sht_note>
+                  <lng_note>申请日期：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="9.07" left="1.1" right="19.68333" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_T8nY1">
+            <rect x="19.68333" y="1.1" width="41.43667" height="7.97" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>dt_effe</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ciorderdo</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath>xap.mw.coreitf.d.FDateTime</data_type_fpath>
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>BS000010000100001034</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ciorderdo.dt_entry</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>开立日期</sht_note>
+                  <lng_note>临床医嘱\开立日期</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="9.07" left="19.68333" right="61.12" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+  <Base_Cmpt type="12" name="表格(按单元格)_Jpj">
+    <rect x="4.65" y="279.77" width="54.31" height="7.76" />
+    <font name="新宋体" size="10.5" style="Regular" bold="False" />
+    <fore_color alpha="255" red="0" green="0" blue="0" />
+    <bkg_color alpha="0" red="255" green="255" blue="255" />
+    <print_border_style>0</print_border_style>
+    <will_print_content>True</will_print_content>
+    <will_autozoom>False</will_autozoom>
+    <outbound_showtype>1</outbound_showtype>
+    <line_space>0</line_space>
+    <read_only>False</read_only>
+    <halign_style>3</halign_style>
+    <data_item_name>申请医生</data_item_name>
+    <demo_text />
+    <data_formula>
+      <vo_class_path />
+    </data_formula>
+    <ext_eles>
+      <column_lines>
+        <line pos="1.1" />
+        <line pos="19.36583" />
+        <line pos="55.41" />
+      </column_lines>
+      <row_lines>
+        <line pos="1.1" />
+        <line pos="8.860001">
+          <cell type="14" name="单元格_X2ga3">
+            <rect x="1.1" y="1.1" width="18.26583" height="7.760001" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>0</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>3</halign_style>
+            <data_item_name>申请医生</data_item_name>
+            <demo_text>申请医生：</demo_text>
+            <data_formula>
+              <vo_class_path />
+              <one_function>
+                <func_param>
+                  <data_type_id />
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>申请医生：</sht_name>
+                  <lng_name>申请医生：</lng_name>
+                  <sht_note>申请医生：</sht_note>
+                  <lng_note>申请医生：</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.860001" left="1.1" right="19.36583" />
+            </ext_eles>
+          </cell>
+          <cell type="14" name="单元格_PcSHK">
+            <rect x="19.36583" y="1.1" width="36.04417" height="7.760001" />
+            <font name="新宋体" size="10.5" style="Regular" bold="False" />
+            <fore_color alpha="255" red="0" green="0" blue="0" />
+            <bkg_color alpha="0" red="255" green="255" blue="255" />
+            <print_border_style>4</print_border_style>
+            <will_print_content>True</will_print_content>
+            <will_autozoom>False</will_autozoom>
+            <outbound_showtype>1</outbound_showtype>
+            <line_space>0</line_space>
+            <read_only>False</read_only>
+            <halign_style>2</halign_style>
+            <data_item_name>name_emp_sign</data_item_name>
+            <demo_text />
+            <data_formula>
+              <vo_class_path>ciorderdo</vo_class_path>
+              <one_function>
+                <func_name>
+                  <data_type_id />
+                  <data_type_fpath />
+                  <data_dir>1</data_dir>
+                  <sht_name>getMData</sht_name>
+                  <lng_name />
+                  <sht_note>获取元数据的值</sht_note>
+                  <lng_note />
+                </func_name>
+                <func_param>
+                  <data_type_id>C6A3AD52-B530-0001-AB85-201B137811E4</data_type_id>
+                  <data_type_fpath>System.String</data_type_fpath>
+                  <data_dir>2</data_dir>
+                  <sht_name>ciorderdo.emp_phy_name</sht_name>
+                  <lng_name>ToDo:║LngName</lng_name>
+                  <sht_note>姓名</sht_note>
+                  <lng_note>临床医嘱\开立医生\姓名</lng_note>
+                </func_param>
+              </one_function>
+            </data_formula>
+            <ext_eles>
+              <text_type>1</text_type>
+              <text_fmtstr />
+              <is_money_num>False</is_money_num>
+              <is_cap_num>False</is_cap_num>
+              <around_line_pos top="1.1" bottom="8.860001" left="19.36583" right="55.41" />
+            </ext_eles>
+          </cell>
+        </line>
+      </row_lines>
+    </ext_eles>
+  </Base_Cmpt>
+</Templ>

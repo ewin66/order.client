@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Clazz id="LayoutPanelManager" classname="xap.rui.engine.xlayouts.LayoutPanelManager" dllname="xap.rui.engine" singleton="true">
+      <StateHandler classname="iih.ci.ord.opemergency.assi.handler.DefaultStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <Clazz id="tablayout1" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine" singleton="true"/>
+    <Clazz id="tablayout2" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine" singleton="true"/>
+
+    <!-- 就诊历史 -->
+    <Clszz id="EntHistoryTabFrame" classname="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryTabFrame" dllname="iih.ci.ord" singleton="true"/>
+    <!--<Clszz id="EntHistoryTabFrame2" classname="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryTabFrame" dllname="iih.ci.ord" singleton="true"/>-->
+    <!-- 门诊组套 -->
+    <Clszz id="MkrMsAppView" classname="iih.mkr.ms.medclingrpapp.MkrMsAppView" dllname="iih.mkr.ms" singleton="true"/>
+    <!-- 病历模板 -->
+    <Clszz id="TplView" classname="iih.ci.mr_pub.outpmr.tpl.TplView" dllname="iih.ci.mr_pub" singleton="true"/>
+    <!-- 个人知识库 -->
+    <Clszz id="KnowledgeFormView" classname="iih.ci.mr_pub.outpmr.knowledge.KnowledgeFormView" dllname="iih.ci.mr_pub" singleton="true"/>
+    <!-- 常用词，预设符号 -->
+    <Clszz id="EmrTermTabFrame" classname="iih.bd.srv.emrterm.emrtermcomp.view.EmrTermTabFrame" dllname="iih.bd.srv" singleton="true"/>
+
+    <!---医嘱模板-->
+    <!--<Clszz id="OpTemplateFrame" classname="iih.ci.ord.opemergency.assi.OrderTemplate.OpTemplateFrame" dllname="iih.ci.ord" singleton="true"/>-->
+    <!---医嘱模板简易版-->
+    <Clszz id="OpTemplateFramePithy" classname="iih.ci.ord.opemergency.assi.OrdertemplatePithy.OpTemplateFramePithy" dllname="iih.ci.ord" singleton="true"/>
+    <!---医嘱模板复杂版-->
+    <Clszz id="OpTemplateFrameComplex" classname="iih.ci.ord.opemergency.assi.OrdertemplateComplex.OpTemplateFrameComplex" dllname="iih.ci.ord" singleton="true"/>
+ <!---医技常规-->
+    <Clszz id="OpTechnoloyFrame" classname="iih.ci.ord.opemergency.assi.opmedicaltechnology.OpTechnoloyFrame" dllname="iih.ci.ord" singleton="true"/>
+    <!---服务分类-->
+    <Clszz id="OpMedsrvClassFrame" classname="iih.ci.ord.opemergency.assi.medsrvclass.OpMedsrvClassFrame" dllname="iih.ci.ord" singleton="true"/>
+
+
+  </Clazzes>
+  <States>
+
+  </States>
+  <Events />
+  <Content>    
+    <PanelManager ref="LayoutPanelManager">
+      <ManagedPanels>
+        <ManagedPanel id="rightDialogPanelManger" lazy="true">
+          <XLayoutPanel>
+            <Center Padding="0,4,0,0">
+              <XTabPanelControl alignment="Top" ref="tablayout1">
+                <XTabPages>
+                  <XTabPage id="EntHistoryTabFrame" text="就诊历史" visible="true" lazy="true">
+                    <Control ref="EntHistoryTabFrame"/>
+                  </XTabPage>
+                  <XTabPage id="MkrMsAppView" text="门诊组套" visible="true" lazy="true">
+                    <Control ref="MkrMsAppView"/>
+                  </XTabPage>
+                </XTabPages>
+              </XTabPanelControl>
+            </Center>
+          </XLayoutPanel>
+        </ManagedPanel>
+
+        <ManagedPanel id="rightPanelManger" lazy="true">
+          <XLayoutPanel>
+            <Center Padding="0,4,0,0">
+              <XTabPanelControl alignment="Top" ref="tablayout2">
+                <XTabPages>
+                  <XTabPage id="TplView" text="病历模板" visible="true" lazy="true">
+                    <Control ref="TplView"/>
+                  </XTabPage>
+                  <XTabPage id="KnowledgeFormView" text="个人知识库" visible="true" lazy="true">
+                    <Control ref="KnowledgeFormView"/>
+                  </XTabPage>
+                  <XTabPage id="EmrTermTabFrame" text="常用词" visible="true" lazy="true">
+                    <Control ref="EmrTermTabFrame"/>
+                  </XTabPage>
+                </XTabPages>
+              </XTabPanelControl>
+            </Center>
+          </XLayoutPanel>
+        </ManagedPanel>
+
+        <ManagedPanel id="leftPanelManger" lazy="true">
+          <XLayoutPanel>
+            <Center Padding="0,4,0,0">
+              <XTabPanelControl alignment="Top" ref="tablayout2">
+                <XTabPages>
+                  <!--<XTabPage id="OpTemplateFrame" text="医嘱模板" visible="true" lazy="true">
+                    <Control ref="OpTemplateFrame"/>
+                  </XTabPage>-->
+                  <XTabPage id="OpMedicalTechnology" text="医技常规" visible="true" lazy="true">
+                    <Control ref="OpTechnoloyFrame"/>
+                  </XTabPage>
+                  <XTabPage id="MedSrv" text="服务分类" visible="true" lazy="true">
+                    <Control ref="OpMedsrvClassFrame"/>
+                  </XTabPage>
+                </XTabPages>
+              </XTabPanelControl>
+            </Center>
+          </XLayoutPanel>
+        </ManagedPanel>
+        <ManagedPanel id="OrdertemplatePithy" lazy="true">
+          <XLayoutPanel>
+            <Center Padding="0,4,0,0">
+              <Control ref="OpTemplateFramePithy"/>
+            </Center>
+          </XLayoutPanel>
+        </ManagedPanel>
+        <ManagedPanel id="OrdertemplateComplex" lazy="true">
+          <XLayoutPanel>
+            <Center Padding="0,4,0,0">
+              <Control ref="OpTemplateFrameComplex"/>
+            </Center>
+          </XLayoutPanel>
+        </ManagedPanel>
+      </ManagedPanels>
+    </PanelManager>
+  </Content>
+</Funclet>

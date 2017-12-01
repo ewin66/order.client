@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+
+    <!---医嘱模板-->
+    <Clazz id="OpOrderTemplateListView" classname="iih.ci.ord.opemergency.assi.OrderTemplate.view.OpOrderTemplateListView" dllname="iih.ci.ord"/>
+    <Clazz id="OpOrderTemplateTreeView" classname="iih.ci.ord.opemergency.assi.OrderTemplate.view.OpOrderTemplateTreeView" dllname="iih.ci.ord"/>
+    <!---医技常规-->
+    <Clazz id="OpMedicalTechnologyTreeView" classname="iih.ci.ord.opemergency.assi.opmedicaltechnology.view.OpMedicalTechnologyTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="OPMedicalTechnologyListView" classname="iih.ci.ord.opemergency.assi.opmedicaltechnology.view.OPMedicalTechnologyListView" dllname="iih.ci.ord"/>
+
+    <!---服务分类-->
+    <Clazz id="medSrvTreeView" classname="iih.ci.ord.opemergency.assi.medsrvclass.view.OpmedSrvTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="medSrvRadioView" classname="iih.ci.ord.opemergency.assi.medsrvclass.view.OpmedSrvRadioView" dllname="iih.ci.ord"/>
+
+    <Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>
+    <!--按钮-->
+    <Clazz id="OrderHelpButten" classname="iih.ci.ord.opemergency.assi.OrderTemplate.OrderHelpButten" dllname="iih.ci.ord"/>
+    <!--普通类是否需要直接注册-->
+  </Clazzes>
+
+  <States>
+    <State old="Begin" event="Load"  new="Init"/>
+    <State old="Init" event="SelectNode" new="NodeSelected"/>
+  </States>
+
+
+  <Content>
+    <XLayoutPanel>
+      <Center>
+        <XLayoutPanel>
+          <Left Width="300">
+            <Control ref="OpOrderTemplateTreeView" />
+          </Left>
+          <Center>
+            <Control ref="OpOrderTemplateListView" />
+          </Center>
+        </XLayoutPanel>
+      </Center>
+      <Bottom Width="46">
+        <Control ref="OrderHelpButten" />
+      </Bottom>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

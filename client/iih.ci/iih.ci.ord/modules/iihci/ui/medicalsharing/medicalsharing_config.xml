@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<funclet>
+
+  <clazzes>
+    <clazz id="hporsitemlist" classname="iih.ci.ord.medicaresharing.medicareshar.MedicaresharMgr" dllname="iih.ci.ord"/>
+  </clazzes>
+
+  <actions>
+
+  </actions>
+
+  <!-- 状态表 -->
+  <states>
+    <state id="listbrowse">
+      <uidef apppanel="0"/>
+    </state>
+  </states>
+
+  <!--状态转移表-->
+  <statetable init="listbrowse" >
+  </statetable>
+
+  <!-- ui控件定义 -->
+  <views>
+    <view id="hporsitemlist1" typeid="hporsitemlist">
+      <props FormTplId="20170824095841539000"/>
+    </view>
+  </views>
+
+  <!--应用面板定义-->
+  <apppanels>
+    <apppanel id = "0">
+      <ui>
+        <view position="fill" refid="hporsitemlist1"/>
+      </ui>
+      <msgs>
+        <msg id="xm_queryscheme_query" subsribers="hporsitemlist1"/>
+      </msgs>
+    </apppanel>
+  </apppanels>
+</funclet>

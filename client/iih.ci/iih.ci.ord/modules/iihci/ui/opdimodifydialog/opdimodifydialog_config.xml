@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+   <!--按钮定义- 新增，删除，保存，取消-->
+    <Clazz id="add_action" classname="iih.ci.ord.opemergency.action.OpDiAddAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="delete_action" classname="iih.ci.ord.opemergency.action.OpDiDeleteAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="save_action" classname="iih.ci.ord.opemergency.action.OpDiSaveAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="cancel_action" classname="iih.ci.ord.opemergency.action.OpDiCloseAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    
+    <!--内容定义-->
+    
+    <Clazz id="DiListView" classname="iih.ci.ord.opemergency.orddi.DiListView" dllname="iih.ci.ord"/>
+    <Clazz id="DiAssListView" classname="iih.ci.ord.opemergency.orddi.DiAssListView" dllname="iih.ci.ord"/>
+    
+    <!--标签布局-->
+    <Clazz id="LayoutXTabPanelControl" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine" singleton="true"/>
+    <Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+    <State old="Init" event="SelectRow" new="RowSelected"/>
+    <State old="RowSelected" event="Add" new="Edit"/>
+    <State old="RowSelected" event="Edit" new="Edit"/>
+    <State old="RowSelected" event="View" new="View"/>
+    <State old="Edit" event="Save" new="Init"/>
+    <State old="Init" event="Edit" new="Edit"/>
+    <State old="Edit" event="SaveSuccess" new="Init"/>
+    <State old="Edit" event="SaveAdd" new="Init"/>
+    <State old="Edit" event="Cancel" new="RowSelected"/>
+  </States>
+  <Menu>
+    <Group>
+    <MenuItem ref="add_action"/>
+    <MenuItem ref="delete_action"/>
+    <MenuItem ref="save_action"/>
+    <MenuItem ref="cancel_action"/>
+    </Group>
+  </Menu>
+  
+  <Content>
+    <XLayoutPanel>
+      <Center  Padding="4,4,4,4">
+        <XLayoutPanel>
+          <Top Width="170" >
+            <Control ref="DiListView"/>
+          </Top>
+          <Center Padding="0,4,0,0">
+            <Control ref="DiAssListView" />
+          </Center>
+        </XLayoutPanel>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

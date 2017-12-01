@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Funclet>
+  <!--控制器要单独定义-->
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+
+  <Clazzes>
+
+    <!--<Clazz id="save_action" classname="xap.rui.engine.xactions.standard.SaveAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>-->
+    <!--<Clazz id="topView" classname="iih.ci.ord.opemergency.view.printmanage.PrintChooseView" dllname="iih.ci.ord" singleton="true"/>-->
+    <Clszz id="bottomView" classname="iih.ci.ord.opemergency.view.printmanage.PrintPreviewView" dllname="iih.ci.ord" singleton="true"/>
+    
+  </Clazzes>
+
+
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+  
+  <Content>
+    
+    <XLayoutPanel>
+      <!--<Top Width="100">
+        <Control ref="topView"/>
+      </Top>-->
+      <Center>
+        <Control ref="bottomView"/>
+      </Center>
+    </XLayoutPanel>
+       
+  </Content>
+</Funclet>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+XAP-Component-Version: 0.2.0-medicare-SNAPSHOT
+XAP-Component-Name: iih.ci_pub
+XAP-Component-Namespace: iih
+XAP-Component-Dependencies: xap.sys/xap.sys_pub/0.2.0-medicare-SNAPSHO
+ T,xap.sys/xap.sys.core/0.2.0-medicare-SNAPSHOT,com.founder.xap/xap.mw
+ .jdbc/0.2.0-medicare-SNAPSHOT,iih/iih.bd_pub/0.2.0-medicare-SNAPSHOT,
+ iih/iih.en_pub/0.2.0-medicare-SNAPSHOT,xap.lui/xap.portal.server/1.0-
+ SNAPSHOT,com.founder.xap/xap.mw.sf.core/0.2.0-medicare-SNAPSHOT,iih/i
+ ih.mkr_pub/0.2.0-medicare-SNAPSHOT,com.founder.xap/xap.mw.core/0.2.0-
+ medicare-SNAPSHOT,xap.lui/xap.lui.wfmgr.3.0/1.0.0-SNAPSHOT,com.founde
+ r.xap/xap.mw.log/0.2.0-medicare-SNAPSHOT,iih/iih.pi_pub/0.2.0-medicar
+ e-SNAPSHOT
+

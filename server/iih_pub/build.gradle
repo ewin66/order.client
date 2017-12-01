@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+		maven {
+			url "http://172.18.40.98:8081/repository/maven-public/"
+		}
+    }
+    dependencies {
+        classpath "cn.sweeper:sweeper-gradle-plugin:1.0-SNAPSHOT"
+    }
+    
+	configurations.all {
+		resolutionStrategy {
+			cacheChangingModulesFor 0, 'seconds'
+		}
+	}
+}
+
+repositories {
+	maven {
+		url "http://172.18.40.98:8081/repository/maven-public/"
+	}
+	mavenLocal()
+}
+
+apply plugin: 'cn.sweeper.feature'
+
+group 'iih_pub'
+version '0.0.0-SNAPSHOT'
+
+dependencies {
+	compile "lui:lui:0.0.0-SNAPSHOT"
+	compile "security:security:0.0.0-SNAPSHOT"
+	compile "dp:dp:0.0.0-SNAPSHOT"
+	compile "rui:rui:0.0.0-SNAPSHOT"
+	compile "xso:xso:0.0.0-SNAPSHOT"
+	compile "sys:sys:0.0.0-SNAPSHOT"
+	compile "sys_base:sys_base:0.0.0-SNAPSHOT"
+	compile "system:system:0.0.0-SNAPSHOT"
+	compile project(":iih.bd_pub")
+	compile project(":iih.en_pub")
+	compile project(":iih.ci_pub")
+	compile project(":iih.pi_pub")
+	compile project(":iih.bl_pub")
+	compile project(":iih.sc_pub")
+	compile project(":iih.mp_pub")
+	compile project(":iih.mm_pub")
+	compile "iih:iih.hp_pub:1.0.0-SNAPSHOT"
+	compile "iih:iih.mkr_pub:1.0.0-SNAPSHOT"
+}
+
+configurations.all {
+	resolutionStrategy {
+		cacheChangingModulesFor 0, 'seconds'
+	}
+}

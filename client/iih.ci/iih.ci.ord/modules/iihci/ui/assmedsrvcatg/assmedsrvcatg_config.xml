@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <Clazz id="AssMedSrvCatgTreeView" classname="iih.ci.ord.opemergency.view.AssMedSrvCatgTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="AssMedSrvCatgItemView" classname="iih.ci.ord.opemergency.view.AssMedSrvCatgItemView" dllname="iih.ci.ord"/>
+    
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+    
+  </States>
+
+  <Content>
+    <XLayoutPanel>
+      <Left Width =" 220">
+        <Control ref="AssMedSrvCatgTreeView"/>
+      </Left>
+      <Center>
+          <Control ref="AssMedSrvCatgItemView"/>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

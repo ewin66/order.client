@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+   
+    <Clazz id="medSrvTreeView" classname="iih.ci.ord.doctorhelper.classification.view.medSrvTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="medSrvRadioView" classname="iih.ci.ord.doctorhelper.classification.view.medSrvRadioView" dllname="iih.ci.ord"/>
+    <Clazz id="PastOrderListView" classname="iih.ci.ord.doctorhelper.past.view.PastOrderListView" dllname="iih.ci.ord"/>
+    <Clazz id="conmonOrderTreeView" classname="iih.ci.ord.doctorhelper.commonorder.view.conmonOrderTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="commonOrderListView" classname="iih.ci.ord.doctorhelper.commonorder.view.commonOrderListView" dllname="iih.ci.ord"/>
+    <Clazz id="OrderTemplateTreeView" classname="iih.ci.ord.doctorhelper.ordertemplate.view.OrderTemplateTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="OrderTemplateListView" classname="iih.ci.ord.doctorhelper.ordertemplate.view.OrderTemplateListView" dllname="iih.ci.ord"/>
+    <Clazz id="prescriptionTreeView" classname="iih.ci.ord.doctorhelper.prescription.view.prescriptionTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="prescriptionListView" classname="iih.ci.ord.doctorhelper.prescription.view.prescriptionListView" dllname="iih.ci.ord"/>
+
+    <Clazz id="NewOrderTemplateListView" classname="iih.ci.ord.doctorhelper.newtemplate.view.NewOrderTemplateListView" dllname="iih.ci.ord"/>
+    <Clazz id="NewOrderTemplateTreeView" classname="iih.ci.ord.doctorhelper.newtemplate.view.NewOrderTemplateTreeView" dllname="iih.ci.ord"/>
+
+    
+    <Clazz id="PastTreeView" classname="iih.ci.ord.doctorhelper.past.view.PastTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>
+    <!--普通类是否需要直接注册-->
+  </Clazzes>
+
+  <States>
+    <State old="Begin" event="Load"  new="Init"/>
+    <State old="Init" event="SelectNode" new="NodeSelected"/>
+  </States>
+
+  <Content>
+    <XLayoutPanel>
+      <Center>
+        <XTabPanelControl alignment="Top" ref="tablayout">
+          <XTabPages>
+            <XTabPage id="1" text="服务分类" visible="true" lazy="false">
+              <SplitContainer Orientation="Vertical"  SplitterDistance="100">
+                <SplitterPanel>
+                  <Control ref="medSrvTreeView" />
+                </SplitterPanel>
+                <SplitterPanel>
+                  <Control ref="medSrvRadioView" />
+                </SplitterPanel>
+              </SplitContainer>
+            </XTabPage>
+            <XTabPage id="2" text="患者既往" visible="true" lazy="false">
+              <SplitContainer Orientation="Vertical"  SplitterDistance="100">
+                <SplitterPanel>
+                  <Control ref="PastTreeView" />
+                </SplitterPanel>
+                <SplitterPanel>
+                  <Control ref="PastOrderListView" />
+                </SplitterPanel>
+              </SplitContainer>
+            </XTabPage>
+            <XTabPage id="3" text="常规医嘱" visible="true" lazy="false">
+              <SplitContainer Orientation="Vertical"  SplitterDistance="100">
+                <SplitterPanel>
+                  <Control ref="conmonOrderTreeView" />
+                </SplitterPanel>
+                <SplitterPanel>
+                  <Control ref="commonOrderListView" /> 
+                </SplitterPanel>
+              </SplitContainer>
+            </XTabPage>
+            
+            <!--<XTabPage id="4" text="医嘱模板" visible="true" lazy="false">
+              <SplitContainer Orientation="Vertical"  SplitterDistance="100">
+                <SplitterPanel>
+                  <Control ref="OrderTemplateTreeView" />
+                </SplitterPanel>
+                <SplitterPanel>
+                  <Control ref="OrderTemplateListView" />
+                </SplitterPanel>
+              </SplitContainer>
+            </XTabPage>-->
+           
+            <XTabPage id="5" text="协定处方" visible="true" lazy="false">
+              <SplitContainer Orientation="Vertical"  SplitterDistance="100">
+                <SplitterPanel>
+                  <Control ref="prescriptionTreeView" />
+                </SplitterPanel>
+                <SplitterPanel>
+                  <Control ref="prescriptionListView" />
+                </SplitterPanel>
+              </SplitContainer>
+            </XTabPage>
+            
+            <XTabPage id="6" text="医嘱模板" visible="true" lazy="false">
+            <!--  <SplitContainer Orientation="Vertical"  SplitterDistance="100">
+                <SplitterPanel >
+                  <Control ref="NewOrderTemplateTreeView" />
+                </SplitterPanel>
+                <SplitterPanel>
+                  <Control ref="NewOrderTemplateListView" />
+                </SplitterPanel>
+              </SplitContainer>-->
+              <XLayoutPanel>
+                <Left Width="220" padding ="4">
+                  <Control ref="NewOrderTemplateTreeView"/>
+                </Left>
+                <Center>
+                      <Control ref="NewOrderTemplateListView"/>
+                </Center>
+              </XLayoutPanel>
+            </XTabPage>
+            
+          </XTabPages>
+        </XTabPanelControl>
+      </Center>
+
+    </XLayoutPanel>
+  </Content>
+</Funclet>

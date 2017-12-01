@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+  
+
+    <Clazz id="DiagtreatCardView" classname="iih.ci.ord.diagtreatview.view.DiagtreatCardView" dllname="iih.ci.ord" singleton="true"/>
+
+
+
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init" />
+    <State old="Init" event="Add" new="Edit" />
+    <State old="Init" event="ListSelected" new="Edit" />
+    <State old="Edit" event="view" new="Init" />
+    <State old="Edit" event="Cancel" new="Init" />
+    <State old="Init" event="SaveSuccess" new="Init" />
+    <State old ="Edit" event ="Delete" new="Init"/>
+    <!--<State old ="Edit" event ="sign" new="Init"/>-->
+     
+    <State old="Init" event="editview" new="Edit" />
+  </States>
+  
+  <Content>
+    <BorderLayoutPanel>
+      <Center>
+        <Control ref="DiagtreatCardView"/>
+      </Center>
+    </BorderLayoutPanel>
+  </Content>
+<!--  Orientation="Vertical" 左右
+  Horizontal="true"    上下-->
+ 
+ <!--<Content>
+    <PanelManager ref="panelmanager">
+      <SplitContainer  Orientation="Vertical"  SplitterDistance="30">
+        <SplitterPanel>
+          <Control ref="tree_view"/>
+        </SplitterPanel>
+        
+        <SplitterPanel>
+          <ManagedPanels>
+            <ManagedPanel id="1" lazy="false">
+               <Control ref="IpCiDiagView"/>
+            </ManagedPanel>
+            <ManagedPanel id="2" lazy="true">
+              <Control ref="wetergrid_view"/>
+            </ManagedPanel>
+          </ManagedPanels>
+        </SplitterPanel>
+      </SplitContainer>
+    
+    </PanelManager>
+  </Content>-->
+</Funclet>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <!-- 取消接诊：1.校验医嘱；2.校验诊断；3.就诊取消接诊-->
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Class id="CiOrdCheckAction" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.CiOrdCheckAction" dllname="iih.ci.ord" />
+    <Class id="CiDiCancelCheckAction" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.CiDiCancelCheckAction" dllname="iih.ci.ord" />
+    <Class id="EnCancelView" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.EnCancelView" dllname="iih.ci.ord" />
+  </Clazzes>
+  <States>   
+  </States>
+  <Content>    
+  </Content>
+</Funclet>

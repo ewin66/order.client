@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <Clazz id="MedReferralSaveAction" classname="iih.ci.ord.opemergency.medreferral.action.MedReferralSaveAction" dllname="iih.ci.ord"/>
+    <Clazz id="MedReferralPrintAction" classname="iih.ci.ord.opemergency.medreferral.action.MedReferralPrintAction" dllname="iih.ci.ord"/>
+    <Clazz id="CiMedReferralView" classname="iih.ci.ord.opemergency.medreferral.view.CiMedReferralView" dllname="iih.ci.ord" singleton="true"/>
+    <Clazz id="CiMedReferralController" classname="iih.ci.ord.opemergency.medreferral.controller.CiMedReferralController" dllname="iih.ci.ord"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+  <Menu>
+    <MenuItem ref="MedReferralSaveAction" />
+    <MenuItem ref="MedReferralPrintAction" />
+  </Menu>
+  <Content>
+    <XLayoutPanel>
+      <Center>
+        <Control ref="CiMedReferralView" />
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+
+ 
+    <Clazz id="OPMedicalTechnologyListView" classname="iih.ci.ord.opemergency.assi.opmedicaltechnology.view.OPMedicalTechnologyListView" dllname="iih.ci.ord"/>
+    <Clazz id="OpMedicalTechnologyTreeView" classname="iih.ci.ord.opemergency.assi.opmedicaltechnology.view.OpMedicalTechnologyTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="OpTechnologyButton" classname="iih.ci.ord.opemergency.assi.opmedicaltechnology.OpTechnologyButton" dllname="iih.ci.ord"/>
+
+
+
+    <Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>
+    <!--普通类是否需要直接注册-->
+  </Clazzes>
+
+  <States>
+    <State old="Begin" event="Load"  new="Init"/>
+    <State old="Init" event="SelectNode" new="NodeSelected"/>
+  </States>
+
+  <Content>
+    <XLayoutPanel>
+      <Center>
+        <XLayoutPanel>
+          <Left Width="200">
+            <Control ref="OpMedicalTechnologyTreeView" />
+          </Left>
+          <Center>
+            <Control ref="OPMedicalTechnologyListView" />
+          </Center>
+        </XLayoutPanel>
+      </Center>
+      <Bottom Width="46">
+        <Control ref="OpTechnologyButton" />
+      </Bottom>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

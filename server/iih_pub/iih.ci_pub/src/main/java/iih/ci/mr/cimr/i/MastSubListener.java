@@ -1,0 +1,52 @@
+package iih.ci.mr.cimr.i;
+
+import iih.ci.mr.cimr.d.CiMrDO;
+import iih.en.pv.dto.d.MedPsnDTO;
+import iih.en.pv.i.IEnOutQryService;
+import xap.mw.core.data.BizException;
+import xap.mw.core.data.Context;
+import xap.mw.sf.core.util.ServiceFinder;
+import xap.wf.af.bpmn.SequenceFlow;
+import xap.wf.af.engine.ILogicDecision;
+import xap.wf.af.runtime.TaskInstance;
+import xap.wf.af.server.WfFormInfoCtx;
+
+public class MastSubListener implements ILogicDecision {
+
+	@Override
+	public boolean judge(TaskInstance task, SequenceFlow sf,
+			WfFormInfoCtx... formVo) {
+		String userId =  Context.get().getUserId();
+		String deptId =  Context.get().getDeptId();
+		if(formVo==null || formVo.length<=0)
+			return false;
+		EntEmpUtils entUtils = new EntEmpUtils();
+		String id_psn = null;
+		try {
+			id_psn = entUtils.GetUserEmpId(userId);
+		} catch (BizException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		CiMrDO ciMrDo = (CiMrDO)formVo[0];
+		String id_ent = ciMrDo.getId_ent();
+		IEnOutQryService service = ServiceFinder.find(IEnOutQryService.class);
+		MedPsnDTO medPsnDTO = null;
+		try {
+			medPsnDTO = service.getMedPsn4Mr(id_ent);
+		} catch (BizException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    		
+		if(medPsnDTO != null && medPsnDTO.getId_zz_doc() != null
+				&& medPsnDTO.getId_zz_doc().equals(id_psn)
+				&&(medPsnDTO.getId_zr_doc() == null || !medPsnDTO.getId_zr_doc().equals(id_psn))
+				)			
+			return true;
+		
+		return false;
+	}
+
+}

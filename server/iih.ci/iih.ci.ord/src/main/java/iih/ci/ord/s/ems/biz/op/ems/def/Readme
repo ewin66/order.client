@@ -1,0 +1,5 @@
+## def 包文件说明
+
+主要用于 根据给定的数据按照BD态信息创建默认医嘱对象（CiOrderDO - OrdSrvDO[] - OrdSrvMMDO[] - OrdSrvSetDO[] - xxxAppDO)
+
+在创建过程中，主键ID都是代码生成的（并不是保存数据库时候生成），组建这些对象结构的时候，相关外键都是由调用方法传递

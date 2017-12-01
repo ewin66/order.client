@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <!-- 诊毕、撤回：1.校验未签署医嘱；2.校验诊断；3.病历签名；4.诊毕结束；5.传染病上报；6.清空Banner-->
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Class id="CiOrCompleteCheckAction" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.CiOrCompleteCheckAction" dllname="iih.ci.ord" />
+    <Class id="CiDiCompleteCheckAction" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.CiDiCompleteCheckAction" dllname="iih.ci.ord" />
+    <Class id="EmrSignName" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.EmrSignName" dllname="iih.ci.ord" />
+    <Class id="EnCompleteView" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.EnCompleteView" dllname="iih.ci.ord" />
+    <!--<Class id="LoadPrintCenter" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.LoadPrintCenter" dllname="iih.ci.ord"/>-->
+    <Class id="LoadReportCardView" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.LoadReportCardView" dllname="iih.ci.ord"/>    
+    <Class id="EnCompleteClearView" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.EnCompleteClearView" dllname="iih.ci.ord"/>    
+  </Clazzes>
+  <States>   
+  </States>
+  <Content>    
+  </Content>
+</Funclet>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Clazz id ="add_action" classname="xap.rui.engine.xactions.standard.AddAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.SaveStateHandler" dllname="iih.ci.diag"/>
+    </Clazz>
+    <Clazz id ="edit_action" classname="xap.rui.engine.xactions.standard.EditAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.EditStateHandler" dllname="iih.ci.diag"/>
+    </Clazz>
+    <Clazz id ="delete_action" classname="xap.rui.engine.xactions.standard.DeleteAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.DeleteStateHandler" dllname="iih.ci.diag"/>
+    </Clazz>
+    <Clazz id="save_action" classname="xap.rui.engine.xactions.standard.SaveAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.SaveStateHandler" dllname="iih.ci.diag"/>
+     </Clazz>
+    <Clazz id ="savedisk_action" classname="iih.ci.diag.cidiag.action.SaveDiskAction" dllname="iih.ci.diag">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.SaveDiskStatehandler" dllname="iih.ci.diag"/>
+    </Clazz>
+    <Clazz id ="sign_action" classname="iih.ci.diag.cidiag.action.signAction" dllname="iih.ci.diag">
+    </Clazz>
+    <Clazz id ="out_action" classname="iih.ci.diag.cidiag.action.OutPatientlAction" dllname="iih.ci.diag">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.OutpatientstateHandler" dllname="iih.ci.diag"/>
+    </Clazz>
+    <Clazz id ="first_action" classname="iih.ci.diag.cidiag.action.FirstAction" dllname="iih.ci.diag">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.FirstStateHandler" dllname="iih.ci.diag"/>
+    </Clazz>
+    <Clazz id ="in_action" classname="iih.ci.diag.cidiag.action.InhospitalAction" dllname="iih.ci.diag">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.InhospitalStateHandler" dllname="iih.ci.diag"/>
+    </Clazz>
+    <Clazz id ="leave_action" classname="iih.ci.diag.cidiag.action.LeaveHospitalAction" dllname="iih.ci.diag">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.LeaveHospitalStateHandler" dllname="iih.ci.diag"/>
+    </Clazz>
+    <Clazz id ="die_action" classname="iih.ci.diag.cidiag.action.DieAction" dllname="iih.ci.diag">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.DieStateHandler" dllname="iih.ci.diag"/>
+    </Clazz>
+	 <Clazz id ="old_action" classname="iih.ci.diag.cidiag.action.OldDiAction" dllname="iih.ci.diag">
+       
+    </Clazz>
+  
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init" /></States>
+  <Menu>
+    <MenuItem ref="add_action"/>
+ 
+  </Menu>
+  <Content>
+ 
+  </Content>
+</Funclet>

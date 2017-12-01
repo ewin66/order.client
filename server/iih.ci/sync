@@ -1,0 +1,37 @@
+#/bin/bash
+BASE_PATH=$(cd `dirname $0`; pwd)
+C_BASE_PATH=""
+
+echo "exporting public resources ..."
+SVN_BASE=http://172.18.65.166/svn/XAP2/PrjSrc/serversrc/iih.ci/
+components=("iih.ci.ciet" "iih.ci.cp" "iih.ci.diag" "iih.ci.mr" "iih.ci.mrqc" "iih.ci.ord" "iih.ci.pre")
+for c in ${components[@]}
+do
+	C_BASE_PATH="$BASE_PATH/$c"
+	TARGET_DIR="$C_BASE_PATH/src/main/java"
+	
+	#同步sys模块下所有pub工程代码
+	echo "deleting $TARGET_DIR ..."
+	rm -rf $TARGET_DIR
+	if [ "$?" != "0" ]; then
+		echo "delete $TARGET_DIR error"
+		exit 1
+	fi
+	svn export --force "$SVN_BASE$c/src" $TARGET_DIR
+	if [ "$?" != "0" ]; then
+		echo "error"
+		exit 1
+	fi
+	XAP_PATH="$C_BASE_PATH/src/main/resources/META-INF/xap/"
+	mkdir -p $XAP_PATH
+	cp -f $TARGET_DIR/META-INF/xap/module.xml $XAP_PATH/module.xml
+	if [ -d "$TARGET_DIR/lui" ]; then
+		rm -rf $C_BASE_PATH/src/main/resources/lui
+		cp -rf $TARGET_DIR/lui $C_BASE_PATH/src/main/resources/lui
+		rm -rf $TARGET_DIR/lui
+	fi
+	rm -rf $TARGET_DIR/lib
+	rm -rf $TARGET_DIR/META-INF
+done
+
+echo "success"

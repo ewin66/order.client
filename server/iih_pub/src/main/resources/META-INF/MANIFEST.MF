@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+XAP-Component-Version: 0.2.0-medicare-SNAPSHOT
+XAP-Component-Name: iih_pub
+XAP-Component-Namespace: iih_pub
+XAP-Component-Dependencies: xip/xip/0.2.0-medicare-SNAPSHOT,sys/sys/0.
+ 2.0-medicare-SNAPSHOT,sys_base/sys_base/0.2.0-medicare-SNAPSHOT,lui.s
+ ys/lui.sys/0.2.0-medicare-SNAPSHOT
+

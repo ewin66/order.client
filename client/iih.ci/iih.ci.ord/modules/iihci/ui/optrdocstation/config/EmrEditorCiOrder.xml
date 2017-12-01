@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 医嘱病历配置文件 -->
+<root>
+  <columns>
+    <!-- 服务名称-->
+    <column colname="Name"></column>
+    <!-- 剂量-->
+    <column colname="Dosage"></column>
+    <!-- 煎法-->
+    <column colname="Decoct"></column>
+    <!-- 用法-->
+    <column colname="Usage"></column>
+    <!-- 频次-->
+    <column colname="Frequency"></column>    
+    <!-- 备注-->
+    <column colname="Remark"></column>
+  </columns>
+  <body>
+  <!-- 西药 -->
+  <sd_srvtp code="0101">
+    <format content="2.0" colName="Name"/>
+    <format content="2.1,2.2" colName="Dosage"/>
+    <format content="3.0" colName="Usage"/>
+    <format content="3.1" colName="Frequency"/>
+    <format content="3.2" colName="Remark"/>
+  </sd_srvtp>
+  <!-- 成药 -->
+  <sd_srvtp code="0102">
+    <!-- 参考相同类 -->
+    <ref code="0101"></ref>
+  </sd_srvtp>
+  <!-- 草药-->
+  <sd_srvtp code="0103">
+    <format content="2.0" colName="Name"/>
+    <format content="2.1,2.2" colName="Dosage"/>
+    <format content="2.3" colName="Decoct"/>
+    <format content="3.0" colName="Usage"/>
+    <format content="3.1" colName="Frequency"/>
+    <format content="3.2" colName="Remark"/>
+  </sd_srvtp>
+  <sd_srvtp code="02">
+    <!-- 参考相同类 -->
+    <format content="2.0" colName="Name"/>
+    <format content="3.0" colName="Remark"/>
+  </sd_srvtp>
+    <sd_srvtp code="03">
+      <!-- 参考相同类 -->
+      <format content="2.0" colName="Name"/>
+      <format content="3.0" colName="Remark"/>
+    </sd_srvtp>
+    <sd_srvtp code="OTH">
+      <format content="2.0" colName="Name"/>
+    </sd_srvtp>
+    
+  </body>
+</root>

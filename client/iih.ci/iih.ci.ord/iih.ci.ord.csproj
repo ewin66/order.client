@@ -1,0 +1,3188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD58274B-356C-4582-A169-6E572494B223}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iih.ci.ord</RootNamespace>
+    <AssemblyName>iih.ci.ord</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\xapclient\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\xapclient\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\xapclient\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\xapclient\iih.ci.ord.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;H:\Programs\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;H:\Programs\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\xapclient\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\iih.ci.ord.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;H:\Programs\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;H:\Programs\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iih.bd_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.bd_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.bl.common, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.bl.common.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.bl_common_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.bl_common_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.bl_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.bl_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.ci_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.ci_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.common_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.common_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.en_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.en_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.hp_stub">
+      <HintPath>..\..\xapclient\iih.hp_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.mkr_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.mkr_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.mm.itf, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.mm.itf.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.mm_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.mm_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.mp_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.mp_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.pi_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.pi_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xap.cli.context, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.cli.context.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.cli.sdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.cli.sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.cli.skin_if, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.cli.skin_if.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.dp.libcomm, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.dp.libcomm.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.dp.optdesigner, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.dp.optdesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.dp.rptview, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.dp.rptview.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.mw.core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.mw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.mw.func, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.mw.func.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.mw.log, Version=1.2.13.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.mw.log.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.mw.serviceframework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.mw.serviceframework.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.appfw, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.appfw.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.bizcontrol, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.bizcontrol.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.control, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.control.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.core2, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.core2.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.devices, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.devices.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.engine.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.engine2, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.engine2.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.uipattern2, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.uipattern2.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.uniword, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.uniword.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.sys.ui.layoutManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.sys.ui.layoutManager.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.sys_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.sys_stub.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ciconsresponse\action\ConsPrint.cs" />
+    <Compile Include="ciconsresponse\view\ConsRptPrint.cs" />
+    <Compile Include="cilab\viewmodel\CiRptLabTreeViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cilab\viewmodel\CiRptlabViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cilab\viewmodel\LabDateTreeModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cilab\viewmodel\LabTreeModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cilab\view\CiRptLabTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cilab\view\CiRptLabTreeView.Designer.cs">
+      <DependentUpon>CiRptLabTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cilab\view\CiRptLabView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cilab\view\CiRptLabView.Designer.cs">
+      <DependentUpon>CiRptLabView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cilab\view\LabDateTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cilab\view\LabDateTree.Designer.cs">
+      <DependentUpon>LabDateTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cilab\view\LabTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cilab\view\LabTree.Designer.cs">
+      <DependentUpon>LabTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cilab\view\Rptimg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cilab\view\Rptimg.Designer.cs">
+      <DependentUpon>Rptimg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciobs\viewmodel\CiRptObsTreeViewModel.cs" />
+    <Compile Include="ciobs\viewmodel\CiRptObsViewModel.cs" />
+    <Compile Include="ciobs\view\CiRptObsChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciobs\view\CiRptObsChart.Designer.cs">
+      <DependentUpon>CiRptObsChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciobs\view\CiRptObsTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciobs\view\CiRptObsTreeView.Designer.cs">
+      <DependentUpon>CiRptObsTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciobs\view\CIRptObsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciobs\view\CIRptObsView.Designer.cs">
+      <DependentUpon>CIRptObsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciobs\view\ObsDateTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciobs\view\ObsDateTree.Designer.cs">
+      <DependentUpon>ObsDateTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciobs\view\ObsTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciobs\view\ObsTree.Designer.cs">
+      <DependentUpon>ObsTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciobs\view\VideoImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciobs\view\VideoImage.Designer.cs">
+      <DependentUpon>VideoImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\dialog\ConsMrCommonDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciordcons\dialog\ConsMrCommonDialog.Designer.cs">
+      <DependentUpon>ConsMrCommonDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\viewmodel\ConsMrTreeViewModel.cs" />
+    <Compile Include="ciordcons\view\ConsMrTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsMrTreeView.Designer.cs">
+      <DependentUpon>ConsMrTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\action\CancelAction.cs" />
+    <Compile Include="ciorder\action\CiSaveasAction.cs" />
+    <Compile Include="ciorder\action\ConFirmAction.cs" />
+    <Compile Include="ciorder\cards\controls\StockTableCell.cs" />
+    <Compile Include="ciorder\cards\drugext\dialogform\CheckPatAgentInfoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\dialogform\CheckPatAgentInfoDialog.Designer.cs">
+      <DependentUpon>CheckPatAgentInfoDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\dialogform\ExtOrderDrugDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\dialogform\ExtOrderDrugDialog.designer.cs">
+      <DependentUpon>ExtOrderDrugDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderPathgyHDWView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderPathgyPKUView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\thread\dp\MiddleWareXapDataList.cs" />
+    <Compile Include="ciorder\cards\OrderCrossDeptView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\thread\dp\SkinTestLogic.cs" />
+    <Compile Include="ciorder\cards\thread\ThreadSetMaterialInfoOfDrug.cs" />
+    <Compile Include="ciorder\cards\thread\ThreadSkinTestLogic.cs" />
+    <Compile Include="ciorder\cards\OrderCrossDeptView.Designer.cs">
+      <DependentUpon>OrderCrossDeptView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderDeathView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderDeathView.Designer.cs">
+      <DependentUpon>OrderDeathView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\ciorderprn\action\AdjustAction.cs" />
+    <Compile Include="ciorder\ciorderprn\action\BrowseAction.cs" />
+    <Compile Include="ciorder\ciorderprn\action\ClearAction.cs" />
+    <Compile Include="ciorder\ciorderprn\action\LongAction.cs" />
+    <Compile Include="ciorder\ciorderprn\action\OrderAction.cs" />
+    <Compile Include="ciorder\ciorderprn\action\PreviewAction.cs" />
+    <Compile Include="ciorder\ciorderprn\action\PrintAction.cs" />
+    <Compile Include="ciorder\ciorderprn\action\SetupAction.cs" />
+    <Compile Include="ciorder\ciorderprn\action\TempAction.cs" />
+    <Compile Include="ciorder\ciorderprn\viewmodel\CiorderPrintViewModel.cs" />
+    <Compile Include="ciorder\ciorderprn\viewmodel\OrdPrintCfgViewModel.cs" />
+    <Compile Include="ciorder\ciorderprn\viewmodel\OrdPrintConstant.cs" />
+    <Compile Include="ciorder\ciorderprn\viewmodel\OrdPrintDataViewModel.cs" />
+    <Compile Include="ciorder\ciorderprn\view\CiorderPrintToolView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\ciorderprn\view\CiorderPrintToolView.Designer.cs">
+      <DependentUpon>CiorderPrintToolView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\ciorderprn\view\CiorderPrintWorkspaceView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\ciorderprn\view\CiorderPrintWorkspaceView.Designer.cs">
+      <DependentUpon>CiorderPrintWorkspaceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\ciorderprn\view\OrdPrintClearView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\ciorderprn\view\OrdPrintClearView.Designer.cs">
+      <DependentUpon>OrdPrintClearView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\ciorderprn\view\OrdPrintSortView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\ciorderprn\view\OrdPrintSortView.Designer.cs">
+      <DependentUpon>OrdPrintSortView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\control\CiQuanMedTableCell.cs" />
+    <Compile Include="ciorder\render\common\OrderCheckBox.cs" />
+    <Compile Include="ciorder\render\common\OrderComboBox.cs" />
+    <Compile Include="ciorder\render\common\OrderConstAssist.cs" />
+    <Compile Include="ciorder\render\common\OrderEmptyRender.cs" />
+    <Compile Include="ciorder\render\common\OrderLineRender.cs" />
+    <Compile Include="ciorder\render\common\OrderNumberTextBox.cs" />
+    <Compile Include="ciorder\render\common\OrderServerStopRender.cs" />
+    <Compile Include="ciorder\render\common\OrdStrUtil.cs" />
+    <Compile Include="ciorder\render\complexOrder\ChineseComplexSecondOrder.cs" />
+    <Compile Include="ciorder\render\complexOrder\ChineseComplexTopRender.cs" />
+    <Compile Include="ciorder\render\complexOrder\ComplexOrderAssist.cs" />
+    <Compile Include="ciorder\render\complexOrder\GroupOrderSecondRender.cs" />
+    <Compile Include="ciorder\render\complexOrder\GroupOrderTopRender.cs" />
+    <Compile Include="ciorder\render\interfaces\IComplexExtOrder.cs" />
+    <Compile Include="ciorder\render\complexOrder\LisComplexFirstOrdrRender.cs" />
+    <Compile Include="ciorder\render\complexOrder\LisComplexSecondOrder.cs" />
+    <Compile Include="ciorder\render\complexOrder\SingleComplexOrderRender.cs" />
+    <Compile Include="ciorder\render\complexOrder\SingleComplexTopOrderRender.cs" />
+    <Compile Include="ciorder\render\complexOrder\TreatComplexOrder.cs" />
+    <Compile Include="ciorder\render\order\ChineseMedcineFirstOrder.cs" />
+    <Compile Include="ciorder\render\order\ChineseMedicineOrder.cs" />
+    <Compile Include="ciorder\render\interfaces\IExtOrder.cs" />
+    <Compile Include="ciorder\render\order\LisFirstOrdrRender.cs" />
+    <Compile Include="ciorder\render\order\LisSecondOrder.cs" />
+    <Compile Include="ciorder\render\common\OrderContext.cs" />
+    <Compile Include="ciorder\render\order\OrderExtAssist.cs" />
+    <Compile Include="ciorder\render\common\OrderLabel.cs" />
+    <Compile Include="ciorder\render\order\OrderGroupFirstOrder.cs" />
+    <Compile Include="ciorder\render\order\OrderSingleRender.cs" />
+    <Compile Include="ciorder\render\common\OrderTextUnit.cs" />
+    <Compile Include="ciorder\render\order\TreatmentOrder.cs" />
+    <Compile Include="ciorder\takedrug4outhosp\view\TakeDrugOurtSearchControlView.cs" />
+    <Compile Include="ciorder\utils\CalQuantumUtil.cs" />
+    <Compile Include="ciorder\utils\DrugUtils.cs" />
+    <Compile Include="ciorder\utils\logwrite.cs" />
+    <Compile Include="ciorder\utils\TimerComboBoxMaxAndMin.cs" />
+    <Compile Include="ciorder\Validate\OrderOutValidate.cs" />
+    <Compile Include="ciorder\viewmodel\OrderDrugHerbViewModel.cs" />
+    <Compile Include="ciordsysparam\CiorderSysParamDTO.cs" />
+    <Compile Include="ciordsysparam\GetSysParamDTO.cs" />
+    <Compile Include="common\log\LogManagerUtil.cs" />
+    <Compile Include="common\utils\DictionaryUtil.cs" />
+    <Compile Include="common\utils\msg\BizAssMessageBoxUtil.cs" />
+    <Compile Include="diagtreatview\viewmodel\bp\CiMrDataAdapter.cs" />
+    <Compile Include="diagtreatview\viewmodel\bp\DiagTreatInit.cs" />
+    <Compile Include="diagtreatview\viewmodel\cache\KeyPointCacheDataUtils.cs" />
+    <Compile Include="diagtreatview\viewmodel\cache\KeyPointCacheTotal.cs" />
+    <Compile Include="diagtreatview\viewmodel\cache\KeyPointViewData.cs" />
+    <Compile Include="diagtreatview\viewmodel\cache\NewCacheDataUtils.cs" />
+    <Compile Include="diagtreatview\viewmodel\cache\NewCacheTotal.cs" />
+    <Compile Include="dicertificate\statehandler\AddStateHandler.cs" />
+    <Compile Include="dicertificate\statehandler\DeleteStateHandler.cs" />
+    <Compile Include="dicertificate\statehandler\PrintStateHandler.cs" />
+    <Compile Include="dicertificate\statehandler\SaveStateHandler.cs" />
+    <Compile Include="doctorhelper\BaseHelperView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\HelperListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="medicaresharing\IMedicalSharingDateRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="medicaresharing\mdeicalrule\GetMedicalsharingData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="medicaresharing\mdeicalrule\MedicalSharingCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="medicaresharing\mdeicalrule\MedicalSharingDateRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="medicaresharing\MedicalSharingInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medicaresharing\MedicalSharingInfoForm.Designer.cs">
+      <DependentUpon>MedicalSharingInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicaresharing\medicareshar\MedicaresharMgr.cs" />
+    <Compile Include="medicaresharing\medicareshar\MedicaresharModel.cs" />
+    <Compile Include="newconfirm\view\baseview\FeeInpputBaseView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\action\ConsReportAction.cs" />
+    <Compile Include="opemergency\action\HistorymedicalsharingDataAction.cs" />
+    <Compile Include="opemergency\action\OpAgainPresAction.cs" />
+    <Compile Include="opemergency\action\OpAllOrderCancelAction.cs" />
+    <Compile Include="opemergency\action\OpAllOrderCancelCopyAction.cs" />
+    <Compile Include="opemergency\action\OpAllOrderDeleteAction.cs" />
+    <Compile Include="opemergency\action\OpAllOrderRevertAction.cs" />
+    <Compile Include="opemergency\action\OpAllOrderSaveasAction.cs" />
+    <Compile Include="opemergency\action\OpAllOrderSignAction.cs" />
+    <Compile Include="opemergency\action\OpCurrOrderCancelAction.cs" />
+    <Compile Include="opemergency\action\OpCurrOrderCancelCopyAction.cs" />
+    <Compile Include="opemergency\action\OpCurrOrderDeleteAction.cs" />
+    <Compile Include="opemergency\action\OpCurrOrderRevertAction.cs" />
+    <Compile Include="opemergency\action\OpCurrOrderSignAction.cs" />
+    <Compile Include="opemergency\action\OpOrderCancelAction.cs" />
+    <Compile Include="opemergency\action\OpOrderCancelCopyAction.cs" />
+    <Compile Include="opemergency\action\OpOrderSaveasAction.cs" />
+    <Compile Include="opemergency\action\OpPreCalcFeeAction.cs" />
+    <Compile Include="opemergency\action\OpPresCancelFeeAction.cs" />
+    <Compile Include="opemergency\action\OpRevertSignAction.cs" />
+    <Compile Include="opemergency\action\shortcut\ShortCutKnowledgeFormView.cs" />
+    <Compile Include="opemergency\action\shortcut\ShortCutMkrMsAppView.cs" />
+    <Compile Include="opemergency\action\shortcut\ShortcutOpEntpHistory.cs" />
+    <Compile Include="opemergency\action\shortcut\ShortCutOpMedicalTechnology.cs" />
+    <Compile Include="opemergency\action\shortcut\ShortCutOpMedSrvCategory.cs" />
+    <Compile Include="opemergency\action\shortcut\ShortCutOpTemplateFrame.cs" />
+    <Compile Include="opemergency\action\shortcut\ShortCutTplView.cs" />
+    <Compile Include="opemergency\action\statehandler\EmrSyncCiordHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpAgainPresStatushandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpAllOrderCancelCopyHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpAllOrderCancelHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpAllOrderDeleteHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpAllOrderRevertHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpAllOrderSignHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpCurrOrderCancelCopyHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpCurrOrderCancelHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpCurrOrderDeleteHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpCurrOrderRevertHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpCurrOrderSignHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpOrderCancelCopyHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpOrderCancelHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpOrderSaveasStateHandler.cs" />
+    <Compile Include="opemergency\action\OpAddNewOrderAction.cs" />
+    <Compile Include="opemergency\action\OpOrdDrugUsageAction.cs" />
+    <Compile Include="opemergency\action\statehandler\OpPreCalcFeeActionStateHandler.cs" />
+    <Compile Include="opemergency\assi\asscommon\dto\AssiFrameOrModelType.cs" />
+    <Compile Include="opemergency\assi\entdi\EntDiAssiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\entdi\EntDiAssiForm.Designer.cs">
+      <DependentUpon>EntDiAssiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\entdi\EntDiAssiContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\entdi\EntDiAssiContainer.Designer.cs">
+      <DependentUpon>EntDiAssiContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\entdi\viewmodel\EntDiAssiViewModel.cs" />
+    <Compile Include="opemergency\assi\entdi\viewmodel\EntDiChronAssiViewModel.cs" />
+    <Compile Include="opemergency\assi\entdi\viewmodel\EntDiDeptAssiViewModel.cs" />
+    <Compile Include="opemergency\assi\entdi\viewmodel\EntDiInfectAssiViewModel.cs" />
+    <Compile Include="opemergency\assi\entdi\viewmodel\EntDiSpeciAssiViewModel.cs" />
+    <Compile Include="opemergency\assi\entdi\view\EntDiAssiView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\entdi\view\EntDiChronAssiView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\entdi\view\EntDiDeptAssiView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\entdi\view\EntDiInfectAssiView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\entdi\view\EntDiSpeciAssiView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\i\IViewCommond.cs" />
+    <Compile Include="opemergency\assi\medsrvclass\OpMedSrvClassButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\medsrvclass\OpMedSrvClassButton.Designer.cs">
+      <DependentUpon>OpMedSrvClassButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\medsrvclass\OpMedsrvClassFrame.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\medsrvclass\OpMedsrvClassFrame.Designer.cs">
+      <DependentUpon>OpMedsrvClassFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\OpTechnologyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\OpTechnologyButton.Designer.cs">
+      <DependentUpon>OpTechnologyButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\OpTechnoloyFrame.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\OpTechnoloyFrame.Designer.cs">
+      <DependentUpon>OpTechnoloyFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplateComplex\OpTemplateFrameComplex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplateComplex\OrderHelpButtenComplex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplateComplex\OrderHelpButtenComplex.Designer.cs">
+      <DependentUpon>OrderHelpButtenComplex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplateComplex\view\OpOrderTemplateListViewComplex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplateComplex\view\OpOrderTemplateListViewComplex.Designer.cs">
+      <DependentUpon>OpOrderTemplateListViewComplex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplateComplex\view\OpOrderTemplateTreeViewComplex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplateComplex\view\OpOrderTemplateTreeViewComplex.Designer.cs">
+      <DependentUpon>OpOrderTemplateTreeViewComplex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplateComplex\view\OpTemplateControlComplex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplatePithy\model\OrderTemplatePithyTreeViewModel.cs" />
+    <Compile Include="opemergency\assi\OrdertemplatePithy\OrderHelpButten.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplatePithy\OrderHelpButten.Designer.cs">
+      <DependentUpon>OrderHelpButten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplatePithy\view\OpOrderTemplateTreeViewPithy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplatePithy\view\OpOrderTemplateTreeViewPithy.Designer.cs">
+      <DependentUpon>OpOrderTemplateTreeViewPithy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrderTemplate\OrderHelpButten.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrderTemplate\OrderHelpButten.Designer.cs">
+      <DependentUpon>OrderHelpButten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrdertemplatePithy\OpTemplateFramePithy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\model\OrTmplTreeViewModel.cs" />
+    <Compile Include="opemergency\assi\ortmplconcise\OrderHelpButten.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\OrderHelpButten.Designer.cs">
+      <DependentUpon>OrderHelpButten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\OrTmplConciseFrame.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\view\OrTmplTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\view\OrTmplTreeView.Designer.cs">
+      <DependentUpon>OrTmplTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\view\OrTmplTreeViewCom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\view\OrTmplTreeViewDrugs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\view\OrTmplTreeViewLis.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\view\OrTmplTreeViewRis.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\ortmplconcise\view\OrTmplTreeViewTreat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\controls\CustomQuanMedControl.cs" />
+    <Compile Include="opemergency\controls\CustomRefSetItmsControl.cs" />
+    <Compile Include="opemergency\controls\EmsFeesControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\controls\QuanSaleUnitFeeBillTableCell.cs" />
+    <Compile Include="opemergency\dialog\HpIndicDocJudgeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\dialog\HpIndicDocJudgeForm.Designer.cs">
+      <DependentUpon>HpIndicDocJudgeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\emsfactory\pathgy\EmsPathgyHDWDriver.cs" />
+    <Compile Include="opemergency\emsfactory\pathgy\EmsPathgyPKUDriver.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyDigitizationToothViewDriver.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyCBCTNEWViewDriver.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyGeneralXRayViewDriver.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyCTBlankViewDriver.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyUltrasonicDiagViewDriver.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyElectrocardiogramViewDriver.cs" />
+    <Compile Include="opemergency\emsfeebill\model\EmsFeebillViewModel.cs" />
+    <Compile Include="opemergency\emsfeebill\view\EmsFeebillView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\common\BaseEmsFormView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\pathgy\EmsPathgyHDWViewModel.cs" />
+    <Compile Include="opemergency\ems\pathgy\EmsPathgyPKUViewModel.cs" />
+    <Compile Include="opemergency\ems\drugs\EmsDrugsViewGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\herbs\EmsHerbsViewGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\lis\EmsLisViewGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\EmsRisViewGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyDigitizationToothViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyDigitizationToothViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyCBCTNEWViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyCBCTNEWViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyUltrasonicDiagViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyUltrasonicDiagViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyGeneralXRayViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyGeneralXRayViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyCTBlankViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyCTBlankViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyElectrocardiogramViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyElectrocardiogramViewModel.cs" />
+    <Compile Include="opemergency\ems\treat\EmsTreatViewGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\pathgy\HDWPathgySrvTableView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\pathgy\PKUPathgySrvTableView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\CiDiCancelCheckAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\CiDiCheck4OrOpenAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\CiDiCheck4OrSignAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\CiDiCheckResponse4OrOpenAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\CiDiCheckResponse4OrSignAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\CiDiCompleteCheckAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\CiOrCompleteCheckAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\CiOrdCheckAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\EnCancelView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\orddi\didepend\DiDependForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\orddi\didepend\DiDependForm.Designer.cs">
+      <DependentUpon>DiDependForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\orddi\didepend\DiDependMgr.cs" />
+    <Compile Include="opemergency\orddi\didepend\DiDependModel.cs" />
+    <Compile Include="opemergency\orderaction\IOrderAction.cs" />
+    <Compile Include="opemergency\orderaction\OrderAction.cs" />
+    <Compile Include="opemergency\orderaction\OrderCancelAction.cs" />
+    <Compile Include="opemergency\orderaction\OrderComplexAction.cs" />
+    <Compile Include="opemergency\orderaction\OrderCopyAction.cs" />
+    <Compile Include="opemergency\orderaction\OrderDeleteAction.cs" />
+    <Compile Include="opemergency\orderaction\OrderLoadAction.cs" />
+    <Compile Include="opemergency\orderaction\OrderRevertAction.cs" />
+    <Compile Include="opemergency\orderaction\OrderSignAction.cs" />
+    <Compile Include="opemergency\setting\ClearCacheSettingApp.cs" />
+    <Compile Include="opemergency\setting\ClearCacheSettingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\setting\printersetting\PrinterSettingApp.cs" />
+    <Compile Include="opemergency\setting\printersetting\PrinterSettingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\thirdparty\viewmodel\ReportViewModel.cs" />
+    <Compile Include="opemergency\thirdparty\view\ReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\thirdparty\view\ReportView.Designer.cs">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\thirdparty\view\ReportViewInit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\tool\EmsMatchTool.cs" />
+    <Compile Include="opemergency\tool\medicalInfoCache.cs" />
+    <Compile Include="opemergency\tool\PrintConstant.cs" />
+    <Compile Include="opemergency\tool\PrintTool.cs" />
+    <Compile Include="opemergency\tool\SysParamUtils.cs" />
+    <Compile Include="opemergency\trorder\pathgy\TrOrderPathgyHDWView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\pathgy\TrOrderPathgyPKUView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyDigitizationToothView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyCBCTNEWView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyGeneralXRayView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyCTBlankView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyElectrocardiogramView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyUltrasonicDiagView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\basic\DelegateRunnable.cs" />
+    <Compile Include="opemergency\view\basic\IRunnable.cs" />
+    <Compile Include="opemergency\view\BeforeOpenCheckView.cs" />
+    <Compile Include="pathgyreportform\viewmodel\OptpathgyViewModel.cs" />
+    <Compile Include="pathgyreportform\view\OpRptpathgyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pathgyreportform\view\OpRptpathgyView.Designer.cs">
+      <DependentUpon>OpRptpathgyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\orreport\model\OrReportModel.cs" />
+    <Compile Include="ciorder\orreport\ReportCodeDict.cs" />
+    <Compile Include="ciorder\orreport\scrollpanel\model\HealthCheckReportModel.cs" />
+    <Compile Include="ciorder\orreport\scrollpanel\model\BaseCheckReportModel.cs" />
+    <Compile Include="ciorder\orreport\scrollpanel\model\CporCheckReportModel.cs" />
+    <Compile Include="ciorder\orreport\scrollpanel\view\HealthCheckRepoatView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\orreport\scrollpanel\view\HealthCheckRepoatView.Designer.cs">
+      <DependentUpon>HealthCheckRepoatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\orreport\OrReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\orreport\OrReport.Designer.cs">
+      <DependentUpon>OrReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\orreport\scrollpanel\OrReportScrollPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\orreport\scrollpanel\OrReportScrollPanel.Designer.cs">
+      <DependentUpon>OrReportScrollPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\orreport\scrollpanel\view\BaseCheckRepoatView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\orreport\scrollpanel\view\BaseCheckRepoatView.Designer.cs">
+      <DependentUpon>BaseCheckRepoatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\orreport\scrollpanel\view\CporCheckRepoatView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\orreport\scrollpanel\view\CporCheckRepoatView.Designer.cs">
+      <DependentUpon>CporCheckRepoatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\utils\CiEmsSrvDTOComparer.cs" />
+    <Compile Include="ciorder\utils\FiledMapping.cs" />
+    <Compile Include="ciorder\utils\HpJudgeUtil.cs" />
+    <Compile Include="ciorder\utils\OrReportPictureButton.cs" />
+    <Compile Include="ciorder\Validate\OrderTransValidate.cs" />
+    <Compile Include="cirptpathgy\viewmodel\CiRptpathgyViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cirptpathgy\view\CiRptpathgyView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cirptpathgy\view\CiRptpathgyView.Designer.cs">
+      <DependentUpon>CiRptpathgyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="common\dto\BaseParameterViewClass.cs" />
+    <Compile Include="common\log\CiLog4OpStation.cs" />
+    <Compile Include="common\log\CiLog4IhStation.cs" />
+    <Compile Include="common\log\Log.cs" />
+    <Compile Include="common\quanamt\QuanamtCalc.cs" />
+    <Compile Include="cicheck\viewmodel\CiCheckCardViewModel.cs" />
+    <Compile Include="cicheck\view\CiCheckCardFile.cs" />
+    <Compile Include="cicheck\view\CiCheckCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cicheck\view\CiCheckCardView.Designer.cs">
+      <DependentUpon>CiCheckCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cicheck\xactions\UploadAction.cs" />
+    <Compile Include="ciconsresponse\action\ConsDepResAction.cs" />
+    <Compile Include="ciconsresponse\action\CompleteCons.cs" />
+    <Compile Include="ciconsresponse\statehandler\SaveStateHandler.cs" />
+    <Compile Include="ciconsresponse\statehandler\SubmitStateHandler.cs" />
+    <Compile Include="ciconsresponse\statehandler\CompleteStateHandler.cs" />
+    <Compile Include="ciconsresponse\viewmodel\ApConsViewModel.cs" />
+    <Compile Include="ciconsresponse\viewmodel\ConResDepViewModel.cs" />
+    <Compile Include="ciconsresponse\viewmodel\ConResHosViewModel.cs" />
+    <Compile Include="ciconsresponse\viewmodel\ConsItemViewModel.cs" />
+    <Compile Include="ciconsresponse\viewmodel\ConsRptViewModel.cs" />
+    <Compile Include="ciconsresponse\viewmodel\InviteConsViewModel.cs" />
+    <Compile Include="ciconsresponse\view\ConResDepView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciconsresponse\view\ConResDepView.Designer.cs">
+      <DependentUpon>ConResDepView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciconsresponse\view\ConResHosView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciconsresponse\view\ConResHosView.Designer.cs">
+      <DependentUpon>ConResHosView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciconsresponse\view\ConResInfoView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciconsresponse\view\ConResInfoView.Designer.cs">
+      <DependentUpon>ConResInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciconsresponse\view\ConsRptTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciconsresponse\view\ConsRptTreeView.Designer.cs">
+      <DependentUpon>ConsRptTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciconsresponse\view\ConsRptView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciconsresponse\view\ConsRptView.Designer.cs">
+      <DependentUpon>ConsRptView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciconsresponse\view\FrmConResInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciconsresponse\view\FrmConResInfo.Designer.cs">
+      <DependentUpon>FrmConResInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciexamine\viewmodel\CiExamCardViewModel.cs" />
+    <Compile Include="ciexamine\view\CiExamCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciexamine\view\CiExamCardView.Designer.cs">
+      <DependentUpon>CiExamCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorcof\viewmodel\CiOrdSheetItemViewModel.cs" />
+    <Compile Include="ciorcof\viewmodel\CiOrdSrvVsSheetViewModel.cs" />
+    <Compile Include="ciorcof\view\CiOrdSheetItemView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorcof\view\CiOrdSheetItemView.Designer.cs">
+      <DependentUpon>CiOrdSheetItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorcof\view\CiOrdSrvVsSheetView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ciorcof\view\CiOrdSrvVsSheetView.Designer.cs">
+      <DependentUpon>CiOrdSrvVsSheetView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\cards\ConsPatDetailCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciordcons\cards\ConsPatDetailCardView.Designer.cs">
+      <DependentUpon>ConsPatDetailCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\dialog\ConsResponseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciordcons\dialog\ConsResponseDialog.Designer.cs">
+      <DependentUpon>ConsResponseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\dialog\ConsReviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciordcons\dialog\ConsReviewDialog.Designer.cs">
+      <DependentUpon>ConsReviewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\dialog\ConsCompleteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciordcons\dialog\ConsCompleteDialog.Designer.cs">
+      <DependentUpon>ConsCompleteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\viewmodel\ConsCardViewModel.cs" />
+    <Compile Include="ciordcons\viewmodel\ConsGridViewModel.cs" />
+    <Compile Include="ciordcons\view\ConsCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsCardView.Designer.cs">
+      <DependentUpon>ConsCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsReponseGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsReponseGridView.Designer.cs">
+      <DependentUpon>ConsReponseGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsQueryView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsQueryView.Designer.cs">
+      <DependentUpon>ConsQueryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsReviewGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsReviewGridView.Designer.cs">
+      <DependentUpon>ConsReviewGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsReviewMdaGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciordcons\view\ConsReviewMdaGridView.Designer.cs">
+      <DependentUpon>ConsReviewMdaGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\action\CiBackAction.cs" />
+    <Compile Include="ciorder\action\CiCancelSubmitAction.cs" />
+    <Compile Include="ciorder\action\CiCopyAndAddAction.cs" />
+    <Compile Include="ciorder\action\CipresAction.cs" />
+    <Compile Include="ciorder\action\CiStopAction.cs" />
+    <Compile Include="ciorder\action\CiSubmitAction.cs" />
+    <Compile Include="ciorder\action\CiTrendAction.cs" />
+    <Compile Include="ciorder\action\CiVideoAction.cs" />
+    <Compile Include="ciorder\action\EnOverAction.cs" />
+    <Compile Include="ciorder\action\EnStayAction.cs" />
+    <Compile Include="ciorder\action\OpBackAction.cs" />
+    <Compile Include="ciorder\action\OrdConfirmAction.cs" />
+    <Compile Include="ciorder\action\SrvConfirmAction.cs" />
+    <Compile Include="ciorder\cards\drugext\ExtOrderDrugsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\ExtOrderDrugsView.Designer.cs">
+      <DependentUpon>ExtOrderDrugsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\dialogform\ExtOrderDrugDialog_Old.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\dialogform\ExtOrderDrugDialog_Old.designer.cs">
+      <DependentUpon>ExtOrderDrugDialog_Old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\dialogform\ExtMmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\dialogform\ExtMmRefView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\ExtOrderInfusionView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\ExtOrderInfusionView.Designer.cs">
+      <DependentUpon>ExtOrderInfusionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\viewmodel\ExtOrderDrugDialogModel.cs" />
+    <Compile Include="ciorder\cards\drugext\dialogform\ExtDrugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\drugext\dialogform\ExtDrugForm.Designer.cs">
+      <DependentUpon>ExtDrugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\FrmSkinTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\FrmSkinTest.Designer.cs">
+      <DependentUpon>FrmSkinTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\INSLineChartView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\INSLineChartView.Designer.cs">
+      <DependentUpon>INSLineChartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\MmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\MmForm.Designer.cs">
+      <DependentUpon>MmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\MmRefView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\MmRefView.Designer.cs">
+      <DependentUpon>MmRefView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\OrderScEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\OrderScEx.Designer.cs">
+      <DependentUpon>OrderScEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\OrScArgs.cs" />
+    <Compile Include="ciorder\cards\extend\OrSkinTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\OrSkinTest.Designer.cs">
+      <DependentUpon>OrSkinTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\OrSrvForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\extend\OrSrvForm.Designer.cs">
+      <DependentUpon>OrSrvForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrdApBuCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrdApBuCardView.Designer.cs">
+      <DependentUpon>OrdApBuCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrdApBuGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrdApBuGridView.Designer.cs">
+      <DependentUpon>OrdApBuGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrdApBuView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrdApBuView.Designer.cs">
+      <DependentUpon>OrdApBuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\EmsIndexAndButtonArea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\EmsIndexAndButtonArea.Designer.cs">
+      <DependentUpon>EmsIndexAndButtonArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderApbtView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderApbtView.Designer.cs">
+      <DependentUpon>OrderApbtView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderAplabView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderAplabView.Designer.cs">
+      <DependentUpon>OrderAplabView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderApobsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderApobsView.Designer.cs">
+      <DependentUpon>OrderApobsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderCommonView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderCommonView.Designer.cs">
+      <DependentUpon>OrderCommonView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderConsGeneralView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderConsGeneralView.Designer.cs">
+      <DependentUpon>OrderConsGeneralView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderConsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderConsView.Designer.cs">
+      <DependentUpon>OrderConsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderDrugDesView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderDrugDesView.Designer.cs">
+      <DependentUpon>OrderDrugDesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderDrugsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderDrugsView.Designer.cs">
+      <DependentUpon>OrderDrugsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderHerbsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderHerbsView.Designer.cs">
+      <DependentUpon>OrderHerbsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderInfusionView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderInfusionView.Designer.cs">
+      <DependentUpon>OrderInfusionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderOpView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderOpView.Designer.cs">
+      <DependentUpon>OrderOpView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderOutView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderOutView.Designer.cs">
+      <DependentUpon>OrderOutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderPathgyView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderPathgyView.Designer.cs">
+      <DependentUpon>OrderPathgyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderPresView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderPresView.Designer.cs">
+      <DependentUpon>OrderPresView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderTransView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderTransView.Designer.cs">
+      <DependentUpon>OrderTransView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderINSView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderINSView.Designer.cs">
+      <DependentUpon>OrderINSView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderConsAppView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\cards\OrderConsAppView.Designer.cs">
+      <DependentUpon>OrderConsAppView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\CiorderBaseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\ctlEx\FrmChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\ctlEx\FrmChart.Designer.cs">
+      <DependentUpon>FrmChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\ctlEx\GraphicsPathHelper.cs" />
+    <Compile Include="ciorder\ctlEx\OrdPageCommand.cs" />
+    <Compile Include="ciorder\OrderEventArgs.cs" />
+    <Compile Include="ciorder\ordertotalcount\GetTotalCountBase.cs" />
+    <Compile Include="ciorder\ordertotalcount\IpOpTotalCount.cs" />
+    <Compile Include="ciorder\overview\CiDiView.cs" />
+    <Compile Include="ciorder\overview\CiAlHisView.cs" />
+    <Compile Include="ciorder\overview\CiExpenseView.cs" />
+    <Compile Include="ciorder\overview\CiOrderListView.cs" />
+    <Compile Include="ciorder\overview\EmrView.cs" />
+    <Compile Include="ciorder\overview\VitalSignsView.cs" />
+    <Compile Include="ciorder\render\AlphabetRender.cs" />
+    <Compile Include="ciorder\render\AlphabetRenderGroup.cs" />
+    <Compile Include="ciorder\render\OrderTitleRender.cs" />
+    <Compile Include="ciorder\render\XOrderCancelButton.cs" />
+    <Compile Include="ciorder\render\XOrderImageListItem.cs" />
+    <Compile Include="ciorder\render\XOrderUnitFreqGroup.cs" />
+    <Compile Include="ciorder\render\XRoundRender.cs" />
+    <Compile Include="ciorder\statehandler\AddStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\CancelStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\CipresStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\DeleteStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\DisEnableStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\EditStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\EnableStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\EnStayStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\GoBackStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\OrdConfirmStateHandlr.cs" />
+    <Compile Include="ciorder\statehandler\PanelManagerStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\QueryStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\RefreshStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\SaveAddStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\SaveStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\StopStateHandler.cs" />
+    <Compile Include="ciorder\statehandler\BackStateHandler.cs" />
+    <Compile Include="ciorder\takedrug4outhosp\viewmodel\TakeDrugOutItemViewModel.cs" />
+    <Compile Include="ciorder\takedrug4outhosp\view\TakeDrugOutCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\takedrug4outhosp\view\TakeDrugOutCardView.Designer.cs">
+      <DependentUpon>TakeDrugOutCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\takedrug4outhosp\view\TakeDrugOutItemView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\takedrug4outhosp\view\TakeDrugOutItemView.Designer.cs">
+      <DependentUpon>TakeDrugOutItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\takedrug4outhosp\view\TakeDrugOutPresView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\takedrug4outhosp\view\TakeDrugOutPresView.Designer.cs">
+      <DependentUpon>TakeDrugOutPresView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\utils\AppObsAndlabUtil.cs" />
+    <Compile Include="ciorder\utils\AutoLocation.cs" />
+    <Compile Include="ciorder\utils\SkinTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\utils\SkinTestForm.Designer.cs">
+      <DependentUpon>SkinTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\utils\SkinTestDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\utils\SkinTestDialog.Designer.cs">
+      <DependentUpon>SkinTestDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\utils\LogicEx.cs" />
+    <Compile Include="ciorder\utils\OrCIEmsTOUIEms.cs" />
+    <Compile Include="ciorder\utils\OrDataBing.cs" />
+    <Compile Include="ciorder\utils\OrDataConvert.cs" />
+    <Compile Include="ciorder\utils\OrderDataVerify.cs" />
+    <Compile Include="ciorder\utils\OrdParam.cs" />
+    <Compile Include="ciorder\utils\OrdSelectedContainer.cs" />
+    <Compile Include="ciorder\Validate\IOrdValidate.cs" />
+    <Compile Include="ciorder\Validate\IValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderApbtValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderAplabValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderApobsValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderConsValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderDrugsValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderHerbsValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderInfusionValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderOpValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderPathgyValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderApbtUseValidate.cs" />
+    <Compile Include="ciorder\Validate\OrderCommonValidate.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetCoutUnitImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetDeptMpImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetDrugTotalCountImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetInHosTime.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetMmByMmtpImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetSrvConstpImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetSrvDrugPropImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetSrvLabImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetMedSrvImpl.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetMmImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetObsImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetPatDiagImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetprimdPriceImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetSrvLabItemImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetSrvSugImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetSrvViewItemImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetSrvSetImp.cs" />
+    <Compile Include="ciorder\viewmodel\impext\GetSrvVsRouteImp.cs" />
+    <Compile Include="ciorder\viewmodel\IpOverViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\MmRefViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrdApBuCardViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrdApBuGridViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrdChildfrmModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderCardViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderDrugDesViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderGetSheetEx.cs" />
+    <Compile Include="ciorder\viewmodel\OrderInviteConsViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderItemViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrdermmViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderOrdSrvSetViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderPresViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderSaveCommonViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderSaveViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderSkinTestViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderSrvDoseViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderSrvListViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderSrvSetViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderSrvViewModel.cs" />
+    <Compile Include="ciorder\cards\Doctoradvices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\render\DoctorRender.cs" />
+    <Compile Include="ciorder\viewmodel\OrderApbtViewModel.cs" />
+    <Compile Include="ciorder\viewmodel\OrderTransViewModel.cs" />
+    <Compile Include="ciorder\view\ipoverview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\render\MenuRender.cs" />
+    <Compile Include="ciorder\view\ipoverview.Designer.cs">
+      <DependentUpon>ipoverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\view\opoverview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\view\opoverview.Designer.cs">
+      <DependentUpon>opoverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\cards\OrdChildfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ciorder\view\OrderCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\view\OrderCardView.Designer.cs">
+      <DependentUpon>OrderCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\render\OrderInputRender.cs" />
+    <Compile Include="ciorder\view\OrderItemView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\view\OrderItemView.Designer.cs">
+      <DependentUpon>OrderItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\render\OrderRender.cs" />
+    <Compile Include="ciorder\view\OrderSrvListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\view\OrderSrvListView.Designer.cs">
+      <DependentUpon>OrderSrvListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ciorder\view\SearchControlView.cs" />
+    <Compile Include="ciorder\render\XOrderService.cs" />
+    <Compile Include="ciorder\_ems\ds\EmsDsBase.cs" />
+    <Compile Include="ciorder\_ems\EmsFactoryBase.cs" />
+    <Compile Include="ciorder\_ems\EmsManager.cs" />
+    <Compile Include="ciorder\_ems\EmsModelBase.cs" />
+    <Compile Include="ciorder\_ems\EmsViewBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ciorder\_ems\trans\TransEmsDataCarrier.cs" />
+    <Compile Include="ciorder\_ems\trans\TransEmsFactory.cs" />
+    <Compile Include="ciorder\_ems\trans\TransEmsModel.cs" />
+    <Compile Include="ciorder\_ems\trans\TransEmsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="common\utils\BeanUtils.cs" />
+    <Compile Include="common\utils\CiEnContextUtil.cs" />
+    <Compile Include="common\utils\RenderUtil.cs" />
+    <Compile Include="diagtreatview\adapter\DrugAdapter.cs" />
+    <Compile Include="diagtreatview\viewmodel\bp\DiagtreatUtils.cs" />
+    <Compile Include="diagtreatview\viewmodel\bp\HandleDrugExeLoopBP.cs" />
+    <Compile Include="diagtreatview\viewmodel\bp\HandleLisOrRisExeLoopBP.cs" />
+    <Compile Include="diagtreatview\viewmodel\bp\SplitSrv8OrdBP.cs" />
+    <Compile Include="diagtreatview\viewmodel\cache\CacheIndex.cs" />
+    <Compile Include="diagtreatview\viewmodel\cache\CacheTotal.cs" />
+    <Compile Include="diagtreatview\viewmodel\cache\CashData.cs" />
+    <Compile Include="diagtreatview\viewmodel\cache\CacheUtils.cs" />
+    <Compile Include="diagtreatview\viewmodel\DiagtreatCardViewModel.cs" />
+    <Compile Include="diagtreatview\view\DiagtreatCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="diagtreatview\view\DiagtreatCardView.Designer.cs">
+      <DependentUpon>DiagtreatCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dicertificate\viewmodel\DiCertificateTreeViewModel.cs" />
+    <Compile Include="dicertificate\viewmodel\Utils.cs" />
+    <Compile Include="dicertificate\view\DiCertificateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificateDialog.Designer.cs">
+      <DependentUpon>DiCertificateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificateEditView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificateEditView.Designer.cs">
+      <DependentUpon>DiCertificateEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificatePrintDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificatePrintDialog.Designer.cs">
+      <DependentUpon>DiCertificatePrintDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificatePrintView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificatePrintView.Designer.cs">
+      <DependentUpon>DiCertificatePrintView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificateTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificateTreeView.Designer.cs">
+      <DependentUpon>DiCertificateTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificateView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dicertificate\view\DiCertificateView.Designer.cs">
+      <DependentUpon>DiCertificateView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\classification\viewmodel\medSrvRadioViewModel.cs" />
+    <Compile Include="doctorhelper\classification\viewmodel\medSrvTreeViewModel.cs" />
+    <Compile Include="doctorhelper\classification\view\medSrvRadioView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\classification\view\medSrvRadioView.Designer.cs">
+      <DependentUpon>medSrvRadioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\classification\view\medSrvTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\classification\view\medSrvTreeView.Designer.cs">
+      <DependentUpon>medSrvTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\commonorder\viewmodel\commonOrderListViewModel.cs" />
+    <Compile Include="doctorhelper\commonorder\viewmodel\conmonOrderTreeViewModel.cs" />
+    <Compile Include="doctorhelper\commonorder\view\commonOrderListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\commonorder\view\commonOrderListView.Designer.cs">
+      <DependentUpon>commonOrderListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\commonorder\view\conmonOrderTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\commonorder\view\conmonOrderTreeView.Designer.cs">
+      <DependentUpon>conmonOrderTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\helperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\helperForm.Designer.cs">
+      <DependentUpon>helperForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\helperView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\helperView.Designer.cs">
+      <DependentUpon>helperView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\HelperViewModel.cs" />
+    <Compile Include="doctorhelper\IViewSave.cs" />
+    <Compile Include="doctorhelper\newtemplate\viewmodel\NewOrderTemplateListViewModel.cs" />
+    <Compile Include="doctorhelper\newtemplate\viewmodel\NewOrderTemplateTreeViewModel.cs" />
+    <Compile Include="doctorhelper\newtemplate\view\NewOrderTemplateListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\newtemplate\view\NewOrderTemplateListView.Designer.cs">
+      <DependentUpon>NewOrderTemplateListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\newtemplate\view\NewOrderTemplateTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\newtemplate\view\NewOrderTemplateTreeView.Designer.cs">
+      <DependentUpon>NewOrderTemplateTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\ordertemplate\viewmodel\OrderTemplateListViewModel.cs" />
+    <Compile Include="doctorhelper\ordertemplate\viewmodel\OrderTemplateTreeViewModel.cs" />
+    <Compile Include="doctorhelper\ordertemplate\view\OrderTemplateListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\ordertemplate\view\OrderTemplateListView.Designer.cs">
+      <DependentUpon>OrderTemplateListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\ordertemplate\view\OrderTemplateTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\ordertemplate\view\OrderTemplateTreeView.Designer.cs">
+      <DependentUpon>OrderTemplateTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\past\viewmodel\PastOrderListViewModel.cs" />
+    <Compile Include="doctorhelper\past\viewmodel\PastTreeViewModel.cs" />
+    <Compile Include="doctorhelper\past\view\PastOrderListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\past\view\PastOrderListView.Designer.cs">
+      <DependentUpon>PastOrderListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\past\view\PastTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\past\view\PastTreeView.Designer.cs">
+      <DependentUpon>PastTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\prescription\viewmodel\prescriptionListViewModel.cs" />
+    <Compile Include="doctorhelper\prescription\viewmodel\prescriptionTreeViewModel.cs" />
+    <Compile Include="doctorhelper\prescription\view\prescriptionListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\prescription\view\prescriptionListView.Designer.cs">
+      <DependentUpon>prescriptionListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorhelper\prescription\view\prescriptionTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="doctorhelper\prescription\view\prescriptionTreeView.Designer.cs">
+      <DependentUpon>prescriptionTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newconfirm\viewmodel\bp\ConfirmEvent.cs" />
+    <Compile Include="newconfirm\viewmodel\bp\OrderConfirmUtils.cs" />
+    <Compile Include="newconfirm\viewmodel\OrderConfirmCardViewModel.cs" />
+    <Compile Include="newconfirm\viewmodel\OrderConfirmViewModel.cs" />
+    <Compile Include="newconfirm\viewmodel\OrderConfirmFeeViewModel.cs" />
+    <Compile Include="newconfirm\view\CiOrdFirmCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="newconfirm\view\CiOrdFirmCardView.Designer.cs">
+      <DependentUpon>CiOrdFirmCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newconfirm\view\OrderConfirmView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="newconfirm\view\OrderConfirmView.Designer.cs">
+      <DependentUpon>OrderConfirmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newconfirm\view\OrderConfirmFeeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="newconfirm\view\OrderConfirmFeeView.Designer.cs">
+      <DependentUpon>OrderConfirmFeeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nsorconfirmqry\viewmodel\OrderConfirmCardViewModel.cs" />
+    <Compile Include="nsorconfirmqry\viewmodel\OrderConfirmViewModel.cs" />
+    <Compile Include="nsorconfirmqry\view\CiOrdFirmCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="nsorconfirmqry\view\CiOrdFirmCardView.Designer.cs">
+      <DependentUpon>CiOrdFirmCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nsorconfirmqry\view\OrderConfirmView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="nsorconfirmqry\view\OrderConfirmView.Designer.cs">
+      <DependentUpon>OrderConfirmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\action\ApbuApplyPrintAction.cs" />
+    <Compile Include="opemergency\action\changeNumberAction.cs" />
+    <Compile Include="opemergency\action\costant\OpActionConstant.cs" />
+    <Compile Include="opemergency\action\DataCenterAction.cs" />
+    <Compile Include="opemergency\action\EmrDeleteAction.cs" />
+    <Compile Include="opemergency\action\EmrSyncCidiAction.cs" />
+    <Compile Include="opemergency\action\EmrSyncCidiCiordAction.cs" />
+    <Compile Include="opemergency\action\EmrSyncCiordAction.cs" />
+    <Compile Include="opemergency\action\EntAddNumberAction.cs" />
+    <Compile Include="opemergency\action\EntAppointCancelAction.cs" />
+    <Compile Include="opemergency\action\HerbalPresPrintAction.cs" />
+    <Compile Include="opemergency\action\LisApplyPrintAction.cs" />
+    <Compile Include="opemergency\action\OpDiAddAction.cs" />
+    <Compile Include="opemergency\action\OpDiCloseAction.cs" />
+    <Compile Include="opemergency\action\OpDiDeleteAction.cs" />
+    <Compile Include="opemergency\action\OpDiSaveAction.cs" />
+    <Compile Include="opemergency\action\OpOrderDeleteAction.cs" />
+    <Compile Include="opemergency\action\OpOrderSignAction.cs" />
+    <Compile Include="opemergency\action\EmrSaveAction.cs" />
+    <Compile Include="opemergency\action\ems\EmsOrderListRefreshAction.cs" />
+    <Compile Include="opemergency\action\ems\EmsAppendApbuAction.cs" />
+    <Compile Include="opemergency\action\ems\EmsSaveExpAction.cs" />
+    <Compile Include="opemergency\action\ems\EmsDeleteExpAction.cs" />
+    <Compile Include="opemergency\action\ems\EmsAppendExpAction.cs" />
+    <Compile Include="opemergency\action\ems\EmsCancelAction.cs" />
+    <Compile Include="opemergency\action\ems\EmsSaveAction.cs" />
+    <Compile Include="opemergency\action\ems\EmsDeleteItemAction.cs" />
+    <Compile Include="opemergency\action\ems\EmsAppendItemAction.cs" />
+    <Compile Include="opemergency\action\OpEmrPerAction.cs" />
+    <Compile Include="opemergency\action\OpPeriodontalCheckFileAction.cs" />
+    <Compile Include="opemergency\action\OpHpTransformEnFileAction.cs" />
+    <Compile Include="opemergency\action\OpDiProofFileAction.cs" />
+    <Compile Include="opemergency\action\EmrPrintAction.cs" />
+    <Compile Include="opemergency\action\EmrPrintViewAction.cs" />
+    <Compile Include="opemergency\action\entAppointmentAction.cs" />
+    <Compile Include="opemergency\action\HospitalNoticeAction.cs" />
+    <Compile Include="opemergency\action\InfectiousDiseaseAction.cs" />
+    <Compile Include="opemergency\action\InvalidMedicalRecord.cs" />
+    <Compile Include="opemergency\action\LisHistoryReportAction.cs" />
+    <Compile Include="opemergency\action\OpAddTicketsAction.cs" />
+    <Compile Include="opemergency\action\OpCancelDiAction.cs" />
+    <Compile Include="opemergency\action\OpCompleteAndNextAction.cs" />
+    <Compile Include="opemergency\action\OpOtherAction.cs" />
+    <Compile Include="opemergency\action\OpPatListAction.cs" />
+    <Compile Include="opemergency\action\OpEmrDocAction.cs" />
+    <Compile Include="opemergency\action\OpNextAction.cs" />
+    <Compile Include="opemergency\action\OpCallingAction.cs" />
+    <Compile Include="opemergency\action\OpCompleteAction.cs" />
+    <Compile Include="opemergency\action\OpPrintAction.cs" />
+    <Compile Include="opemergency\action\OPProofOfDiagnosisAction.cs" />
+    <Compile Include="opemergency\action\OpOrderRevertSignAction.cs" />
+    <Compile Include="opemergency\action\OpRefreshAllAction.cs" />
+    <Compile Include="opemergency\action\OpRevokeEnAction.cs" />
+    <Compile Include="opemergency\action\OpsApplyPrintActioin.cs" />
+    <Compile Include="opemergency\action\OpSuspendAction.cs" />
+    <Compile Include="opemergency\action\OpVacationProofFileAction.cs" />
+    <Compile Include="opemergency\action\PoisHempPresPrintAction.cs" />
+    <Compile Include="opemergency\action\RefundAction.cs" />
+    <Compile Include="opemergency\action\OrdPresPrintAction.cs" />
+    <Compile Include="opemergency\action\OrdWestDrugPresPrintAction.cs" />
+    <Compile Include="opemergency\action\ReportViewAction.cs" />
+    <Compile Include="opemergency\action\RisApplyPrintAction.cs" />
+    <Compile Include="opemergency\action\RisHistoryReportAction.cs" />
+    <Compile Include="opemergency\action\statehandler\OpActionsStatusHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\action\statehandler\OpHpTransformEnFileStateHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpRevertSignStateHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\SignActionStateHandler.cs" />
+    <Compile Include="opemergency\action\statehandler\OpRevokeEnStateHandler.cs" />
+    <Compile Include="opemergency\action\ShortcutOpOrdTemplatAction.cs" />
+    <Compile Include="opemergency\action\statehandler\OpShortcutActionStateHandler.cs" />
+    <Compile Include="opemergency\action\ShortcutOpEntpHistoryAction.cs" />
+    <Compile Include="opemergency\action\ShortcutOpMedclingrpAppAction.cs" />
+    <Compile Include="opemergency\action\ShortcutOpTplcommandAction.cs" />
+    <Compile Include="opemergency\action\ShortcutOpMedicalTechmologyAction.cs" />
+    <Compile Include="opemergency\action\ShortcutOpMedSrvCatgAction.cs" />
+    <Compile Include="opemergency\action\TreatApplyPrintAction.cs" />
+    <Compile Include="opemergency\assi\asscommon\dto\AssiFrameLocation.cs" />
+    <Compile Include="opemergency\assi\asscommon\dto\AssiFrameOpenModel.cs" />
+    <Compile Include="opemergency\assi\asscommon\dto\AssiBtnDTO.cs" />
+    <Compile Include="opemergency\assi\asscommon\util\AssiMouseEventHandler.cs" />
+    <Compile Include="opemergency\assi\asscommon\viewmodel\AssistantBaseViewModel.cs" />
+    <Compile Include="opemergency\assi\asscommon\viewmodel\AssistantCidiViewModel.cs" />
+    <Compile Include="opemergency\assi\asscommon\viewmodel\AssistantCiOrderViewModel.cs" />
+    <Compile Include="opemergency\assi\asscommon\viewmodel\AssistantConstant.cs" />
+    <Compile Include="opemergency\assi\asscommon\view\AssistantBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\asscommon\view\AssistantBase.Designer.cs">
+      <DependentUpon>AssistantBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\asscommon\view\AssistantBaseEvent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\asscommon\view\AssistantBaseEvent.Designer.cs">
+      <DependentUpon>AssistantBaseEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\asscommon\view\AssistantBtnBaseView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\asscommon\view\AssiViewFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\asscommon\view\AssiViewFrame.Designer.cs">
+      <DependentUpon>AssiViewFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\assistantinit\AssButtonOpView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\viewmodel\CiDiagViewModel.cs" />
+    <Compile Include="opemergency\assi\enthistory\viewmodel\CiOrdViewModel.cs" />
+    <Compile Include="opemergency\assi\enthistory\viewmodel\EntHistoryViewModel.cs" />
+    <Compile Include="opemergency\assi\enthistory\view\EntHistory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistory.Designer.cs">
+      <DependentUpon>EntHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryBase.Designer.cs">
+      <DependentUpon>EntHistoryBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryBtn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryBtn.Designer.cs">
+      <DependentUpon>EntHistoryBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryCiDiag.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryCiDiag.Designer.cs">
+      <DependentUpon>EntHistoryCiDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryContent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryContent.Designer.cs">
+      <DependentUpon>EntHistoryContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryContentBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryContentBase.Designer.cs">
+      <DependentUpon>EntHistoryContentBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryContentEnvet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryContentEnvet.Designer.cs">
+      <DependentUpon>EntHistoryContentEnvet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryFrame.Designer.cs">
+      <DependentUpon>EntHistoryFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryInitEvent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryInitEvent.Designer.cs">
+      <DependentUpon>EntHistoryInitEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryIPCiDiagView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryIPCiDiagView.Designer.cs">
+      <DependentUpon>EntHistoryIPCiDiagView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryOrderItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryOrderItem.Designer.cs">
+      <DependentUpon>EntHistoryOrderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryReportFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryReportFrame.Designer.cs">
+      <DependentUpon>EntHistoryReportFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\enthistory\view\EntHistoryTabFrame.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\handler\DefaultStateHandler.cs" />
+    <Compile Include="opemergency\assi\medsrvclass\MedsrvClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\medsrvclass\MedsrvClassForm.Designer.cs">
+      <DependentUpon>MedsrvClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\medsrvclass\view\OpmedSrvRadioView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\medsrvclass\view\OpmedSrvRadioView.Designer.cs">
+      <DependentUpon>OpmedSrvRadioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\medsrvclass\view\OpmedSrvTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\medsrvclass\view\OpmedSrvTreeView.Designer.cs">
+      <DependentUpon>OpmedSrvTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\mkrms\view\MkrMsAssiEventView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\mkrms\view\MkrMsAssiEventView.Designer.cs">
+      <DependentUpon>MkrMsAssiEventView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\OpMedicalTechnologyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\OpMedicalTechnologyForm.Designer.cs">
+      <DependentUpon>OpMedicalTechnologyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\view\OPMedicalTechnologyListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\view\OPMedicalTechnologyListView.Designer.cs">
+      <DependentUpon>OPMedicalTechnologyListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\view\OpMedicalTechnologyTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\opmedicaltechnology\view\OpMedicalTechnologyTreeView.Designer.cs">
+      <DependentUpon>OpMedicalTechnologyTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrderTemplate\OpOrderTemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrderTemplate\OpOrderTemplateForm.Designer.cs">
+      <DependentUpon>OpOrderTemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrderTemplate\OpTemplateFrame.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrderTemplate\view\OpOrderTemplateListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrderTemplate\view\OpOrderTemplateListView.Designer.cs">
+      <DependentUpon>OpOrderTemplateListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\OrderTemplate\view\OpOrderTemplateTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\OrderTemplate\view\OpOrderTemplateTreeView.Designer.cs">
+      <DependentUpon>OpOrderTemplateTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\rationaldrug\viewmodel\datong\RationalDrugDTViewModel.cs" />
+    <Compile Include="opemergency\assi\rationaldrug\viewmodel\RationalDrugConstant.cs" />
+    <Compile Include="opemergency\assi\rationaldrug\viewmodel\RationalDrugViewModel.cs" />
+    <Compile Include="opemergency\assi\rationaldrug\view\datong\RationalDrugDTView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\rationaldrug\view\datong\RationalDrugDTView.Designer.cs">
+      <DependentUpon>RationalDrugDTView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\rationaldrug\view\RationalDrugEvent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\rationaldrug\view\RationalDrugEvent.Designer.cs">
+      <DependentUpon>RationalDrugEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\rationaldrug\view\RationalDrugView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\rationaldrug\view\RationalDrugView.Designer.cs">
+      <DependentUpon>RationalDrugView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\assi\rationaldrug\view\RationalDrugViewFactory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\assi\rationaldrug\view\RationalDrugViewFactory.Designer.cs">
+      <DependentUpon>RationalDrugViewFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\command\IPageCommand.cs" />
+    <Compile Include="opemergency\command\OpClinicalGuideCommand.cs" />
+    <Compile Include="opemergency\command\OpPatCommonUseCommand.cs" />
+    <Compile Include="opemergency\command\OpMedicalTechmologyCommand.cs" />
+    <Compile Include="opemergency\command\OrderTemplateCommand.cs" />
+    <Compile Include="opemergency\command\OrdListDiGridCommand.cs" />
+    <Compile Include="opemergency\controls\CiIconToolButton.cs" />
+    <Compile Include="opemergency\controls\ExpAddDelSaveGroupView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\controls\EmsUseSaveCancelGroupView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\controls\EmsAddDelSaveCancelGroupView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\controls\EmsSaveCancelGroupView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\controls\CustomQuanCurControl.cs" />
+    <Compile Include="opemergency\controls\QuanMedUnitFeeBillTableCell.cs" />
+    <Compile Include="opemergency\declare\CiPresConst.cs" />
+    <Compile Include="opemergency\controls\QuanBtTableCell.cs" />
+    <Compile Include="opemergency\controls\QuanBuTableCell.cs" />
+    <Compile Include="opemergency\declare\TypeDefine.cs" />
+    <Compile Include="opemergency\declare\EventDefine.cs" />
+    <Compile Include="opemergency\dialog\OrdTplDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\dialog\OrdTplDialog.Designer.cs">
+      <DependentUpon>OrdTplDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\dialog\PrintManageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\dialog\PrintManageDialog.Designer.cs">
+      <DependentUpon>PrintManageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\dialog\BdHpIndicationDTOForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\dialog\BdHpIndicationDTOForm.Designer.cs">
+      <DependentUpon>BdHpIndicationDTOForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\emreditor\viewmodel\EmrEditorCiViewModel.cs" />
+    <Compile Include="opemergency\emreditor\viewmodel\EmrEditorConst.cs" />
+    <Compile Include="opemergency\emreditor\viewmodel\EmrEditorViewModel.cs" />
+    <Compile Include="opemergency\emreditor\viewmodel\EmrEditorXmlViewModel.cs" />
+    <Compile Include="opemergency\emreditor\view\EmrEditorInitEvent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\emreditor\view\EmrEditorInitEvent.Designer.cs">
+      <DependentUpon>EmrEditorInitEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\emsfactory\BaseEmsDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsConsDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsOpsDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsApbuDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsApbtDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsTreatDriver.cs" />
+    <Compile Include="opemergency\emsfactory\pathgy\EmsPathgyDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsLisDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsRisDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsHerbsDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsDrugsDriver.cs" />
+    <Compile Include="opemergency\emsfactory\EmsDriverFactory.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyRisDriver.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyXRayPerspectiveDriver.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyCTDriver.cs" />
+    <Compile Include="opemergency\emsfactory\stomatology\EmsStomatologyUltrasonicDriver.cs" />
+    <Compile Include="opemergency\ems\empty\EmptyDrugSrvGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\common\BaseButtonGroupView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\common\EmsCreatedParameter.cs" />
+    <Compile Include="opemergency\ems\common\BaseEmsModel.cs" />
+    <Compile Include="opemergency\ems\empty\EmptyEmsViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyRisViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyXRayPerspectiveViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyCTViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyUltrasonicViewModel.cs" />
+    <Compile Include="opemergency\ems\lis\EmsLisViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\EmsRisViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\common\BaseEmsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\common\EmsDrugSrvGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\cons\EmsConsViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\common\IEmsModel.cs" />
+    <Compile Include="opemergency\ems\cons\EmsConsViewModel.cs" />
+    <Compile Include="opemergency\ems\ops\EmsOpsViewModel.cs" />
+    <Compile Include="opemergency\ems\apbu\EmsApbuViewModel.cs" />
+    <Compile Include="opemergency\ems\pathgy\PathgyObsItemView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ops\EmsOpsViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\pathgy\PathgySrvTableView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\apbu\EmsApbuViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\apbt\EmsApbtViewModel.cs" />
+    <Compile Include="opemergency\ems\pathgy\EmsPathgyViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\common\BaseBizViewModel.cs" />
+    <Compile Include="opemergency\ems\ris\EmsRisViewModel.cs" />
+    <Compile Include="opemergency\ems\lis\EmsLisViewModel.cs" />
+    <Compile Include="opemergency\ems\pathgy\EmsPathgyViewModel.cs" />
+    <Compile Include="opemergency\ems\herbs\EmsHerbsViewModel.cs" />
+    <Compile Include="opemergency\ems\drugs\EmsDrugsViewModel.cs" />
+    <Compile Include="opemergency\ems\common\IBizModel.cs" />
+    <Compile Include="opemergency\ems\treat\EmsTreatViewModel.cs" />
+    <Compile Include="opemergency\ems\herbs\EmsHerbsViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\apbt\EmsApbtViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\drugs\EmsDrugsViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\treat\EmsTreatViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\command\OpMedSrvCatgCommand.cs" />
+    <Compile Include="opemergency\controls\BaseValueUnitTableCell.cs" />
+    <Compile Include="opemergency\controls\BaseTableCell.cs" />
+    <Compile Include="opemergency\controls\CustomRefControl.cs" />
+    <Compile Include="opemergency\controls\QuanCurTableCell.cs" />
+    <Compile Include="opemergency\controls\QuanMedTableCell.cs" />
+    <Compile Include="opemergency\dialog\ApobsSetItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\dialog\ApobsSetItemDialog.Designer.cs">
+      <DependentUpon>ApobsSetItemDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\command\OpDiSetCommand.cs" />
+    <Compile Include="opemergency\dialog\DoseChangedDrugsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\dialog\DoseChangedDrugsDialog.Designer.cs">
+      <DependentUpon>DoseChangedDrugsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\dialog\AplabsSetItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\dialog\AplabsSetItemDialog.Designer.cs">
+      <DependentUpon>AplabsSetItemDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\dialog\ConsInvitedDeptsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\dialog\ConsInvitedDeptsDialog.Designer.cs">
+      <DependentUpon>ConsInvitedDeptsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyRisViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyXRayPerspectiveViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyXRayPerspectiveViewCard.Designer.cs">
+      <DependentUpon>EmsStomatologyXRayPerspectiveViewCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyCTViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyCTViewCard.Designer.cs">
+      <DependentUpon>EmsStomatologyCTViewCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyUltrasonicViewCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\EmsStomatologyUltrasonicViewCard.Designer.cs">
+      <DependentUpon>EmsStomatologyUltrasonicViewCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\tooth\ToothBitmapView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\ems\ris\stomatology\tooth\ToothBitmapView.Designer.cs">
+      <DependentUpon>ToothBitmapView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\lis\ListrptView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\lis\ListrptView.Designer.cs">
+      <DependentUpon>ListrptView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\lis\PastlistrptsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\lis\PastlistrptsView.Designer.cs">
+      <DependentUpon>PastlistrptsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\medreferral\action\MedReferralPrintAction.cs" />
+    <Compile Include="opemergency\medreferral\action\MedReferralSaveAction.cs" />
+    <Compile Include="opemergency\medreferral\action\statehandler\MedReferralPrintStateHandler.cs" />
+    <Compile Include="opemergency\medreferral\action\statehandler\MedReferralSaveStateHandler.cs" />
+    <Compile Include="opemergency\medreferral\controller\CiMedReferralController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\medreferral\model\CiMedReferralViewModel.cs" />
+    <Compile Include="opemergency\medreferral\view\CiMedReferralView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\medreferral\view\CiMedReferralDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\medsrvcatg\AssMedSrvCatgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\medsrvcatg\AssMedSrvCatgForm.Designer.cs">
+      <DependentUpon>AssMedSrvCatgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\medsrvcatg\AssMedSrvCatgItemView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\medsrvcatg\AssMedSrvCatgItemView.Designer.cs">
+      <DependentUpon>AssMedSrvCatgItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\medsrvcatg\AssMedSrvCatgTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\medsrvcatg\AssMedSrvCatgTreeView.Designer.cs">
+      <DependentUpon>AssMedSrvCatgTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\operateaction\baseoperate\AbstractActionHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\baseoperate\OpActionChainHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\baseoperate\OpOperateActionEvent.cs" />
+    <Compile Include="opemergency\operateaction\dto\RequestParam.cs" />
+    <Compile Include="opemergency\operateaction\dto\ResponseParam.cs" />
+    <Compile Include="opemergency\operateaction\opcomplete\view\EmrSaveView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\EmrSignName.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\EnBannerSwitchingUserView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\EnCompleteClearView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\EnCompleteView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\EnOpSuspendView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\LoadPrintCenter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\operateaction\opcomplete\view\LoadReportCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\orddi\DiAssListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\orddi\DiListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\orddi\ICallbackAction.cs" />
+    <Compile Include="opemergency\orddi\model\DiAssListViewModel.cs" />
+    <Compile Include="opemergency\orddi\model\DiListViewModel.cs" />
+    <Compile Include="opemergency\orddi\model\OrderDiInfoViewModel.cs" />
+    <Compile Include="opemergency\orddi\OrdDiOpenDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\orddi\OrderDiInfoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\orddi\OrderDiInfoView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\orderlist\model\OrdGridViewModel.cs" />
+    <Compile Include="opemergency\orderlist\view\OrdGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\ordfeebill\model\OrdFeeBillViewModel.cs" />
+    <Compile Include="opemergency\ordfeebill\view\OrdFeeBillView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\proofofdiag\DIPorveView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\proofofdiag\OPProofOfDiagnosisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\proofofdiag\OPProofOfDiagnosisView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\proofofdiag\viewprint\DiProvePrintDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opemergency\proofofdiag\viewprint\DiProvePrintPreView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\proofofdiag\viewprint\DiProvePrinTypeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\spltpres\model\SpltPrescriptionViewModel.cs" />
+    <Compile Include="opemergency\spltpres\SpltPrescriptionView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\tool\AssCostTimeTool.cs" />
+    <Compile Include="opemergency\tool\AssMultiTaskActionTool.cs" />
+    <Compile Include="opemergency\tool\AssWaittingTool.cs" />
+    <Compile Include="opemergency\tool\AssXapFormUtils.cs" />
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyRisView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyXRayPerspectiveView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyCTView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\stomatology\TrOrderStomatologyUltrasonicView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderConsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderOpsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderApbuView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderApbtView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\pathgy\TrOrderPathgyView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderTreatView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderLisView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderRisView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderBaseView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderHerbsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\trorder\TrOrderDrugsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\tool\AssToolEx.cs" />
+    <Compile Include="opemergency\validate\EmsRisValidate.cs" />
+    <Compile Include="opemergency\validate\EmsLisValidate.cs" />
+    <Compile Include="opemergency\validate\BaseEmsValidate.cs" />
+    <Compile Include="opemergency\validate\EmsConsValidate.cs" />
+    <Compile Include="opemergency\validate\EmsOpsValidate.cs" />
+    <Compile Include="opemergency\validate\EmsApbtValidate.cs" />
+    <Compile Include="opemergency\validate\EmsApbuValidate.cs" />
+    <Compile Include="opemergency\validate\EmsPathgyValidate.cs" />
+    <Compile Include="opemergency\validate\EmsTreatValidate.cs" />
+    <Compile Include="opemergency\validate\EmsDrugsValidate.cs" />
+    <Compile Include="opemergency\validate\EmsHerbsValidate.cs" />
+    <Compile Include="opemergency\validate\IEmsValidate.cs" />
+    <Compile Include="opemergency\viewmodel\AssButtonViewModel.cs" />
+    <Compile Include="opemergency\viewmodel\OPProofOfDiagnosisViewModel.cs" />
+    <Compile Include="opemergency\viewmodel\PreBloodCardViewModel.cs" />
+    <Compile Include="opemergency\viewmodel\OpDiModifyDialogModel.cs" />
+    <Compile Include="opemergency\viewmodel\PrintManageViewModel.cs" />
+    <Compile Include="opemergency\view\basic\BaseBizView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\basic\BaseTableBizView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\basic\BaseFormBizView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\basic\IEmsFormResource.cs" />
+    <Compile Include="opemergency\resource\EmsFromResource.cs" />
+    <Compile Include="opemergency\view\basic\IEventDelegate.cs" />
+    <Compile Include="opemergency\view\EmsButtonGroupView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\expenseview\OrdExpenseView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\OrdEditorView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\OrdEmsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\TabEmsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\expenseview\model\PathgyExpenseModel.cs" />
+    <Compile Include="opemergency\view\expenseview\model\LabObsExpenseModel.cs" />
+    <Compile Include="opemergency\view\expenseview\model\BloodExpenseModel.cs" />
+    <Compile Include="opemergency\view\expenseview\model\OperationExpenseModel.cs" />
+    <Compile Include="opemergency\view\expenseview\model\CommonExpenseModel.cs" />
+    <Compile Include="opemergency\view\expenseview\model\ConsExpenseModel.cs" />
+    <Compile Include="opemergency\view\expenseview\model\DrugsExpenseModel.cs" />
+    <Compile Include="opemergency\view\expenseview\model\ExpenseModel.cs" />
+    <Compile Include="opemergency\view\printmanage\PrintChooseView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\printmanage\PrintChooseView.Designer.cs">
+      <DependentUpon>PrintChooseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\view\printmanage\PrintPreviewView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\printmanage\PrintPreviewView.Designer.cs">
+      <DependentUpon>PrintPreviewView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opemergency\view\AssButtonView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\DiBannerView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\OrdListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opemergency\view\EntDiStatusView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opippathgy\pathgy2\model\OpippathgyCardModel2.cs" />
+    <Compile Include="opippathgy\pathgy2\model\OpippathgyDateTreeModel2.cs" />
+    <Compile Include="opippathgy\pathgy2\model\OpippathgyTreeModel2.cs" />
+    <Compile Include="opippathgy\pathgy2\viewinit\OpippathgyCardFormInit.cs" />
+    <Compile Include="opippathgy\pathgy2\view\OpippathgyCardView2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opippathgy\pathgy2\view\OpippathgyDateTreeView2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opippathgy\pathgy2\view\OpippathgyTreeView2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opippathgy\viewmodel\OpippathgyCardModel.cs" />
+    <Compile Include="opippathgy\viewmodel\OpippathgyDateTreeModel.cs" />
+    <Compile Include="opippathgy\viewmodel\OpippathgyTreeModel.cs" />
+    <Compile Include="opippathgy\view\OpippathgyCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opippathgy\view\OpippathgyCardView.Designer.cs">
+      <DependentUpon>OpippathgyCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opippathgy\view\OpippathgyDateTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opippathgy\view\OpippathgyDateTreeView.Designer.cs">
+      <DependentUpon>OpippathgyDateTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opippathgy\view\OpippathgyTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="opippathgy\view\OpippathgyTreeView.Designer.cs">
+      <DependentUpon>OpippathgyTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\extend\MmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\extend\MmForm.Designer.cs">
+      <DependentUpon>MmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\extend\MmRefView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\extend\MmRefView.Designer.cs">
+      <DependentUpon>MmRefView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderDrugsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderDrugsView.Designer.cs">
+      <DependentUpon>OpOrderDrugsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderHerbsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderHerbsView.Designer.cs">
+      <DependentUpon>OpOrderHerbsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderInfusionView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderInfusionView.Designer.cs">
+      <DependentUpon>OpOrderInfusionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderOperView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderOperView.Designer.cs">
+      <DependentUpon>OpOrderOperView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderAplabView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderAplabView.Designer.cs">
+      <DependentUpon>OpOrderAplabView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderApobsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderApobsView.Designer.cs">
+      <DependentUpon>OpOrderApobsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderPresPrinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderPresPrinForm.Designer.cs">
+      <DependentUpon>OpOrderPresPrinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderPresPrinView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\cards\OpOrderPresPrinView.Designer.cs">
+      <DependentUpon>OpOrderPresPrinView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\Validate\OpOrderDrugsValidate.cs" />
+    <Compile Include="oporder\Validate\OpOrderInfusionValidate.cs" />
+    <Compile Include="oporder\view\OpOrderCardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\view\OpOrderCardView.Designer.cs">
+      <DependentUpon>OpOrderCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\view\OpOrderItemView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\view\OpOrderItemView.Designer.cs">
+      <DependentUpon>OpOrderItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\view\OpOrderPresView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\view\OpOrderPresView.Designer.cs">
+      <DependentUpon>OpOrderPresView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oporder\view\OpOrderSrvListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oporder\view\OpOrderSrvListView.Designer.cs">
+      <DependentUpon>OpOrderSrvListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orsrvref\util\BeanPropertyUtil.cs" />
+    <Compile Include="orsrvref\view\IndividualForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orsrvref\view\IndividualForm.Designer.cs">
+      <DependentUpon>IndividualForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orsrvref\view\SmartQueryResult.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="orsrvref\view\SmartQueryResult.Designer.cs">
+      <DependentUpon>SmartQueryResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orsrvref\view\SmartQueryResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orsrvref\view\SmartQueryResultForm.Designer.cs">
+      <DependentUpon>SmartQueryResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orsrvref\view\SmartSearchControl.cs" />
+    <Compile Include="orsrvref\view\SmartSearchService.cs" />
+    <Compile Include="preloader\DoctorStationPreloaderContainer.cs" />
+    <Compile Include="preloader\IpUIPreloader.cs" />
+    <Compile Include="preloader\OpUIPreloader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportcard\diag\ReportCardFillJudge.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cicheck\view\CiCheckCardView.resx">
+      <DependentUpon>CiCheckCardView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciconsresponse\view\ConResDepView.resx">
+      <DependentUpon>ConResDepView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciconsresponse\view\ConResHosView.resx">
+      <DependentUpon>ConResHosView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciconsresponse\view\ConResInfoView.resx">
+      <DependentUpon>ConResInfoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciconsresponse\view\ConsRptView.resx">
+      <DependentUpon>ConsRptView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciconsresponse\view\FrmConResInfo.resx">
+      <DependentUpon>FrmConResInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciexamine\view\CiExamCardView.resx">
+      <DependentUpon>CiExamCardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cilab\view\LabDateTree.resx">
+      <DependentUpon>LabDateTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciobs\view\CiRptObsChart.resx">
+      <DependentUpon>CiRptObsChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciobs\view\CiRptObsTreeView.resx">
+      <DependentUpon>CiRptObsTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciobs\view\ObsDateTree.resx">
+      <DependentUpon>ObsDateTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorcof\view\CiOrdSheetItemView.resx">
+      <DependentUpon>CiOrdSheetItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciordcons\view\ConsMrTreeView.resx">
+      <DependentUpon>ConsMrTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\drugext\ExtOrderDrugsView.resx">
+      <DependentUpon>ExtOrderDrugsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\drugext\ExtOrderInfusionView.resx">
+      <DependentUpon>ExtOrderInfusionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\extend\FrmSkinTest.resx">
+      <DependentUpon>FrmSkinTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\extend\OrderScEx.resx">
+      <DependentUpon>OrderScEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\extend\OrSrvForm.resx">
+      <DependentUpon>OrSrvForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\EmsIndexAndButtonArea.resx">
+      <DependentUpon>EmsIndexAndButtonArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderAplabView.resx">
+      <DependentUpon>OrderAplabView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderApobsView.resx">
+      <DependentUpon>OrderApobsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderCommonView.resx">
+      <DependentUpon>OrderCommonView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderConsGeneralView.resx">
+      <DependentUpon>OrderConsGeneralView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderConsView.resx">
+      <DependentUpon>OrderConsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderDrugDesView.resx">
+      <DependentUpon>OrderDrugDesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderDrugsView.resx">
+      <DependentUpon>OrderDrugsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderHerbsView.resx">
+      <DependentUpon>OrderHerbsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderInfusionView.resx">
+      <DependentUpon>OrderInfusionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderOpView.resx">
+      <DependentUpon>OrderOpView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderOutView.resx">
+      <DependentUpon>OrderOutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderPathgyView.resx">
+      <DependentUpon>OrderPathgyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderTransView.resx">
+      <DependentUpon>OrderTransView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderINSView.resx">
+      <DependentUpon>OrderINSView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderConsAppView.resx">
+      <DependentUpon>OrderConsAppView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderCrossDeptView.resx">
+      <DependentUpon>OrderCrossDeptView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrderDeathView.resx">
+      <DependentUpon>OrderDeathView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\ctlEx\FrmChart.resx">
+      <DependentUpon>FrmChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pathgyreportform\view\OpRptpathgyView.resx">
+      <DependentUpon>OpRptpathgyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\takedrug4outhosp\view\TakeDrugOutCardView.resx">
+      <DependentUpon>TakeDrugOutCardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\takedrug4outhosp\view\TakeDrugOutItemView.resx">
+      <DependentUpon>TakeDrugOutItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\takedrug4outhosp\view\TakeDrugOutPresView.resx">
+      <DependentUpon>TakeDrugOutPresView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\view\ipoverview.resx">
+      <DependentUpon>ipoverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\cards\OrdChildfrm.resx">
+      <DependentUpon>OrdChildfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\view\OrderCardView.resx">
+      <DependentUpon>OrderCardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\view\OrderItemView.resx">
+      <DependentUpon>OrderItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ciorder\view\OrderSrvListView.resx">
+      <DependentUpon>OrderSrvListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cirptpathgy\view\CiRptpathgyView.resx">
+      <DependentUpon>CiRptpathgyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorhelper\helperForm.resx">
+      <DependentUpon>helperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorhelper\helperView.resx">
+      <DependentUpon>helperView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorhelper\past\view\PastOrderListView.resx">
+      <DependentUpon>PastOrderListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorhelper\past\view\PastTreeView.resx">
+      <DependentUpon>PastTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opippathgy\view\OpippathgyDateTreeView.resx">
+      <DependentUpon>OpippathgyDateTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\cards\OpOrderDrugsView.resx">
+      <DependentUpon>OpOrderDrugsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\cards\OpOrderHerbsView.resx">
+      <DependentUpon>OpOrderHerbsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\cards\OpOrderInfusionView.resx">
+      <DependentUpon>OpOrderInfusionView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\cards\OpOrderOperView.resx">
+      <DependentUpon>OpOrderOperView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\cards\OpOrderAplabView.resx">
+      <DependentUpon>OpOrderAplabView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\cards\OpOrderApobsView.resx">
+      <DependentUpon>OpOrderApobsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\cards\OpOrderPresPrinForm.resx">
+      <DependentUpon>OpOrderPresPrinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\view\OpOrderCardView.resx">
+      <DependentUpon>OpOrderCardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\view\OpOrderItemView.resx">
+      <DependentUpon>OpOrderItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\view\OpOrderPresView.resx">
+      <DependentUpon>OpOrderPresView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oporder\view\OpOrderSrvListView.resx">
+      <DependentUpon>OpOrderSrvListView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ciexamine\xactions\" />
+    <Folder Include="ciorder\base\" />
+    <Folder Include="diagtreatview\viewmodel\cache\bp\" />
+    <Folder Include="doctorstation\basic\" />
+    <Folder Include="doctorstation\common\" />
+    <Folder Include="doctorstation\inpatient\" />
+    <Folder Include="doctorstation\outpatient\action\button\" />
+    <Folder Include="doctorstation\outpatient\action\menu\" />
+    <Folder Include="doctorstation\outpatient\ass\" />
+    <Folder Include="doctorstation\outpatient\declare\" />
+    <Folder Include="doctorstation\outpatient\ems\cicons\m\" />
+    <Folder Include="doctorstation\outpatient\ems\cicons\v\" />
+    <Folder Include="doctorstation\outpatient\ems\cidrug\m\" />
+    <Folder Include="doctorstation\outpatient\ems\cidrug\v\" />
+    <Folder Include="doctorstation\outpatient\ems\ciherbs\m\" />
+    <Folder Include="doctorstation\outpatient\ems\ciherbs\v\" />
+    <Folder Include="doctorstation\outpatient\ems\cilis\m\" />
+    <Folder Include="doctorstation\outpatient\ems\cilis\v\" />
+    <Folder Include="doctorstation\outpatient\ems\ciops\m\" />
+    <Folder Include="doctorstation\outpatient\ems\ciops\v\" />
+    <Folder Include="doctorstation\outpatient\ems\cipb\m\" />
+    <Folder Include="doctorstation\outpatient\ems\cipb\v\" />
+    <Folder Include="doctorstation\outpatient\ems\cipgy\m\" />
+    <Folder Include="doctorstation\outpatient\ems\cipgy\v\" />
+    <Folder Include="doctorstation\outpatient\ems\ciris\m\" />
+    <Folder Include="doctorstation\outpatient\ems\ciris\v\" />
+    <Folder Include="doctorstation\outpatient\ems\citreat\m\" />
+    <Folder Include="doctorstation\outpatient\ems\citreat\v\" />
+    <Folder Include="doctorstation\outpatient\ems\ciub\m\" />
+    <Folder Include="doctorstation\outpatient\ems\ciub\v\" />
+    <Folder Include="doctorstation\outpatient\ems\common\" />
+    <Folder Include="doctorstation\outpatient\ems\factory\" />
+    <Folder Include="doctorstation\outpatient\feelist\" />
+    <Folder Include="doctorstation\outpatient\ordems\" />
+    <Folder Include="doctorstation\outpatient\ordi\" />
+    <Folder Include="doctorstation\outpatient\orlist\" />
+    <Folder Include="doctorstation\outpatient\preslist\" />
+    <Folder Include="doctorstation\outpatient\utils\" />
+    <Folder Include="opemergency\assi\medsrvclass\viewmodel\" />
+    <Folder Include="opemergency\assi\mkrms\viewmodel\" />
+    <Folder Include="opemergency\assi\opmedicaltechnology\viewmodel\" />
+    <Folder Include="opemergency\assi\OrdertemplateComplex\model\" />
+    <Folder Include="opemergency\assi\OrderTemplate\viewmodel\" />
+    <Folder Include="opemergency\diorderems\di\" />
+    <Folder Include="opemergency\diorderems\orderems\" />
+    <Folder Include="opemergency\operateaction\opcomplete\viewmodel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ciorder\WorkLog.txt" />
+    <Content Include="modules\iihci\ui\assmedsrvcatg\assmedsrvcatg_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\cicpapp\cicpapp_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\cicpdef\cicpdef_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\cicprpt\cicprpt_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\commoncontent\largemonitor\OrderContent.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\commoncontent\OrderContent.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\consadmdeptaudit\consadmdeptaudit_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\consdeptaudit\consdeptaudit_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\diagtreatview\diagtreatview_config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\dicertificate\dicertificate_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\doctorhandover\doctorhandover_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\emsplugins1\emsplugins1_config.xml" />
+    <Content Include="modules\iihci\ui\entdiprove\diproveprint_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\ipconsultresponsen\ipconsultresponsen_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\iporder\iporder_config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\judgedidelete\judgedidelete_config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\medicalsharing\medicalsharing_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\medreferral\medreferral_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\medsrvclass\Helper.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opdimodifydialog\opdimodifydialog_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\opippathgy\opippathgy_config2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opippathgy\opippathgy_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\opmedicaltechnology\Helper.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opordertemplate\Helper.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opordertemplate\Helper_complex.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opordertemplate\Helper_pithy.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opordertemplate\Helper_concise.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\opordertemplate\Helper_complex_control.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\actionchain\OPBannerSwitchingUserConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\actionchain\OPCancelConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\actionchain\OPCompleteAndRevokeConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\actionchain\OPDiCheck4OrOpenConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\actionchain\OPDiCheck4OrSignConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\actionchain\OPSuppendConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\assi\assi_left_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\assi\assi_right_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\assi\assi_right_diag_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\assi\entdi\assi_entdi_config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\config\EmrEditorCiDiagConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\config\EmrEditorCiOrder.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\config\EmrEditorCiOrder2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\enthistory\enthistory_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\enthistory\enthistory_ip_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\enthistory\enthistory_op_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\largemonitor\optrdocstation_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\optrdocstation\optrdocstation_config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\ordbu\ordbu_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\ipcertify\ipcertify_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\ipconsultresponse\ipconsultresponse_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\ipconsult\ipconsult_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\ipdocstation\config\ipdocstation_data_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\ipdocstation\ipdocstation_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\ipemrhist\ipemrhist_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\iporder\largemonitor\iporder_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\ipoverview\ipoverview_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\ipsurgane\ipsurgane_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\iptempchart\iptempchart_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opdiagcertify\opdiagcertify_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opdocstation\config\opdocstation_data_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opdocstation\opdocstation_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\opiplis\opiplis_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\opipris\opipris_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\oporder\oporder_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opoverview\opoverview_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\oppvhist\oppvhist_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\opris\opris_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\OrderHelper\Helper.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\iihci\ui\orderprint\检查申请单.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\orderprint\病理检查申请单.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\printmanage\printmrg_config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\printmanage\printmrg_preview_config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihci\ui\takedrug4outhosp\takedrug4outhosp_config.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihmp\ui\nsorconfirmqry\nsorconfirmqry_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihmp\ui\nsorderconfirm\nsorderconfirm_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihmp\ui\orsheetprint\orsheetprint_config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="orsrvref\view\IndividualForm.resx">
+      <DependentUpon>IndividualForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\住院.png" />
+    <EmbeddedResource Include="Resources\门诊.png" />
+    <Content Include="res\image\checkresult\临床路径已判断.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\临床路径待判断.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\医保-已判断.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\医保-待判断.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\已判断.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\已记账.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\收费异常.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\未记账.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\检查-初出.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\检查-已出.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\检查-未出.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\皮试-未出-废弃.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\皮试-阳性.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\皮试-阴性.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\皮试-未出.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\自费.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\药品审核驳回.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\药品已审核.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\药品强制执行.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\药品未审核.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\checkresult\退费.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\不执行.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\停止（1）.png" />
+    <Content Include="res\image\ci\取消.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\完成.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="res\image\ci\报错.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="res\image\ci\未知.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\未知1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\确认-停止.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\确认-预停.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\预停.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\作废.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\停止.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\已作废.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\已执行.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\开立.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\执行中.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\拒执行.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\收费.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\确认.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\签署.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\预停1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\image\ci\预停（1）.png" />
+    <Content Include="表单记录.txt" />
+    <EmbeddedResource Include="orsrvref\view\SmartQueryResult.resx">
+      <DependentUpon>SmartQueryResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orsrvref\view\SmartQueryResultForm.resx">
+      <DependentUpon>SmartQueryResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\折叠2.png" />
+    <EmbeddedResource Include="Resources\展开.png" />
+    <EmbeddedResource Include="Resources\折叠.png" />
+    <EmbeddedResource Include="Resources\检索icon\搜索-01.png" />
+    <EmbeddedResource Include="Resources\检索icon\搜索-02.png" />
+    <EmbeddedResource Include="Resources\检索icon\搜索-03.png" />
+    <EmbeddedResource Include="Resources\检索icon\搜索-04.png" />
+    <EmbeddedResource Include="Resources\检索icon\搜索-05.png" />
+    <EmbeddedResource Include="Resources\蓝-01.png" />
+    <EmbeddedResource Include="Resources\蓝-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ciorcof\emsplugins1_config.xml" />
+    <None Include="ciorder\医嘱特性整理.xlsx" />
+    <Content Include="modules\iihdata\何时选用诺和灵30R或50R？如何调整剂量？.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihdata\关于诺和灵30R与50R的差别.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihdata\甘精胰岛素与诺和灵30R治疗2型糖尿病效果比较.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihdata\胰岛素泵连续皮下注射在老年糖尿病围手术期的临床应用.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihdata\腹部皮下注射胰岛素降糖效果观察.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihdata\诺和灵30R联合二甲双胍治疗初诊2型糖尿病32例疗效观察.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihdata\诺和灵30R治疗老年2型糖尿病的临床观察.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modules\iihdata\诺和锐30与诺和灵30R治疗老年2型糖尿病的临床观察.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

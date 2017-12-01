@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+
+    <!---医嘱模板-->
+    <Clazz id="complex_OpOrderTemplateListView" classname="iih.ci.ord.opemergency.assi.OrdertemplateComplex.view.OpOrderTemplateListViewComplex" dllname="iih.ci.ord"/>
+    <Clazz id="complex_OpOrderTemplateTreeView" classname="iih.ci.ord.opemergency.assi.OrdertemplateComplex.view.OpOrderTemplateTreeViewComplex" dllname="iih.ci.ord"/>
+  </Clazzes>
+
+  <States>
+    <State old="Begin" event="Load"  new="Init"/>
+    <State old="Init" event="SelectNode" new="NodeSelected"/>
+  </States>
+
+
+  <Content>
+    <XLayoutPanel>
+      <Center>
+        <XLayoutPanel>
+          <Left Width="300">
+            <Control ref="complex_OpOrderTemplateTreeView" />
+          </Left>
+          <Center>
+            <Control ref="complex_OpOrderTemplateListView" />
+          </Center>
+        </XLayoutPanel>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

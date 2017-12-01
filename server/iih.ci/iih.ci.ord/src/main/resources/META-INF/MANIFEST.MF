@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+XAP-Component-Version: 0.2.0-medicare-SNAPSHOT
+XAP-Component-Name: iih.ci.ord
+XAP-Component-Namespace: iih
+XAP-Component-Dependencies: ,com.alibaba/fastjson/1.2.8
+

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<funclet>
+
+  <!--自定义类定义-->
+  <clazzes>
+    <clazz id="clztree1" classname="iih.ci.ord.opippathgy.view.OpippathgyTreeView2" dllname="iih.ci.ord"/>
+    <clazz id="clztree2" classname="iih.ci.ord.opippathgy.view.OpippathgyDateTreeView2" dllname="iih.ci.ord"/>
+    <clazz id="clzcard" classname="iih.ci.ord.opippathgy.view.OpippathgyCardView2" dllname="iih.ci.ord"/>
+  </clazzes>
+
+  <!--action对象定义-->
+  <actions>
+    <action id="videoImageAction">
+      <props text="报告图片" commandid="img_show"  />
+    </action>
+    <action id="refreshaction1" typeid="sys_refresh_action_typeid"/>
+  </actions>
+
+  <!--状态表-->
+  <states>
+    <state id="browse">
+      <uidef apppanel="0" />
+    </state>
+    
+  </states>
+
+  <!--状态转移表-->
+  <statetable init="browse">
+   
+  </statetable>
+
+  <!--UI控件定义-->
+  <views>
+    <view id="toolbar1" typeid="sys_toolbar_typeid" flag="toolbar">
+      <states actions="videoImageAction,refreshaction1" />
+    </view>
+
+    <view id="cardview1" typeid="clzcard"/>
+    <view id="treeview1" typeid="clztree1"/>
+    <view id="treeview2" typeid="clztree2"/>
+  </views>
+
+  <!--应用面板定义-->
+  <apppanels>
+    <apppanel id="0">
+      <ui>
+        <view position="top" refid="toolbar1" height="41"/>
+        <container type="xtab" alignment="Top" position="left" width="200">
+          <page id="1" text="分类模式"  lazy="false" >
+              <view  refid="treeview1"/>
+          </page>
+          <page id="2" text="日期模式"  lazy="false" >
+              <view refid="treeview2"/>
+          </page>
+        </container>
+        <view position="fill" refid="cardview1" />
+      </ui>
+      <msgs>
+       <msg id="xm_action_enable" subsribers = "toolbar1" />
+        <msg id="xm_tree_select" subsribers = "cardview1" />
+       
+      </msgs>
+    </apppanel>
+   
+  </apppanels>
+</funclet>

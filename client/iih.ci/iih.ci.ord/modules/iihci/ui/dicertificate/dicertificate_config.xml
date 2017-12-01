@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+
+  <Clazzes>
+    <Clazz id="add_action" classname="xap.rui.engine.xactions.standard.AddAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.dicertificate.statehandler.AddStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="delete_action" classname="xap.rui.engine.xactions.standard.DeleteAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.dicertificate.statehandler.DeleteStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="save_action" classname="xap.rui.engine.xactions.standard.SaveAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.dicertificate.statehandler.SaveStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="print_action" classname="xap.rui.engine.xactions.standard.PrintAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.dicertificate.statehandler.PrintStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    
+    <Clazz id="leftView" classname="iih.ci.ord.dicertificate.view.DiCertificateTreeView" dllname="iih.ci.ord" singleton="true"/>
+    <Clszz id="rightView" classname="iih.ci.ord.dicertificate.view.DiCertificateEditView" dllname="iih.ci.ord" singleton="true"/>
+  </Clazzes>
+
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+  <Menu>
+    <MenuItem ref="add_action"/>
+    <MenuItem ref="delete_action"/>
+    <MenuItem ref="save_action"/>
+    <MenuItem ref="print_action"/>
+  </Menu>
+  <Content>
+    <XLayoutPanel>
+      <Left Width="256">
+        <Control ref="leftView"/>
+      </Left>
+      <Center>
+        <Control ref="rightView"/>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

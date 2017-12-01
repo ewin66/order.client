@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <!-- 签署医嘱校验诊断 -->
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Class id="CiDiCheck4OrSignAction" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.CiDiCheck4OrSignAction" dllname="iih.ci.ord" />
+    <Class id="CiDiCheckResponse4OrSignAction" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.CiDiCheckResponse4OrSignAction" dllname="iih.ci.ord" />
+  </Clazzes>
+  <States>   
+  </States>
+  <Content>    
+  </Content>
+</Funclet>

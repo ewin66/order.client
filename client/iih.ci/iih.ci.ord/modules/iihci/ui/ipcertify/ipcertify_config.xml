@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <!--控件-->
+    <Clazz id="DiCertificateView" classname="iih.ci.ord.dicertificate.view.DiCertificateView" dllname="iih.ci.ord"/>
+  </Clazzes>
+  <States>
+  </States>
+  <Content>
+    <BorderLayoutPanel>
+      <Center>
+        <Control ref="DiCertificateView"/>
+      </Center>
+    </BorderLayoutPanel>
+  </Content>
+</Funclet>

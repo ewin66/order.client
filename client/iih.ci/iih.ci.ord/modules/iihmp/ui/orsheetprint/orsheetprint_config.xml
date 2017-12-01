@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <!--医嘱单-->
+    <!--<Clazz id="OrderAction" classname="iih.ci.ord.ciorder.ciorderprn.action.OrderAction" dllname="iih.ci.ord">
+    </Clazz>-->
+    <!--长期医嘱单-->
+    <Clazz id="LongAction" classname="iih.ci.ord.ciorder.ciorderprn.action.LongAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--临时医嘱单-->
+    <Clazz id="TempAction" classname="iih.ci.ord.ciorder.ciorderprn.action.TempAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--预览-->
+    <Clazz id="PreviewAction" classname="iih.ci.ord.ciorder.ciorderprn.action.PreviewAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--打印-->
+    <Clazz id="PrintAction" classname="iih.ci.ord.ciorder.ciorderprn.action.PrintAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--设置-->
+    <Clazz id="SetupAction" classname="iih.ci.ord.ciorder.ciorderprn.action.SetupAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--调整-->
+    <Clazz id="AdjustAction" classname="iih.ci.ord.ciorder.ciorderprn.action.AdjustAction" dllname="iih.ci.ord">
+    </Clazz>
+    
+    <!--预览-->
+    <Clazz id="BrowseAction" classname="iih.ci.ord.ciorder.ciorderprn.action.BrowseAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--清空-->
+    <Clazz id="ClearAction" classname="iih.ci.ord.ciorder.ciorderprn.action.ClearAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--医嘱单查询工具-->
+    <Clazz id="OrdPrintToolView" classname="iih.ci.ord.ciorder.ciorderprn.view.OrdPrintToolView" dllname="iih.ci.ord"/>
+    <!--打印面板-->
+    <Clazz id="OrdPrintWorkspaceView" classname="iih.ci.ord.ciorder.ciorderprn.view.OrdPrintWorkspaceView" dllname="iih.ci.ord"/>
+  </Clazzes>
+  <States>
+  </States>
+  <Event>
+  </Event>
+  <Menu>
+    <!--长临-->
+    <Group>
+      <MenuItem ref="LongAction"/>
+      <MenuItem ref="TempAction"/>
+    </Group>
+    <Group>
+      <!--预览-->
+      <MenuItem ref="PreviewAction"/>
+      <!--打印-->
+      <MenuItem ref="PrintAction"/>
+      <!--调整-->
+      <MenuItem ref="AdjustAction"/>
+    </Group>
+    <Group>
+      <!--查询-->
+      <MenuItem ref="BrowseAction"/>
+      <!--清空-->
+      <MenuItem ref="ClearAction"/>
+      <!--设置-->
+      <MenuItem ref="SetupAction"/>
+    </Group>
+  </Menu>
+
+  <Content>
+    <XLayoutPanel>
+      <Top Width="86">
+        <Control ref="OrdPrintToolView"/>
+      </Top>
+      <Center>
+        <Control ref="OrdPrintWorkspaceView"/>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

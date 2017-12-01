@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <Clazz id="add_action" classname="xap.rui.engine.xactions.standard.AddAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="edit_action" classname="xap.rui.engine.xactions.standard.EditAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="delete_action" classname="xap.rui.engine.xactions.standard.DeleteAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="save_action" classname="xap.rui.engine.xactions.standard.SaveAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--<Clazz id="cancel_action" classname="xap.rui.engine.xactions.standard.CancelAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>-->
+
+    <Clazz id="goback_action" classname="xap.rui.engine.xactions.standard.GoBackAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--提交-->
+    <Clazz id="CiSubmitAction_action" classname="iih.ci.ord.ciorder.action.CiSubmitAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--取消提交-->
+    <Clazz id="CiCancelSubmitAction_action" classname="iih.ci.ord.ciorder.action.CiCancelSubmitAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--停止-->
+    <Clazz id="CiStopAction_action" classname="iih.ci.ord.ciorder.action.CiStopAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--作废-->
+    <Clazz id="CiBackAction_action" classname="iih.ci.ord.ciorder.action.CiBackAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--复制新增-->
+    <Clazz id="CiCopyAndAddAction_action" classname="iih.ci.ord.ciorder.action.CiCopyAndAddAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--刷新-->
+    <Clazz id="refresh_action" classname="xap.rui.engine.xactions.standard.RefreshAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--打印-->
+    <Clazz id="PrintAction" classname="iih.en.pv.entdiprove.actions.PrintAction" dllname="iih.en.pv">
+    </Clazz>
+    <!--另存为模板-->
+    <Clazz id="Saveas_action" classname="iih.ci.ord.ciorder.action.CiSaveasAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.RefreshStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--确认-->
+    <Clazz id="ConFirmAction" classname="iih.ci.ord.ciorder.action.ConFirmAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.OrdConfirmStateHandlr" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--取消-->
+    <Clazz id="CancelAction" classname="iih.ci.ord.ciorder.action.CancelAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.CancelStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <Clazz id="orderGroup" classname="xap.cli.sdk.controls.XLayoutControl" dllname="xap.cli.sdk"/>
+
+    <Clazz id="SearchText" classname="iih.ci.ord.ciorder.view.SearchControlView" dllname="iih.ci.ord"/>
+    <Clazz id="Button" classname="xap.cli.sdk.render.Items.XImageTextButton" dllname="xap.cli.sdk"/>
+    <Clazz id="VoiceButton" classname="xap.cli.sdk.render.Items.XImageTextButton" dllname="xap.cli.sdk"/>
+    <Clazz id="XRoundRender" classname="iih.ci.ord.ciorder.render.XRoundRender" dllname="iih.ci.ord"/>
+    <Clazz id="HelpView" classname="iih.ci.ord.doctorhelper.helperView" dllname="iih.ci.ord"/>
+
+    <!--控件-->
+    <Clazz id="orderPres_view" classname="iih.ci.ord.ciorder.cards.OrderPresView" dllname="iih.ci.ord"/>
+    <Clazz id="emrorderitem_view" classname="iih.ci.ord.ciorder.view.OrderItemView" dllname="iih.ci.ord"/>
+    <Clazz id="emrordercard_view" classname="iih.ci.ord.ciorder.view.OrderCardView" dllname="iih.ci.ord"/>
+
+    <!--医疗单容器-->
+    <Clazz id="NavControl" classname="xap.cli.sdk.controls.navbar.TabNavigatorControl" dllname="xap.cli.sdk"/>
+
+    <!--另存为医嘱模板消息发送-->
+    <Clazz id="OrTpmlSaveasEvent" classname="iih.bd.srv.srvortmpl.view.ortmplsaveas.OrTpmlSaveasEvent" dllname="iih.bd.srv"/>
+
+    <Clazz id="ClearCacheSettingApp" classname="iih.ci.ord.opemergency.setting.ClearCacheSettingApp" dllname="iih.ci.ord"/>
+  </Clazzes>
+  <!--用户个性化设置-->
+  <Setting>
+
+    <SettingItem ref="ClearCacheSettingApp"/>
+  </Setting>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+    <State old="NodeSelected" event="Add" new="Edit"/>
+    <State old="Init" event="SelectRow" new="RowSelected"/>
+    <State old="Init" event="SelectNode" new="NodeSelected"/>
+    <State old="Init" event="ShowTwoTreeForm" new="Init"/>
+    <State old="NodeSelected" event="SelectRow" new="RowSelected"/>
+    <State old="RowSelected" event="Add" new="Edit"/>
+    <State old="RowSelected" event="Edit" new="Edit"/>
+    <State old="RowSelected" event="View" new="View"/>
+    <State old="RowSelected" event="SelectNode" new="NodeSelected"/>
+    <State old="Edit" event="Save" new="Init"/>
+    <State old="Init" event="Edit" new="Edit"/>
+    <State old="Edit" event="SaveSuccess" new="Init"/>
+    <State old="Edit" event="SaveAdd" new="Init"/>
+    <State old="Edit" event="Cancel" new="RowSelected"/>
+    <State old="View" event="GoBack" new="RowSelected"/>
+    <State old="Edit" event="GoBack" new="Init"/>
+  </States>
+  <Menu>
+    <!--提交--><!--
+    <MenuItem ref="CiSubmitAction_action"/>
+    --><!--取消提交--><!--
+    <MenuItem ref="CiCancelSubmitAction_action"/>
+    --><!--作废--><!--
+    <MenuItem ref="CiBackAction_action"/>
+    --><!--停止--><!--
+    <MenuItem ref="CiStopAction_action"/>
+    --><!--复制新增--><!--
+    <MenuItem ref="CiCopyAndAddAction_action"/>
+    --><!--删除--><!--
+    <MenuItem ref="delete_action"/>
+    --><!--刷新--><!--
+    <MenuItem ref="refresh_action"/>
+    --><!-- 打印 --><!--
+    --><!--<MenuItem ref="PrintAction"/>--><!--
+    --><!--确认--><!--
+    <MenuItem ref ="ConFirmAction" shortCut="F10"/>
+    --><!--取消--><!--
+    <MenuItem ref ="CancelAction"/>-->
+    <!--提交-->
+    <MenuItem ref="CiSubmitAction_action"  shortCut="F7"/>
+    <!--取消提交-->
+    <MenuItem ref="CiCancelSubmitAction_action" shortCut="Esc"/>
+    <!--作废-->
+    <MenuItem ref="CiBackAction_action" shortCut="F4"/>
+    <!--停止-->
+    <MenuItem ref="CiStopAction_action" shortCut="Alt+T"/>
+    <!--复制新增-->
+    <MenuItem ref="CiCopyAndAddAction_action"  shortCut="Alt+c"/>
+    <!--删除-->
+    <MenuItem ref="delete_action"  shortCut="Ctrl+Delete"/>
+    <!--刷新-->
+    <MenuItem ref="refresh_action"  shortCut="F5"/>
+    <!--另存为-->
+    <MenuItem ref="Saveas_action" shortCut="Ctrl+S"/>
+  </Menu>
+  <RightMenu>
+    <!--提交-->
+    <MenuItem ref="CiSubmitAction_action"/>
+    <!--取消提交-->
+    <MenuItem ref="CiCancelSubmitAction_action"/>
+    <!--作废-->
+    <MenuItem ref="CiBackAction_action"/>
+    <!--停止-->
+    <MenuItem ref="CiStopAction_action"/>
+    <!--复制新增-->
+    <MenuItem ref="CiCopyAndAddAction_action"/>
+    <!--删除-->
+    <MenuItem ref="delete_action"/>
+    <!--刷新-->
+    <MenuItem ref="refresh_action"/>
+    <!--另存为-->
+    <MenuItem ref="Saveas_action"/>
+  </RightMenu>
+  <NavControl ref="NavControl" width="32" height="200" NavFormWith="700"/>
+  <OrderGroup ref="orderGroup" x="767" y="3" width="500" height="32"/>
+  <SearchText ref="SearchText"  width="212" height="24"/>
+  <OrderSevriceButton ref="Button" width="80" height="20"/>
+  <OrderVoiceButton ref="VoiceButton" width="80" height="20"/>
+  <Content>
+    <XLayoutPanel>
+      <Center Padding="4,4,0,4">
+        <Control ref="emrorderitem_view"/>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+
+</Funclet>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <!--科室确认-->
+   <!--<Clazz id="consdepres" classname="iih.ci.ord.ciconsresponse.action.ConsDepResAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciconsresponse.statehandler.SaveStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>--> 
+     <Clazz id="ConsQueryView" classname="iih.ci.ord.ciordcons.view.ConsQueryView" dllname="iih.ci.ord"/>
+    <Clazz id="ConsGridView" classname="iih.ci.ord.ciordcons.view.ConsReponseGridView" dllname="iih.ci.ord"/>
+    <Clazz id="ConsCardView" classname="iih.ci.ord.ciordcons.view.ConsCardView" dllname="iih.ci.ord"/>
+ 
+ 
+
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+  <!--<Menu>
+    --><!--<MenuItem ref="consdepres"/>--><!--
+  </Menu>-->
+ 
+  <Content>
+    <XLayoutPanel>
+      <Top Width="50">
+        <Control ref="ConsQueryView"/>
+      </Top>
+      <Left Width="600">
+        <Control ref="ConsGridView"/>
+      </Left>
+      <Center>
+        <Control ref="ConsCardView"/>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+ 
+</Funclet>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+
+    <Clazz id="cividuo_action" classname="iih.ci.ord.ciorder.action.CiVideoAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--刷新-->
+    <Clazz id="refresh_action" classname="xap.rui.engine.xactions.standard.RefreshAction" dllname="xap.rui.engine">
+    </Clazz>
+    <Clazz id="CiObsTreeView" classname="iih.ci.ord.ciobs.view.ObsTree" dllname="iih.ci.ord" singleton="true"/>
+    <Clazz id="CiRptObsTreeDateView" classname="iih.ci.ord.ciobs.view.ObsDateTree" dllname="iih.ci.ord" singleton="true"/>
+      <Clazz id="CIRptObsView" classname="iih.ci.ord.ciobs.view.CIRptObsView" dllname="iih.ci.ord" singleton="true"/>
+    <Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init" />
+	</States>
+
+  <Menu>
+
+      <MenuItem ref="cividuo_action"/>
+      <MenuItem ref="refresh_action"/>
+
+  </Menu>
+  <Content>
+     
+          <!--<SplitContainer Orientation="Vertical" SplitterDistance="33">
+            <SplitterPanel>
+              <XTabPanelControl alignment="Top" ref="tablayout">
+                <XTabPages>
+                  <XTabPage id="1" text="分类" visible="true" lazy="false">
+                    <Center Padding="4,4,4,4">
+                      <Control ref="CiObsTreeView" />
+                    </Center>
+                  </XTabPage>
+                  <XTabPage id="2" text="日期" visible="true" lazy="false">
+                    <Center Padding="4,4,4,4">
+                      <Control ref="CiRptObsTreeDateView" />
+                    </Center>
+                  </XTabPage>
+                </XTabPages>
+              </XTabPanelControl>
+            </SplitterPanel>
+            <SplitterPanel>
+              <Control ref="CIRptObsView" />
+            </SplitterPanel>
+          </SplitContainer>-->
+
+    <XLayoutPanel>
+      <Left Width="266">
+        <XLayoutPanel>
+          <Center Padding="4,4,4,4">
+            <XTabPanelControl alignment="Top" ref="tablayout">
+              <XTabPages>
+                <XTabPage id="1" text="分类" visible="true" lazy="false">
+                  <Control ref="CiObsTreeView" />
+                </XTabPage>
+                <XTabPage id="2" text="日期" visible="true" lazy="false">
+                  <Control ref="CiRptObsTreeDateView" />
+                </XTabPage>
+              </XTabPages>
+            </XTabPanelControl>
+          </Center>
+        </XLayoutPanel>
+      </Left>
+
+      <Center >
+        <XLayoutPanel>
+          <Center Padding="4,4,4,4">
+            <Control ref="CIRptObsView" />
+          </Center>
+        </XLayoutPanel>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+  
+</Funclet>

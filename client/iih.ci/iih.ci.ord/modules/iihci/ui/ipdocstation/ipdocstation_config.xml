@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+	<Clazzes>
+    <!--面板控制-->
+		<Clazz id="panelmanager" classname="xap.rui.bizcontrol.workstation.layout.PanelSwitchManager" dllname="xap.rui.bizcontrol"/>
+
+    
+    <!--左侧伸缩控件-->
+    <Clazz id="NavBarControl" classname="xap.cli.sdk.controls.navbar.NavBarControl" dllname="xap.cli.sdk"/>
+
+    <!--患者列表-->
+    <Clazz id="patientTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+    <!--患者分类tree（我的患者、全科患者等）-->
+    <Clazz id="treeDataProvider" classname="iih.en.pv.pati.provider.TreeDataProvider" dllname="iih.en.pv"/>
+    <!--点击Banner图标展现【我的患者】列表界面-->
+    <Clazz id="drOwnPatListView" classname="iih.en.pv.pati.view.DrOwnPatListView" dllname="iih.en.pv"/>
+    <!--模板管理-->
+    <Clazz id="tempmanagerTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+    <!--工作管理-->
+    <Clazz id="worksmanagerTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+    <!--综合查询-->
+    <Clazz id="comprehensivequeryTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+    <!--消息-->
+    <Clazz id="messageTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+
+    <!--患者卡片视图-->
+    <Clazz id="patientSmallCard_View" classname="xap.rui.bizcontrol.workstation.view.PatientSmallCardView" dllname="xap.rui.bizcontrol"/>
+
+    
+    <!--患者信息显示banner-->
+    <Clazz id="banner2" classname="xap.rui.bizcontrol.bannerview.banner" dllname="xap.rui.bizcontrol" ModelStyle ="@@@@AA1000000005U817"  singleton="true"/>
+
+    <!--患者就诊临床信息导航控件-->
+    <Clazz id="naviTree" classname="xap.rui.bizcontrol.workstation.control.MenuTreeNavigateControl" dllname="xap.rui.bizcontrol" singleton="true"/>
+
+    <!--患者就诊临床信息控件-->
+    <Clazz id="clinicalRecordControl" classname="xap.rui.bizcontrol.workstation.control.ClinicalRecordControl" dllname="xap.rui.bizcontrol" singleton="true"/>
+ 	</Clazzes>
+
+  <DataProviders>
+    <Provider ref="treeDataProvider" consumer="patientTree_View"/>
+  </DataProviders>
+
+	<Content>
+		<PanelManager ref="panelmanager">
+			<ManagedPanels>
+        <!--住院医生站视图-->
+				<ManagedPanel id="patientlist_managedpanel" lazy="false">
+          <XLayoutPanel>
+            <Left Width="248">
+              <NavBarControl ref="NavBarControl">
+                <MenuItem Caption="患者列表">
+                  <Control ref="patientTree_View"/>
+                  <Icon NormalIcon="患者列表-01.png" SelectedIcon="患者列表-02.png" TitleIcon="患者列表-03.png"/>
+                </MenuItem>
+                <MenuItem Caption="模板管理">
+                  <Control ref="tempmanagerTree_View"/>
+                  <Icon NormalIcon="模板管理-01.png" SelectedIcon="模板管理-02.png" TitleIcon="模板管理-03.png"/>
+                </MenuItem>
+                <MenuItem Caption="工作管理">
+                  <Control ref="worksmanagerTree_View"/>
+                  <Icon NormalIcon="工作管理-01.png" SelectedIcon="工作管理-02.png" TitleIcon="工作管理-03.png"/>
+                </MenuItem>
+                <MenuItem Caption="综合查询">
+                  <Control ref="comprehensivequeryTree_View"/>
+                  <Icon NormalIcon="综合查询-01.png" SelectedIcon="综合查询-02.png" TitleIcon="综合查询-03.png"/>
+                </MenuItem>
+                <MenuItem Caption="消息">
+                  <Control ref="messageTree_View"/>
+                  <Icon NormalIcon="消息-01.png" SelectedIcon="消息-02.png" TitleIcon="消息-03.png"/>
+                </MenuItem>
+                <MenuItem Caption="高级设置">
+                  <Control ref="configTree_View"/>
+                  <Icon NormalIcon="高级设置-01.png" SelectedIcon="高级设置-02.png" TitleIcon="高级设置-03.png"/>
+                </MenuItem>
+              </NavBarControl>
+            </Left>
+            <Center>
+              <Control ref="patientSmallCard_View"/>
+            </Center>
+          </XLayoutPanel>
+				</ManagedPanel>
+        <!--患者住院临床信息视图-->
+				<ManagedPanel id="clinicalrecord_managedpanel" lazy="false">
+          <XLayoutPanel>
+            <Top Width="42">
+              <Control ref="banner2"/>
+            </Top>
+            <Left Width="128">
+              <Control ref="naviTree"/>
+            </Left>
+            <Center>
+              <Control ref="clinicalRecordControl"/>
+            </Center>
+          </XLayoutPanel>
+				</ManagedPanel>
+			</ManagedPanels>
+		</PanelManager>
+	</Content>
+</Funclet>

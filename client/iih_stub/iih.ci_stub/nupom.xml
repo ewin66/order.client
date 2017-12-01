@@ -1,0 +1,9 @@
+<project>
+  <artifactId>iih.ci_stub</artifactId>
+  <version>0.2.5-b1</version>
+  <ProjectReference>
+    <RName>iih.bd_stub</RName>
+    <RName>iih.en_stub</RName>
+    <RName>iih.pi_stub</RName>
+  </ProjectReference>
+</project>

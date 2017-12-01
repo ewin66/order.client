@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Clazz id="LayoutPanelManager" classname="xap.rui.engine.xlayouts.LayoutPanelManager" dllname="xap.rui.engine" singleton="true">
+      <StateHandler classname="iih.ci.ord.opemergency.assi.handler.DefaultStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <Clazz id="tablayout1" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine" singleton="true"/>
+    <Clazz id="sys_OpOrderTemplateTreeViewPithy" classname="iih.ci.ord.opemergency.assi.OrdertemplatePithy.view.OpOrderTemplateTreeViewPithy" dllname="iih.ci.ord"/>
+    <Clazz id="obs_OpOrderTemplateTreeViewPithy" classname="iih.ci.ord.opemergency.assi.OrdertemplatePithy.view.OpOrderTemplateTreeViewPithy" dllname="iih.ci.ord"/>
+    <Clazz id="lab_OpOrderTemplateTreeViewPithy" classname="iih.ci.ord.opemergency.assi.OrdertemplatePithy.view.OpOrderTemplateTreeViewPithy" dllname="iih.ci.ord"/>
+    <Clazz id="treate_OpOrderTemplateTreeViewPithy" classname="iih.ci.ord.opemergency.assi.OrdertemplatePithy.view.OpOrderTemplateTreeViewPithy" dllname="iih.ci.ord"/>
+    <Clazz id="westdrug_OpOrderTemplateTreeViewPithy" classname="iih.ci.ord.opemergency.assi.OrdertemplatePithy.view.OpOrderTemplateTreeViewPithy" dllname="iih.ci.ord"/>
+      <!--按钮-->
+    <Clazz id="OrderHelpButten" classname="iih.ci.ord.opemergency.assi.OrdertemplatePithy.OrderHelpButten" dllname="iih.ci.ord"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load"  new="Init"/>
+    <State old="Init" event="SelectNode" new="NodeSelected"/>
+  </States>
+  <Events />
+  <Content>
+    <XLayoutPanel>
+      <Center Padding="0,4,0,0">
+        <XTabPanelControl alignment="Top" ref="tablayout1">
+          <XTabPages>
+            <XTabPage id="obsOpTemplateFrame" text="检查模板" visible="true" lazy="true">
+              <Control ref="obs_OpOrderTemplateTreeViewPithy"/>
+            </XTabPage>
+            <XTabPage id="labOpTemplateFrame" text="检验模板" visible="true" lazy="true">
+              <Control ref="lab_OpOrderTemplateTreeViewPithy"/>
+            </XTabPage>
+            <XTabPage id="treateOpTemplateFrame" text="诊疗模板" visible="true" lazy="true">
+              <Control ref="treate_OpOrderTemplateTreeViewPithy"/>
+            </XTabPage>
+            <XTabPage id="westdrugOpTemplateFrame" text="西成药模板" visible="true" lazy="true">
+              <Control ref="westdrug_OpOrderTemplateTreeViewPithy"/>
+            </XTabPage>
+            <XTabPage id="sysOpTemplateFrame" text="综合模板" visible="true" lazy="true">
+              <Control ref="sys_OpOrderTemplateTreeViewPithy"/>
+            </XTabPage>
+          </XTabPages>
+        </XTabPanelControl>
+      </Center>
+      <Bottom Width="46">
+        <Control ref="OrderHelpButten" />
+      </Bottom>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <Clazz id="SaveAction" classname="iih.en.pv.entdiprove.actions.SaveAction" dllname="iih.en.pv">
+    </Clazz>
+    <Clazz id="PrintAction" classname="iih.en.pv.entdiprove.actions.PrintAction" dllname="iih.en.pv">
+    </Clazz>
+
+    <!--控件-->
+    <Clazz id="orderGroup" classname="xap.cli.sdk.controls.XLayoutControl" dllname="xap.cli.sdk"/>
+    <Clazz id="smartSearchText" classname="iih.ci.ord.orsrvref.view.SmartSearchControl" FormId="20160507093349982BLX" Code_entp="10" dllname="iih.ci.ord"/>
+    <Clazz id="Button" classname="xap.cli.sdk.render.Items.XImageTextButton" dllname="xap.cli.sdk"/>
+    <!--<Clazz id="smartSrvQueryControl" classname="iih.ci.ord.ciorder.viewSearch.SmartSrvQueryControl" dllname="iih.ci.ord"/>-->
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+  <Menu>
+    <MenuItem ref="SaveAction"/>
+    <MenuItem ref="PrintAction"/>
+    
+  </Menu>
+  <OrderGroup ref="orderGroup" x="647" y="8" width="500" height="30"/>
+  <SearchText ref="smartSearchText"  width="212" height="24"/>
+  <OrderSevriceButton ref="Button" width="80" height="20"/>
+  <Content>
+    <BorderLayoutPanel>
+      <Center>
+       
+      </Center>
+    </BorderLayoutPanel>
+  </Content>
+</Funclet>

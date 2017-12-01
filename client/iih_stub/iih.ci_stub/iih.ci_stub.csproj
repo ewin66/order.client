@@ -1,0 +1,1436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CBD7E2C-EF7B-48E9-A6F1-95BE814A896F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iih.ci</RootNamespace>
+    <AssemblyName>iih.ci_stub</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\xapclient\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\xapclient\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\xapclient\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\xapclient\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iih.bd_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.bd_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.en_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.en_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.pi_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.pi_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="iih.sc_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\iih.sc_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xap.dp_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.dp_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.mw.core, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.mw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.mw.func, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="xap.mw.serviceframework, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.mw.serviceframework.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui.appfw, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui.appfw.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.rui_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.rui_stub.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.sys.basebiz, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.sys.basebiz.dll</HintPath>
+    </Reference>
+    <Reference Include="xap.sys_stub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\xapclient\xap.sys_stub.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="iih.ci.ciet\cievent\d\CiEventDO.cs" />
+    <Compile Include="iih.ci.ciet\cievent\i\ICieventCrudService.cs" />
+    <Compile Include="iih.ci.ciet\cievent\s\ICieventCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.diag\cidiag\d\CidiagAggDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\cidiag\d\CiDiagDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\cidiag\d\CiDiagItemDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\cidiag\i\ICidiagCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\cidiag\i\ICiDiagItemDOCrudService.cs" />
+    <Compile Include="iih.ci.diag\cidiag\i\ICidiagMDOCrudService.cs" />
+    <Compile Include="iih.ci.diag\cidiag\s\ICidiagCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\cidiag\s\ICiDiagItemDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.diag\cidiag\s\ICidiagMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.diag\dto\didefdto\d\DidefDto.cs" />
+    <Compile Include="iih.ci.diag\dto\d\Cididtozy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\dto\d\Cidixy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\dto\d\DIDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\dto\d\DidtoAggDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\dto\d\ENTypeDTO.cs" />
+    <Compile Include="iih.ci.diag\dto\d\Headdto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.diag\dto\judgedideletedto\d\Judgedideletedto.cs" />
+    <Compile Include="iih.ci.diag\i\ICidiagMaintainService.cs" />
+    <Compile Include="iih.ci.diag\i\ICidiagQryService.cs" />
+    <Compile Include="iih.ci.diag\s\ICidiagMaintainServiceImpl.cs" />
+    <Compile Include="iih.ci.diag\s\ICidiagQryServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\bl2mrfp\d\CiMrFpBlDO.cs" />
+    <Compile Include="iih.ci.mrfp\bl2mrfp\i\IBl2mrfpCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\bl2mrfp\s\IBl2mrfpCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\cimrfp\d\CiMrFpDO.cs" />
+    <Compile Include="iih.ci.mrfp\cimrfp\i\ICimrfpCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\cimrfp\s\ICimrfpCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\d\CiMrFpDiDO.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\d\CiMrFpXydiDO.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\d\CiMrfpZydiDO.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\d\Di2mrfpAggDO.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\i\ICiMrFpXydiDOCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\i\ICiMrfpZydiDOCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\i\IDi2mrfpCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\i\IDi2mrfpMDOCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\s\ICiMrFpXydiDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\s\ICiMrfpZydiDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\s\IDi2mrfpCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\di2mrfp\s\IDi2mrfpMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\dto\i\ICiMrFpService.cs" />
+    <Compile Include="iih.ci.mrfp\dto\patinfo2mrfpdto\d\PatInfo2MrfpDTO.cs" />
+    <Compile Include="iih.ci.mrfp\dto\s\ICiMrFpServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\hospitalfirstpagedto\d\HospitalFirstPageDTO.cs" />
+    <Compile Include="iih.ci.mrfp\other2mrfp\d\CiMrfpIntenCareDO.cs" />
+    <Compile Include="iih.ci.mrfp\other2mrfp\d\CiMrFpOtherDO.cs" />
+    <Compile Include="iih.ci.mrfp\other2mrfp\d\Other2mrfpAggDO.cs" />
+    <Compile Include="iih.ci.mrfp\other2mrfp\i\ICiMrfpIntenCareDOCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\other2mrfp\i\IOther2mrfpCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\other2mrfp\i\IOther2mrfpMDOCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\other2mrfp\s\ICiMrfpIntenCareDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\other2mrfp\s\IOther2mrfpCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\other2mrfp\s\IOther2mrfpMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\pat2mrfp\d\CiMrFpPatDO.cs" />
+    <Compile Include="iih.ci.mrfp\pat2mrfp\i\IPat2mrfpCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\pat2mrfp\s\IPat2mrfpCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrfp\sug2mrfp\d\CiMrFpSugDO.cs" />
+    <Compile Include="iih.ci.mrfp\sug2mrfp\i\ISug2mrfpCrudService.cs" />
+    <Compile Include="iih.ci.mrfp\sug2mrfp\s\ISug2mrfpCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\amrapply\d\AmrApplyDO.cs" />
+    <Compile Include="iih.ci.mrqc\amrapply\i\IAmrapplyCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\amrapply\s\IAmrapplyCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\autoqcdto\d\AutoQcDTO.cs" />
+    <Compile Include="iih.ci.mrqc\autoqc\i\IAutoQcService.cs" />
+    <Compile Include="iih.ci.mrqc\autoqc\s\IAutoQcServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\cidiagdto\d\Cidiagdto.cs" />
+    <Compile Include="iih.ci.mrqc\cimrrecallentdto\d\CiMrRecallEntDTO.cs" />
+    <Compile Include="iih.ci.mrqc\cimrrecallentdto\i\ICiMrRecallEntRService.cs" />
+    <Compile Include="iih.ci.mrqc\cimrrecallentdto\s\ICiMrRecallEntRServicelmpl.cs" />
+    <Compile Include="iih.ci.mrqc\cimrrecallresultdto\d\CiMrRecallResultDTO.cs" />
+    <Compile Include="iih.ci.mrqc\cimrrecallresultdto\i\ICiMrRecallResultService.cs" />
+    <Compile Include="iih.ci.mrqc\cimrrecallresultdto\s\ICiMrRecallResultServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\cimrrecall\d\CiMrRecallDO.cs" />
+    <Compile Include="iih.ci.mrqc\cimrrecall\i\ICimrrecallCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\cimrrecall\s\ICimrrecallCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\concerndep\d\ConcernDepDO.cs" />
+    <Compile Include="iih.ci.mrqc\concerndep\i\IConcerndepCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\concerndep\s\IConcerndepCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\concernemp\d\ConcernEmpDO.cs" />
+    <Compile Include="iih.ci.mrqc\concernemp\i\IConcernempCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\concernemp\s\IConcernempCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\divide\d\DivideDO.cs" />
+    <Compile Include="iih.ci.mrqc\divide\i\IDivideCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\divide\s\IDivideCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\itmdto\d\ItmDTO.cs" />
+    <Compile Include="iih.ci.mrqc\itmdto\d\ItmFstDTO.cs" />
+    <Compile Include="iih.ci.mrqc\i\ICiMrQcParamService.cs" />
+    <Compile Include="iih.ci.mrqc\i\IMrqcMaintainService.cs" />
+    <Compile Include="iih.ci.mrqc\i\IMrqcQryService.cs" />
+    <Compile Include="iih.ci.mrqc\mrborrowapply\d\AmrBorrowApplyDO.cs" />
+    <Compile Include="iih.ci.mrqc\mrborrowapply\i\IMrborrowapplyCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\mrborrowapply\s\IMrborrowapplyCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\mrtask\d\MrTaskDO.cs" />
+    <Compile Include="iih.ci.mrqc\mrtask\i\IMrtaskCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\mrtask\s\IMrtaskCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\outqapatlist\d\OutQaPatListDTO.cs" />
+    <Compile Include="iih.ci.mrqc\outqapatlist\i\IOutQaPatListQryService.cs" />
+    <Compile Include="iih.ci.mrqc\outqapatlist\s\IOutQaPatListQryServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\qaflt\d\QaFltDO.cs" />
+    <Compile Include="iih.ci.mrqc\qaflt\d\QaFltDTO.cs" />
+    <Compile Include="iih.ci.mrqc\qaflt\i\IQafltCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\qaflt\s\IQafltCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\qanoticedto\d\QaNoticeDTO.cs" />
+    <Compile Include="iih.ci.mrqc\qapatlist\d\QaPatListDTO.cs" />
+    <Compile Include="iih.ci.mrqc\qapatlist\i\IMrManagePatQryService.cs" />
+    <Compile Include="iih.ci.mrqc\qapatlist\i\IQaProcessQryService.cs" />
+    <Compile Include="iih.ci.mrqc\qapatlist\s\IMrManagePatQryServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\qapatlist\s\IQaProcessQryServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\qarecorddto\d\QaRecordDTO.cs" />
+    <Compile Include="iih.ci.mrqc\qarecorddto\i\IQaProcessRecordQryService.cs" />
+    <Compile Include="iih.ci.mrqc\qarecorddto\s\IQaProcessRecordQryServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\qared\d\QaRecordDO.cs" />
+    <Compile Include="iih.ci.mrqc\qared\i\IQaCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\qared\s\IQaCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\qascoredto\d\QaScoreDTO.cs" />
+    <Compile Include="iih.ci.mrqc\qascoredto\i\IQaScoreDtoQryService.cs" />
+    <Compile Include="iih.ci.mrqc\qascoredto\s\IQaScoreDtoQryServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\qcreport\d\QcReportDO.cs" />
+    <Compile Include="iih.ci.mrqc\qcreport\d\QcReportGrpDO.cs" />
+    <Compile Include="iih.ci.mrqc\qcreport\i\IQcreportCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\qcreport\i\IQcreportgrpCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\qcreport\s\IQcreportCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\qcreport\s\IQcreportgrpCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\qrydto\d\OutQaPatQryDTO.cs" />
+    <Compile Include="iih.ci.mrqc\revisionnotice\d\RevisionNoticeDO.cs" />
+    <Compile Include="iih.ci.mrqc\revisionnotice\i\IRevisionnoticeCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\revisionnotice\s\IRevisionnoticeCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\scoreitmdto\d\ScoreItmDto.cs" />
+    <Compile Include="iih.ci.mrqc\scoreitmdto\i\IScoreItmDtoService.cs" />
+    <Compile Include="iih.ci.mrqc\scoreitmdto\s\IScoreItmDtoServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\serviceext\i\IQcNoticeTraceQryService.cs" />
+    <Compile Include="iih.ci.mrqc\serviceext\i\IQcServiceExt.cs" />
+    <Compile Include="iih.ci.mrqc\serviceext\s\IQcNoticeTraceQryServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\serviceext\s\IQcServiceExtImpl.cs" />
+    <Compile Include="iih.ci.mrqc\spotcheck\d\CiAmrSpotCheckRecordDO.cs" />
+    <Compile Include="iih.ci.mrqc\spotcheck\i\ISpotcheckCrudService.cs" />
+    <Compile Include="iih.ci.mrqc\spotcheck\s\ISpotcheckCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\s\ICiMrQcParamServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\s\IMrqcMaintainServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqc\s\IMrqcQryServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqry\mrtplusagerate\d\MrTplUsageRateDTO.cs" />
+    <Compile Include="iih.ci.mrqry\mrtplusagerate\i\IMrTplUsageRateService.cs" />
+    <Compile Include="iih.ci.mrqry\mrtplusagerate\s\IMrTplUsageRateServiceImpl.cs" />
+    <Compile Include="iih.ci.mrqry\mrusagerate\d\MrUsageRateDTO.cs" />
+    <Compile Include="iih.ci.mrqry\mrusagerate\d\MrUsageRateQryDTO.cs" />
+    <Compile Include="iih.ci.mr\assinfodto\d\AssInfoDTO.cs" />
+    <Compile Include="iih.ci.mr\auditdto\d\AuditDTO.cs" />
+    <Compile Include="iih.ci.mr\ciamr\d\AMrDO.cs" />
+    <Compile Include="iih.ci.mr\ciamr\i\ICiamrCrudService.cs" />
+    <Compile Include="iih.ci.mr\ciamr\s\ICiamrCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cideathcert\d\CideathcertDO.cs" />
+    <Compile Include="iih.ci.mr\cideathcert\i\ICideathcertCrudService.cs" />
+    <Compile Include="iih.ci.mr\cideathcert\s\ICideathcertCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrelede\d\CiMrEleDeDO.cs" />
+    <Compile Include="iih.ci.mr\cimrelede\i\ICimreledeCrudService.cs" />
+    <Compile Include="iih.ci.mr\cimrelede\s\ICimreledeCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimreledg\d\CiMrEleDgDO.cs" />
+    <Compile Include="iih.ci.mr\cimreledg\i\ICiemreledgCrudService.cs" />
+    <Compile Include="iih.ci.mr\cimreledg\s\ICiemreledgCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrfs\d\CiMrFsDO.cs" />
+    <Compile Include="iih.ci.mr\cimrfs\i\ICimrfsCrudService.cs" />
+    <Compile Include="iih.ci.mr\cimrfs\s\ICimrfsCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrfs\s\ICimrPrintServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimripbasedto\d\CiMrIPBaseDTO.cs" />
+    <Compile Include="iih.ci.mr\cimrpatinfodto\d\CiMrPatInfoDTO.cs" />
+    <Compile Include="iih.ci.mr\cimrrs\d\CiMrRsDO.cs" />
+    <Compile Include="iih.ci.mr\cimrrs\i\ICimrrsCrudService.cs" />
+    <Compile Include="iih.ci.mr\cimrrs\s\ICimrrsCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrsign\d\MrSginDTO.cs" />
+    <Compile Include="iih.ci.mr\cimrsign\i\ICiMrSignService.cs" />
+    <Compile Include="iih.ci.mr\cimrsign\s\ICiMrSignServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\CiMrHisDataDTO.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\CimrvtAggDO.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\CiMrVtDO.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\CiMrVtEvDO.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\CiMrVtItmDO.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\PatDTO.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\Patparam.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\PatSignsDTO.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\VitalSignSave.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\d\VitalSignsDTO.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\i\ICimrpatSignsService.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\i\ICimrvtCrudService.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\i\ICiMrVtEvDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\i\ICiMrVtItmDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\i\ICimrvtMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\i\ICiVitalSignsService.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\i\IUdidocServiceExt.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\i\VitalSignSaveService.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\s\CiVitalSignsServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\s\ICimrpatSignsServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\s\ICimrvtCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\s\ICiMrVtEvDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\s\ICiMrVtItmDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\s\ICimrvtMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\s\IUdidocServiceExtImpl.cs" />
+    <Compile Include="iih.ci.mr\cimrvt\s\VitalSignSaveServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimr\d\CiMrDO.cs" />
+    <Compile Include="iih.ci.mr\cimr\i\ICiemrCrudService.cs" />
+    <Compile Include="iih.ci.mr\cimrfs\i\ICimrPrintService.cs" />
+    <Compile Include="iih.ci.mr\cimr\i\ICimrDoPrintService.cs" />
+    <Compile Include="iih.ci.mr\cimr\s\ICiemrCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimr\s\ICimrDoPrintServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\cimr\udi\MrConst.cs" />
+    <Compile Include="iih.ci.mr\diainfodto\d\DiaInfoDTO.cs" />
+    <Compile Include="iih.ci.mr\i\ICiMrOutQryServices.cs" />
+    <Compile Include="iih.ci.mr\i\ICiMrParamService.cs" />
+    <Compile Include="iih.ci.mr\i\ICiMrStateUpdateService.cs" />
+    <Compile Include="iih.ci.mr\i\ICiOrdMrService.cs" />
+    <Compile Include="iih.ci.mr\i\IOPMrService.cs" />
+    <Compile Include="iih.ci.mr\knowledgetype\d\Attribute.cs" />
+    <Compile Include="iih.ci.mr\knowledgetype\d\KnowledgeTypeDO.cs" />
+    <Compile Include="iih.ci.mr\knowledgetype\i\IKnowledgetypeCrudService.cs" />
+    <Compile Include="iih.ci.mr\knowledgetype\s\IKnowledgetypeCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\knowledge\d\KnowledgeDO.cs" />
+    <Compile Include="iih.ci.mr\knowledge\d\Knowledgedto.cs" />
+    <Compile Include="iih.ci.mr\knowledge\i\IKnowledgeCrudService.cs" />
+    <Compile Include="iih.ci.mr\knowledge\i\IKnowledgeExtCrudService.cs" />
+    <Compile Include="iih.ci.mr\knowledge\s\IKnowledgeCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\knowledge\s\IKnowledgeExtCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\meethostdto\d\MeetHostDTO.cs" />
+    <Compile Include="iih.ci.mr\meetpartdto\d\MeetPartDTO.cs" />
+    <Compile Include="iih.ci.mr\mrassist\d\MrAssistObject.cs" />
+    <Compile Include="iih.ci.mr\mrassist\pridef\assisttype.cs" />
+    <Compile Include="iih.ci.mr\mraudit\i\IMrAuitExt.cs" />
+    <Compile Include="iih.ci.mr\mraudit\s\IMrAuitExtImpl.cs" />
+    <Compile Include="iih.ci.mr\mrdocrefvalue\d\MrDocRefValueDO.cs" />
+    <Compile Include="iih.ci.mr\mrdocrefvalue\i\IMrdocrefvalueCrudService.cs" />
+    <Compile Include="iih.ci.mr\mrdocrefvalue\s\IMrdocrefvalueCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\mrfs\d\MrfsDTO.cs" />
+    <Compile Include="iih.ci.mr\mrlogitm\d\CiMrLogItmDO.cs" />
+    <Compile Include="iih.ci.mr\mrlogitm\i\IMrlogitmCrudService.cs" />
+    <Compile Include="iih.ci.mr\mrlogitm\s\IMrlogitmCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\mrlog\d\CiMrLogDO.cs" />
+    <Compile Include="iih.ci.mr\mrlog\i\ICimrlogCrudService.cs" />
+    <Compile Include="iih.ci.mr\mrlog\s\ICimrlogCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\mrpsndto\d\MrPsnDTO.cs" />
+    <Compile Include="iih.ci.mr\mrpsndto\i\IMrPsnDtoService.cs" />
+    <Compile Include="iih.ci.mr\mrpsndto\s\IMrPsnDtoServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\mrserviceext\i\IMrServiceExt.cs" />
+    <Compile Include="iih.ci.mr\mrserviceext\s\IMrServiceExtImpl.cs" />
+    <Compile Include="iih.ci.mr\mrsign\d\CiMrSignDO.cs" />
+    <Compile Include="iih.ci.mr\mrsign\i\IMrsignCrudService.cs" />
+    <Compile Include="iih.ci.mr\mrsign\s\IMrsignCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nurinfodto\d\NurInfoDTO.cs" />
+    <Compile Include="iih.ci.mr\nu\adl\d\ADLDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\adl\i\IAdlCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\adl\s\IAdlCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\admissionnursingassessment\d\AdmissionNursingAssessmentDO.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\admissionnursingassessment\i\IAdmissionnursingassessmentCrudService.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\admissionnursingassessment\s\IAdmissionnursingassessmentCrudServiceImpl.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\chidrenass\d\ChidrenassAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\chidrenass\d\ChildrenInAsseDO.cs" />
+    <Compile Include="iih.ci.mr\nu\chidrenass\d\ChildrenInAsseNurRecordDO.cs" />
+    <Compile Include="iih.ci.mr\nu\chidrenass\i\IChidrenassCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\chidrenass\i\IChidrenassMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\chidrenass\i\IChildrenInAsseNurRecordDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\chidrenass\s\IChidrenassCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\chidrenass\s\IChidrenassMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\chidrenass\s\IChildrenInAsseNurRecordDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\criticalillrec\d\CriticalillDO.cs" />
+    <Compile Include="iih.ci.mr\nu\criticalillrec\d\CriticalillrecAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\criticalillrec\d\CriticalillrecDO.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\criticalillrec\i\ICriticalillrecCrudService.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\criticalillrec\i\ICriticalillRecDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\criticalillrec\i\ICriticalillrecMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\criticalillrec\s\ICriticalillrecCrudServiceImpl.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\criticalillrec\s\ICriticalillRecDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\criticalillrec\s\ICriticalillrecMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\datacomparison\d\DataComparisonDO.cs" />
+    <Compile Include="iih.ci.mr\nu\datacomparison\i\IDatacomparisonCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\datacomparison\s\IDatacomparisonCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\dto\d\NurDocStructDEDTO.cs" />
+    <Compile Include="iih.ci.mr\nu\dto\d\NurDocStructDGDTO.cs" />
+    <Compile Include="iih.ci.mr\nu\dto\d\NurDocStructGridDTO.cs" />
+    <Compile Include="iih.ci.mr\nu\dto\d\NurDocStructTreeDTO.cs" />
+    <Compile Include="iih.ci.mr\nu\dto\d\StructTreeDTO.cs" />
+    <Compile Include="iih.ci.mr\nu\falleval\d\FallEvalDO.cs" />
+    <Compile Include="iih.ci.mr\nu\falleval\i\IFallevalCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\falleval\s\IFallevalCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\generalnursingrec\d\GeneralNursingDO.cs" />
+    <Compile Include="iih.ci.mr\nu\generalnursingrec\d\GeneralnursingrecAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\generalnursingrec\d\GeneralNursingRecDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\generalnursingrec\i\IGeneralnursingrecCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\generalnursingrec\i\IGeneralNursingRecDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\generalnursingrec\i\IGeneralnursingrecMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\generalnursingrec\s\IGeneralnursingrecCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\generalnursingrec\s\IGeneralNursingRecDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\generalnursingrec\s\IGeneralnursingrecMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\healthyedunsrec\d\HealthyEduNsDO.cs" />
+    <Compile Include="iih.ci.mr\nu\healthyedunsrec\d\HealthyedunsrecAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\healthyedunsrec\d\HealthyEduNsRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\healthyedunsrec\i\IHealthyedunsrecCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\healthyedunsrec\i\IHealthyEduNsRecDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\healthyedunsrec\i\IHealthyedunsrecMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\healthyedunsrec\s\IHealthyedunsrecCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\healthyedunsrec\s\IHealthyEduNsRecDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\healthyedunsrec\s\IHealthyedunsrecMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\highriskinfantscare\d\ChildrenCareDO.cs" />
+    <Compile Include="iih.ci.mr\nu\highriskinfantscare\i\IHighriskinfantscareCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\highriskinfantscare\s\IHighriskinfantscareCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\i\ICimrNuQueryService.cs" />
+    <Compile Include="iih.ci.mr\nu\i\INurDocStructBrowserExtService.cs" />
+    <Compile Include="iih.ci.mr\nu\newbabypicc\d\NewbabypiccAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\newbabypicc\d\NewBabyPiccDO.cs" />
+    <Compile Include="iih.ci.mr\nu\newbabypicc\d\NewBabyPiccRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\newbabypicc\i\INewbabypiccCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\newbabypicc\i\INewbabypiccMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\newbabypicc\i\INewBabyPiccRecDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\newbabypicc\s\INewbabypiccCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\newbabypicc\s\INewbabypiccMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\newbabypicc\s\INewBabyPiccRecDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\newbornveinnur\d\NewbornveinnurAggDO.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\newbornveinnur\d\NewBornVeinNurDO.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\newbornveinnur\d\NewBornVeinNurRecordDO.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\newbornveinnur\i\INewbornveinnurCrudService.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\newbornveinnur\i\INewbornveinnurMDOCrudService.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\newbornveinnur\i\INewBornVeinNurRecordDOCrudService.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\newbornveinnur\s\INewbornveinnurCrudServiceImpl.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\newbornveinnur\s\INewbornveinnurMDOCrudServiceImpl.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\newbornveinnur\s\INewBornVeinNurRecordDOCrudServiceImpl.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\obstetrics\abortionrecord\d\AbortionRecordDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\abortionrecord\i\IAbortionrecordCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\abortionrecord\s\IAbortionrecordCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\adhgeneralnursing\d\AdhgeneralnursingAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\adhgeneralnursing\d\AdhNursingDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\adhgeneralnursing\d\AdhNursingRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\adhgeneralnursing\i\IAdhgeneralnursingCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\adhgeneralnursing\i\IAdhgeneralnursingMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\adhgeneralnursing\i\IAdhNursingRecDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\adhgeneralnursing\s\IAdhgeneralnursingCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\adhgeneralnursing\s\IAdhgeneralnursingMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\adhgeneralnursing\s\IAdhNursingRecDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\afterdeliverobsec\d\AfterDeliveInfoDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\afterdeliverobsec\d\AfterDeliveRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\afterdeliverobsec\d\AfterdeliverobsecAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\afterdeliverobsec\i\IAfterdeliverobsecCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\afterdeliverobsec\i\IAfterdeliverobsecMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\afterdeliverobsec\s\IAfterdeliverobsecCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\afterdeliverobsec\s\IAfterdeliverobsecMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antenatalassess\d\AntenAssDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antenatalassess\d\AntenatalassessAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antenatalassess\d\AntenNurBserRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antenatalassess\i\IAntenatalassessCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antenatalassess\i\IAntenatalassessMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antenatalassess\s\IAntenatalassessCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antenatalassess\s\IAntenatalassessMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbaby\d\AntennurbabyAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbaby\d\AntNurBabyBrserDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbaby\d\AntNurBabyDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbaby\i\IAntennurbabyCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbaby\i\IAntennurbabyMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbaby\s\IAntennurbabyCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbaby\s\IAntennurbabyMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbserrec\d\AntenNurBserRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbserrec\i\IAntennurbserrecCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\antennurbserrec\s\IAntennurbserrecCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\barthelassess\d\BarthelAssessDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\obstetrics\barthelassess\i\IBarthelassessCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\obstetrics\barthelassess\s\IBarthelassessCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthrec\d\BirthrecAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthrec\d\BirthrecInDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthrec\d\BirthrecInfoDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthrec\d\BirthrecProDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthrec\i\IBirthrecCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthrec\i\IBirthrecMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthrec\s\IBirthrecCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthrec\s\IBirthrecMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthregis\d\BirthRegistrationDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthregis\i\IBirthregisCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\birthregis\s\IBirthregisCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\breathmachnur\d\BreathMachInfoDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\breathmachnur\d\BreathmachnurAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\breathmachnur\d\BreathMachRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\breathmachnur\i\IBreathmachnurCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\breathmachnur\i\IBreathmachnurMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\breathmachnur\s\IBreathmachnurCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\breathmachnur\s\IBreathmachnurMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\childbirthrecord\d\ChildBirthRecordDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\childbirthrecord\d\EnumExist.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\childbirthrecord\d\EnumPoints.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\childbirthrecord\i\IChildbirthrecordCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\childbirthrecord\s\IChildbirthrecordCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gymissabort\d\GymissabortAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gymissabort\d\GyMissAbortAssDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gymissabort\d\GyMissAbortRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gymissabort\i\IGymissabortCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gymissabort\i\IGymissabortMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gymissabort\s\IGymissabortCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gymissabort\s\IGymissabortMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurafter\d\GynurafterAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurafter\d\GyNurAfterAssDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurafter\d\GyNurAfterRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurafter\i\IGynurafterCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurafter\i\IGynurafterMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurafter\s\IGynurafterCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurafter\s\IGynurafterMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurbefore\d\GynurbeforeAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurbefore\d\GyNurBeforeAssDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurbefore\d\GyNurBeforeRecDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurbefore\i\IGynurbeforeCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurbefore\i\IGynurbeforeMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurbefore\s\IGynurbeforeCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\gynurbefore\s\IGynurbeforeMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\hospitalassess\d\HospAssessDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\obstetrics\hospitalassess\i\IHospitalassessCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\obstetrics\hospitalassess\s\IHospitalassessCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.mr\nu\obstetrics\operationnurvisit\d\OperationNurVisitDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\operationnurvisit\i\IOperationnurvisitCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\operationnurvisit\s\IOperationnurvisitCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\d\OpernurecordAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\d\OperNuRecordDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\d\OperNuRecordDressDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\d\OperNuRecordEqmDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\i\IOpernurecordCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\i\IOperNuRecordDressDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\i\IOperNuRecordEqmDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\i\IOpernurecordMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\s\IOpernurecordCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\s\IOperNuRecordDressDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\s\IOperNuRecordEqmDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opernurecord\s\IOpernurecordMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opersafechecktab\d\OperSafeCheckTableDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opersafechecktab\i\IOpersafechecktabCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opersafechecktab\s\IOpersafechecktabCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opspathandover\d\OpsPatHandoverDO.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opspathandover\i\IOpspathandoverCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\opspathandover\s\IOpspathandoverCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\AbnormalEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\BirthStageEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\CompleteEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\DenyExistEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\EnumExist.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\GoodEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\HBsAgEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\ParentsEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\SyphilisEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\WelcomeEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\obstetrics\publicenum\d\YesNoEnum.cs" />
+    <Compile Include="iih.ci.mr\nu\painassessment\d\PainAssessDO.cs" />
+    <Compile Include="iih.ci.mr\nu\painassessment\d\PainAssessItmDO.cs" />
+    <Compile Include="iih.ci.mr\nu\painassessment\d\PainassessmentAggDO.cs" />
+    <Compile Include="iih.ci.mr\nu\painassessment\i\IPainassessmentCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\painassessment\i\IPainassessmentMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\painassessment\s\IPainassessmentCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\painassessment\s\IPainassessmentMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\pressuresoreass\d\PressureSoreAssDO.cs" />
+    <Compile Include="iih.ci.mr\nu\pressuresoreass\i\IPressuresoreassCrudService.cs" />
+    <Compile Include="iih.ci.mr\nu\pressuresoreass\s\IPressuresoreassCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\s\ICimrNuQueryServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\nu\s\INurDocStructBrowserExtServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\opeinfodto\d\OpeInfoDTO.cs" />
+    <Compile Include="iih.ci.mr\per\d\PerAggDO.cs" />
+    <Compile Include="iih.ci.mr\per\d\PerDO.cs" />
+    <Compile Include="iih.ci.mr\per\d\PerListDO.cs" />
+    <Compile Include="iih.ci.mr\per\i\IPerCrudService.cs" />
+    <Compile Include="iih.ci.mr\per\i\IPerListDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\per\i\IPerMDOCrudService.cs" />
+    <Compile Include="iih.ci.mr\per\s\IPerCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\per\s\IPerListDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\per\s\IPerMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\relapredto\d\RelaPreDTO.cs" />
+    <Compile Include="iih.ci.mr\secinfodto\d\SecInfoDTO.cs" />
+    <Compile Include="iih.ci.mr\service\d\MrTplTreeDTO.cs" />
+    <Compile Include="iih.ci.mr\service\d\OrderMrDto.cs" />
+    <Compile Include="iih.ci.mr\service\d\WaitDoctorDto.cs" />
+    <Compile Include="iih.ci.mr\service\i\IMrservice.cs" />
+    <Compile Include="iih.ci.mr\service\s\IMrserviceImpl.cs" />
+    <Compile Include="iih.ci.mr\s\ICiMrOutQryServicesImpl.cs" />
+    <Compile Include="iih.ci.mr\s\CiMrStateUpdateServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\s\ICiMrParamServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\s\ICiOrdMrServiceImpl.cs" />
+    <Compile Include="iih.ci.mr\s\IOPMrServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiapplissheetAggDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiAppLisSheetDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiAppLisSheetOrDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiapppathgysheetAggDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiAppPathgySheetDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiAppPathgySheetSampDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiAppRisSheetDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiapptreatexecAggDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiAppTreatExecDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiAppTreatExecOrDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiapptreatsheetAggDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiAppTreatSheetDO.cs" />
+    <Compile Include="iih.ci.ord\app\d\CiAppTreatSheetOrDO.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiapplissheetCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiapplissheetMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiAppLisSheetOrDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiapppathgysheetCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiapppathgysheetMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiAppPathgySheetSampDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiapprissheetCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiapptreatexecCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiapptreatexecMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiAppTreatExecOrDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiapptreatsheetCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\i\ICiapptreatsheetMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiapplissheetCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiapplissheetMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiAppLisSheetOrDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiapppathgysheetCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiapppathgysheetMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiAppPathgySheetSampDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiapprissheetCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiapptreatexecCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiapptreatexecMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiAppTreatExecOrDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiapptreatsheetCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\app\s\ICiapptreatsheetMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\d\CiRuleCfg.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\d\CirulecfgAggDO.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\d\CiRuleCfgRelRule.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\d\CiRuleEntity.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\d\RegularCheckPoint.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\d\RuleCategory.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\d\RuleRelCa.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\i\ICirulecfgCrudService.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\i\ICirulecfgMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\i\ICiRuleCfgRelRuleCrudService.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\i\IRuleentityCrudService.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\s\ICirulecfgCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\s\ICirulecfgMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\s\ICiRuleCfgRelRuleCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cfg\cirulecfg\s\IRuleentityCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cfg\dto\validatecondition\d\MedSrvValidateConditionDTO.cs" />
+    <Compile Include="iih.ci.ord\cfg\dto\validatemsgdto\d\MsgType.cs" />
+    <Compile Include="iih.ci.ord\cfg\dto\validatemsgdto\d\ValidateMsgDTO.cs" />
+    <Compile Include="iih.ci.ord\ciorcof\d\CiOrdSheet.cs" />
+    <Compile Include="iih.ci.ord\ciorcof\d\CiOrSrvVsSheet.cs" />
+    <Compile Include="iih.ci.ord\ciorcof\i\IOrdsheetCrudService.cs" />
+    <Compile Include="iih.ci.ord\ciorcof\i\ISrvvssheetCrudService.cs" />
+    <Compile Include="iih.ci.ord\ciorcof\s\IOrdsheetCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciorcof\s\ISrvvssheetCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\AddFeeDTO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\CiordemsAggDTO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\CiOrdFeeSrvDTO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsBtItemDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsBtItemDO_Partial.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsConsItemDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsDrugItemDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsFeesDTO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsOpitemDO_Partial.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsTransportDTO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsUIDTO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsItemInCons.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsItemInOp.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsItemInPathgy.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsObsItemDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsObsLap.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsOpitemDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsOrDrug.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsOrSrvSc.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsOutItemDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsPathgyItemDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsRisItemDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsTransItemDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\EmsType.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\ext\CheckOpRstDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciordems\d\ext\CheckParamDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciordems\d\ext\CheckRstDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciordems\d\OpPresList.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\OraplabDO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\OrCommonFieldsDTO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\OrConfirm.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\OrdFeeBillDTO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\OrdPicStatusIndex.cs" />
+    <Compile Include="iih.ci.ord\ciordems\d\QuantumParamDTO.cs" />
+    <Compile Include="iih.ci.ord\ciordems\i\ICiordemsCrudServices.cs" />
+    <Compile Include="iih.ci.ord\ciordems\s\ICiordemsCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciorder\d\CiorderAggDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\d\CiOrderDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\d\FeeReverseType.cs" />
+    <Compile Include="iih.ci.ord\ciorder\d\HpBeyondEnum.cs" />
+    <Compile Include="iih.ci.ord\ciorder\d\HpIndicBasicJudgeEnum.cs" />
+    <Compile Include="iih.ci.ord\ciorder\d\HpIndicJudgeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\d\HpJudgeRstTypeEnum.cs" />
+    <Compile Include="iih.ci.ord\ciorder\d\InHpBbrEnum.cs" />
+    <Compile Include="iih.ci.ord\ciorder\d\OrdApMtDO.cs" />
+    <Compile Include="iih.ci.ord\ciorder\d\OrdDrugDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\d\OrdFreqTimeDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\d\OrdNurseCareDO.cs" />
+    <Compile Include="iih.ci.ord\ciorder\d\OrdSrvDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\d\OrSourceFromEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\d\OrSrvSourceFromEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\d\PharmVerifyStatusEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\i\ICiorderCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\i\ICiorderMDOCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\i\ICiorderSrvDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\ciorder\i\IOrdDrugDOCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\i\IOrdFreqTimeDOCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\i\IOrdNurseCareDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\ciorder\i\IOrdSrvDOCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\s\ICiorderCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\s\ICiorderMDOCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\s\ICiorderSrvDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciorder\s\IOrdApConsDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciorder\s\IOrdDrugDOCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\s\IOrdFreqTimeDOCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciorder\s\IOrdNurseCareDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciorder\s\IOrdSrvDOCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ciord\d\OrSrvAgentInfoDO.cs" />
+    <Compile Include="iih.ci.ord\ciord\i\ICiorsrvagentCrudService.cs" />
+    <Compile Include="iih.ci.ord\ciord\s\ICiorsrvagentCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciorsrvhp\d\CiOrSrvHpDO.cs" />
+    <Compile Include="iih.ci.ord\ciorsrvhp\i\ICiorsrvhpCrudService.cs" />
+    <Compile Include="iih.ci.ord\ciorsrvhp\s\ICiorsrvhpCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\d\CiorappbtAggDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\CiorappconsultAggDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\CiorapppathgyAggDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\CiorappsurgeryAggDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\CiOrdBtTestDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\CiOrdBtTestItmDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\CiorderAggExtDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\CiordInviteConsDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\CiordrptbttestAggDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\CiOrLastMpDTO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\CiOrSeesionDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\LastOfMpRstTp.cs" />
+    <Compile Include="iih.ci.ord\cior\d\OrConsApAuditDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\OrdApBtDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdApBtViewItemDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdApConsDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\OrdApLabDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdApObsDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdApOpDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdApOutDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\OrdApPathgyDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdApPathgySampDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdAppBtUseDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\OrdApRptOpDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\OrdApRptOpItemDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\OrdApSugViewItemDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdApTransDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\OrdOpEmpDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdOpMmDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\d\OrdrptopAggDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\ReactExtOrsAndStopOrsDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\RptOpEmpDO.cs" />
+    <Compile Include="iih.ci.ord\cior\d\ValidateRtnInfoDTO.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiorappbtCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\i\ICiorappbtMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiorappbuCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiorappconsultCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiorappconsultMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiorapplisCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\i\ICiorappouthospCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiorapppathgyCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\i\ICiorapppathgyMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiorapprisCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\i\ICiorappsurgeryCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\i\ICiorappsurgeryMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiorapptransdeptCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiOrdBtTestItmDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiordInviteConsDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiordrptbttestCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\i\ICiordrptbttestMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiorseesionCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\ICiRptBtTestService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IOrConsApAuditDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IOrdApBtViewItemDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IOrdApPathgySampDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IOrdApRptOpItemDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IOrdApSugViewItemDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IOrdOpEmpDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IOrdOpMmDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IOrdrptopCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IOrdrptopMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\i\IRptOpEmpDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiorappbtCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\s\ICiorappbtMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiorappbuCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiorappconsultCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiorappconsultMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiorapplisCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\s\ICiorappouthospCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiorapppathgyCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\s\ICiorapppathgyMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiorapprisCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\s\ICiorappsurgeryCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\s\ICiorappsurgeryMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiorapptransdeptCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiOrdBtTestItmDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiordInviteConsDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiordrptbttestCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\cior\s\ICiordrptbttestMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiorseesionCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\ICiRptBtTestServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IOrConsApAuditDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IOrdApBtViewItemDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IOrdApPathgySampDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IOrdApRptOpItemDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IOrdApSugViewItemDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IOrdOpEmpDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IOrdOpMmDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IOrdrptopCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IOrdrptopMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cior\s\IRptOpEmpDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cipres\d\CiPresDO.cs" />
+    <Compile Include="iih.ci.ord\cipres\i\ICipresCrudService.cs" />
+    <Compile Include="iih.ci.ord\cipres\s\ICipresCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciprn\d\CiprintAggDO.cs" />
+    <Compile Include="iih.ci.ord\ciprn\d\CiPrnDO.cs" />
+    <Compile Include="iih.ci.ord\ciprn\d\CiPrnItmDO.cs" />
+    <Compile Include="iih.ci.ord\ciprn\d\MatchResultDTO.cs" />
+    <Compile Include="iih.ci.ord\ciprn\i\ICiprintCrudService.cs" />
+    <Compile Include="iih.ci.ord\ciprn\i\ICiprintExtService.cs" />
+    <Compile Include="iih.ci.ord\ciprn\i\ICiprintMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\ciprn\i\ICiPrnItmDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\ciprn\s\ICiprintCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciprn\s\ICiprintExtServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciprn\s\ICiprintMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ciprn\s\ICiPrnItmDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\d\CirptlabAggDO.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\d\CiRptLabDO.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\d\CiRptLabItmDO.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\d\TextCardDataTest.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\i\ICirptExtService.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\i\ICirptlabCrudService.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\i\ICiRptLabItmDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\i\ICirptlabMDOCrudService.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\i\ICiRptLabService.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\s\ICirptExtServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\s\ICirptlabCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\s\ICiRptLabItmDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\s\ICirptlabMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cirptlab\s\ICiRptLabServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cirptobs\d\CiRptObsDO.cs" />
+    <Compile Include="iih.ci.ord\cirptobs\i\ICirptobsCrudService.cs" />
+    <Compile Include="iih.ci.ord\cirptobs\i\ICiRptObsService.cs" />
+    <Compile Include="iih.ci.ord\cirptobs\s\ICirptobsCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cirptobs\s\ICiRptObsServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cirptpathgy\d\CiRptPathgy.cs" />
+    <Compile Include="iih.ci.ord\cirptpathgy\d\CiRptPathgyDO.cs" />
+    <Compile Include="iih.ci.ord\cirptpathgy\i\ICirptpathgyCrudService.cs" />
+    <Compile Include="iih.ci.ord\cirptpathgy\i\ICiRptPathgyService.cs" />
+    <Compile Include="iih.ci.ord\cirptpathgy\s\ICirptpathgyCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\cirptpathgy\s\ICiRptPathgyServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\common\util\IdChecker.cs" />
+    <Compile Include="iih.ci.ord\consrpt\d\CiOrdConsRptDO.cs" />
+    <Compile Include="iih.ci.ord\consrpt\i\IConsrptCrudService.cs" />
+    <Compile Include="iih.ci.ord\consrpt\s\IConsrptCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\dto\allergy\d\AllergyDto.cs" />
+    <Compile Include="iih.ci.ord\dto\appobsdto\d\AppObsDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\blexorder\d\DiagTreatViewRntDataDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\blexorder\d\OrGenSplitTpEnum.cs" />
+    <Compile Include="iih.ci.ord\dto\blexorder\d\OrLongTempEnum.cs" />
+    <Compile Include="iih.ci.ord\dto\blexorder\d\OrSplitOrderDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\blexorder\d\OrSrvSplitParamDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\blexorder\d\PresOutPTpEnum.cs" />
+    <Compile Include="iih.ci.ord\dto\blexorder\d\SrvSplitOrderDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\blexorder\d\DiagTreatKeyPointRntDataDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\blexorder\d\TransSrvSplitOrderDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\consdto\d\OrdConsDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\CiordubDTO.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\d\CiOrAggAndRelInfo.cs" />
+    <Compile Include="iih.ci.ord\dto\d\DiagtreatDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\ExecuteLoopDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\ImplVtDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\IpViewDiagDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\LabDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\MedicalSharingDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\d\OrDrugDetailDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\OrSuModRtnInfoDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\PatUnDoOrderdto.cs" />
+    <Compile Include="iih.ci.ord\dto\d\PresOrSrvDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\SkinTestParamDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\SkinTestRstDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\d\SkinTestUsePharmRstDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\d\ValidSkinOrInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\d\OrtplDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\base\BaseCiDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\base\BaseXapJsonSerialization.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\di\DiagCrtDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\di\DiagLoadDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\di\DiagRstDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\di\DiagSaveDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\di\DiagSignDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\ems\EmsCrtDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\ems\EmsLoadDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\ems\EmsRstDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\ems\EmsSaveDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\error\CiErrorDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\tmpl\ErrorEmsDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\order\OrderOperateDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\order\OrderRstDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\tmpl\TmplLoadDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\tmpl\TmplRstDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\emsmain\tmpl\TmplSaveDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsApbtViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsApbuViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsConsViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsDrugsItemViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsDrugsViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsHerbsItemViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsHerbsViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsLisViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsLisViewItemDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsOpsViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsPathgyHDWViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsPathgyItemViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsPathgyPKUViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsPathgyViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsRisViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsRisViewItemDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsStomatologyCBCTNEWViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsStomatologyCTBlankViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsStomatologyDigitizationToothViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsStomatologyElectrocardiogramViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsStomatologyGeneralXRayViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsStomatologyUltrasonicDiagViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiemsdto\d\EmsTreatViewDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ems\uiorderdto\d\UiOrderListDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\hp\BdHpIndicDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\InsurDrugDivideInfoDTO\d\InsurDrugDivideInfoDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\medicalroutinetreedto\d\Medicalroutinetreedto.cs" />
+    <Compile Include="iih.ci.ord\dto\newordertemplatedto\d\NewOrderTemplateDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\newordertemplatedto\d\OrderTemplateRstDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ordertemplatedto\d\OrderTemplateDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ordertpltree\d\OrderTplTreeDto.cs" />
+    <Compile Include="iih.ci.ord\dto\opdispensecond\d\OpDispenseCondDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\opdrugrtncond\d\OpDrugRtnCondDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\opdrugrtncond\d\OpDrugRtnDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\orderhelppatientpast\d\OrderHelppatientPastDto.cs" />
+    <Compile Include="iih.ci.ord\dto\orderpandectemrdto\d\OrderPandectEmrDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\OrderPresSplitDTO\d\OrderPresSplitDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\orderverify\d\OrderVerifyCondDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\orderverify\d\OrderVerifyDepDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\orderverify\d\OrderVerifyDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\orderverify\d\OrderVerifyItemDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\orderverify\d\OrderVerifyPatDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\orderverify\d\OrderVerifyStateEnum.cs" />
+    <Compile Include="iih.ci.ord\dto\ordinput\d\OrdInputDto.cs" />
+    <Compile Include="iih.ci.ord\dto\ordpres\d\OrdPresDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\ordpres\d\PresDrugDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\ordpres\d\PresPrintParamDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ordprintdto\d\OrdPrintCfgDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ordprintdto\d\OrdPrintDataDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ordprintdto\d\OrdPrintParamDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ordprintparamdto\d\OrdPrintParamDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ordrationaldrugdto\d\OrdRationalDrugDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\ordsrvchangeddto\d\OrdSrvChangedInfoDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\orobsandlab\d\OrObsAandLabDTO.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\orsrvguide\d\OrSrvGuideDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\patdetaildto\d\PatDetailDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\patorderlistdto\d\Patorderlistdto.cs" />
+    <Compile Include="iih.ci.ord\dto\patundoorderdto\d\PatUnDoOrderdto.cs" />
+    <Compile Include="iih.ci.ord\dto\pipvinfo\d\PiPvInfoDTO.cs" />
+    <Compile Include="iih.ci.ord\dto\recipedto\d\RecipeDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\testDO.cs" />
+    <Compile Include="iih.ci.ord\dto\unchargeordinfo\d\UnchargeOrdDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\unchargeordinfo\d\UnchargeordinfoAggDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\unchargeordinfo\d\UnchargeOrdSrvDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\dto\vitalsignsdto\d\VitalSignsDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\d\CijudgeSpecillDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\emsdi\d\BdSrv4EmsDiDTO.cs" />
+    <Compile Include="iih.ci.ord\emsdi\d\EmsDiDTO.cs" />
+    <Compile Include="iih.ci.ord\emsdi\d\EmsDiSrvDTO.cs" />
+    <Compile Include="iih.ci.ord\emsdi\d\EmsDiSrvMmDTO.cs" />
+    <Compile Include="iih.ci.ord\emsdi\d\ExeDeptCalParamDTO.cs" />
+    <Compile Include="iih.ci.ord\emsdi\d\ExeWhDeptDTO.cs" />
+    <Compile Include="iih.ci.ord\emsdi\d\MapKeyStr4EmsEnum.cs" />
+    <Compile Include="iih.ci.ord\emsdi\d\MapKeyStr4EmsMmEnum.cs" />
+    <Compile Include="iih.ci.ord\emsdi\d\MapKeyStr4EmsSrvEnum.cs" />
+    <Compile Include="iih.ci.ord\emsdi\d\OrWfDeptInfoDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ems\d\CiOrderTransMissionDTO.cs" />
+    <Compile Include="iih.ci.ord\ems\d\FeeListRstDTO.cs" />
+    <Compile Include="iih.ci.ord\ems\d\FeeListLoadDTO.cs" />
+    <Compile Include="iih.ci.ord\ems\d\CiEmsDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ems\d\CiEmsSrvDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ems\d\CiEnContextDTO.cs" />
+    <Compile Include="iih.ci.ord\ems\d\CiOrFreqTimeDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ems\d\EmsMapKeyStrEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ems\d\EmsSrvMapKeyStrEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ems\d\ExDeptMacroEnum.cs" />
+    <Compile Include="iih.ci.ord\ems\d\ExDeptParamGrpTpEnum.cs" />
+    <Compile Include="iih.ci.ord\ems\d\UIEmsEnvDTO.cs" />
+    <Compile Include="iih.ci.ord\idvproperty\d\IdVProperty.cs" />
+    <Compile Include="iih.ci.ord\i\ems\ICiOrderMainService.cs" />
+    <Compile Include="iih.ci.ord\i\ems\ICiOrderReadService.cs" />
+    <Compile Include="iih.ci.ord\i\ems\ICiOrderWriteService.cs" />
+    <Compile Include="iih.ci.ord\i\external\ICiOrdEnService.cs" />
+    <Compile Include="iih.ci.ord\i\external\obtain\ICiOrdBlRService.cs" />
+    <Compile Include="iih.ci.ord\i\ICiFeeListMainService.cs" />
+    <Compile Include="iih.ci.ord\i\ICiOrdMedicalInsuranceService.cs" />
+    <Compile Include="iih.ci.ord\i\ICiOrdNSysParamConst.cs" />
+    <Compile Include="iih.ci.ord\i\ICiOrdMaintainService.cs" />
+    <Compile Include="iih.ci.ord\i\ICiOrdQryService.cs" />
+    <Compile Include="iih.ci.ord\i\ICiOrdVerifyService.cs" />
+    <Compile Include="iih.ci.ord\i\ICiSrvRefResultService.cs" />
+    <Compile Include="iih.ci.ord\i\ICiEmsMainService.cs" />
+    <Compile Include="iih.ci.ord\i\ICiSysCacheService.cs" />
+    <Compile Include="iih.ci.ord\i\ICiTmplMainService.cs" />
+    <Compile Include="iih.ci.ord\i\IOprSourceFromConst.cs" />
+    <Compile Include="iih.ci.ord\i\IPsnAuthorityCertifyService.cs" />
+    <Compile Include="iih.ci.ord\i\ortmpl\IOrTmplApplyService.cs" />
+    <Compile Include="iih.ci.ord\moreemsdto\d\MoreEmsParamDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\opemergency\i\command\ICiCommand.cs" />
+    <Compile Include="iih.ci.ord\ordappathgy\d\OrdApPathgyDTO.cs" />
+    <Compile Include="iih.ci.ord\ordprn\d\OrdPrintCfgDO.cs" />
+    <Compile Include="iih.ci.ord\ordprn\d\OrdPrintDO.cs" />
+    <Compile Include="iih.ci.ord\ordprn\i\IOrdprintcfgCrudService.cs" />
+    <Compile Include="iih.ci.ord\ordprn\i\IOrdprintCrudService.cs" />
+    <Compile Include="iih.ci.ord\ordprn\i\IOrdprintExtService.cs" />
+    <Compile Include="iih.ci.ord\ordprn\s\IOrdprintcfgCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ordprn\s\IOrdprintCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ordprn\s\IOrdprintExtServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ordsrvdose\d\OrdSrvDoseDO.cs" />
+    <Compile Include="iih.ci.ord\ordsrvdose\i\IOrdsrvdoseCrudService.cs" />
+    <Compile Include="iih.ci.ord\ordsrvdose\s\IOrdsrvdoseCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\ordsrvmm\d\OrdSrvMmDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ordsrvmm\i\IOrdsrvmmCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ordsrvmm\s\IOrdsrvmmCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ordsrvset\d\OrdSrvSetDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ordsrvset\i\IOrdsrvsetCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\ordsrvset\s\IOrdsrvsetCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\pres\d\CiPresDO.cs" />
+    <Compile Include="iih.ci.ord\pres\i\IPresCrudService.cs" />
+    <Compile Include="iih.ci.ord\pres\s\IPresCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\pub\d\AllergicHandleModeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\pub\d\AllergicPharmHandleMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\pub\d\NDaysTimeCalValidMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\pub\d\NDaysValidThingEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\pub\OrFunCodeConst .cs" />
+    <Compile Include="iih.ci.ord\service\i\ICiOrdCrudService.cs" />
+    <Compile Include="iih.ci.ord\service\s\ICiOrdCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\skintest\d\CiSkinTestRstDO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\skintest\i\ISkintestCrudService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\skintest\s\ISkintestCrudServiceImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\srvpri\d\BdSrvPriCalParamDTO.cs" />
+    <Compile Include="iih.ci.ord\srvreact\d\OrOpenSrvReactDTO.cs" />
+    <Compile Include="iih.ci.ord\srvref\d\CiSrvRefParamDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\srvref\d\CiSrvRefResultDTO.cs" />
+    <Compile Include="iih.ci.ord\srvref\d\MedicalWfTpAbbrEnum.cs" />
+    <Compile Include="iih.ci.ord\srvref\d\SrvRefRelInfoType.cs" />
+    <Compile Include="iih.ci.ord\s\ICiFeeListMainServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\CiTmplMainServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\ems\ICiOrderMainServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\external\ICiOrdEnServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\external\obtain\ICiOrdBlRServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\ICiEmsMainServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\CiOrdVerifyServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\ICiOrdMaintainServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\ICiOrdMedicalInsuranceServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\ICiOrdQryServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\ICiSrvRefResultServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\ICiSysCacheServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\IPsnAuthorityCertifyServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\s\ortmpl\OrTmplApplyServiceImpl.cs" />
+    <Compile Include="iih.ci.ord\tmpl\d\CiOrBasicEleEnum.cs" />
+    <Compile Include="iih.ci.ord\tmpl\d\CiortmplAggDTO.cs" />
+    <Compile Include="iih.ci.ord\tmpl\d\CiOrTmplDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\tmpl\d\CiOrTmplSetItmDTO.cs" />
+    <Compile Include="iih.ci.ord\tmpl\d\CiOrTmplSrvDTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iih.ci.ord\tmpl\d\LongTempOrEnum.cs" />
+    <Compile Include="iih.ci.pre\dto\d\EmergPreDTO.cs" />
+    <Compile Include="iih.ci.pre\obspre\d\ObspreAggDO.cs" />
+    <Compile Include="iih.ci.pre\obspre\d\ObsPreDO.cs" />
+    <Compile Include="iih.ci.pre\obspre\d\ObspredoAggDO.cs" />
+    <Compile Include="iih.ci.pre\obspre\d\ObsPreSrvDO.cs" />
+    <Compile Include="iih.ci.pre\obspre\i\IObspreCrudService.cs" />
+    <Compile Include="iih.ci.pre\obspre\i\IObspredoCrudService.cs" />
+    <Compile Include="iih.ci.pre\obspre\i\IObspredoMDOCrudService.cs" />
+    <Compile Include="iih.ci.pre\obspre\i\IObsPreExtService.cs" />
+    <Compile Include="iih.ci.pre\obspre\i\IObspreMDOCrudService.cs" />
+    <Compile Include="iih.ci.pre\obspre\s\IObspreCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.pre\obspre\s\IObspredoCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.pre\obspre\s\IObspredoMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.pre\obspre\s\IObsPreExtServiceImpl.cs" />
+    <Compile Include="iih.ci.pre\obspre\s\IObspreMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\au\d\AntibioticUseDO.cs" />
+    <Compile Include="iih.ci.rcm\au\d\AntibioticUserDO.cs" />
+    <Compile Include="iih.ci.rcm\au\i\IAntibioticusedoCrudService.cs" />
+    <Compile Include="iih.ci.rcm\au\s\IAntibioticusedoCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\coninfodto\d\ConInfoDTO.cs" />
+    <Compile Include="iih.ci.rcm\coninfodto\i\IConInfoService.cs" />
+    <Compile Include="iih.ci.rcm\coninfodto\s\IConInfoServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\consite\d\ConSiteDO.cs" />
+    <Compile Include="iih.ci.rcm\consite\i\IConsitedoCrudService.cs" />
+    <Compile Include="iih.ci.rcm\consite\s\IConsitedoCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagionmessage\d\ContagionMessageDTO.cs" />
+    <Compile Include="iih.ci.rcm\contagionmessage\i\IContagionMessageService.cs" />
+    <Compile Include="iih.ci.rcm\contagionmessage\s\IContagionMessageServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagionqrydto\d\ContagionQryDTO.cs" />
+    <Compile Include="iih.ci.rcm\contagionqrydto\i\IContagionQryService.cs" />
+    <Compile Include="iih.ci.rcm\contagionqrydto\s\IContagionQryServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagionrecordop\d\ContagionRecordOpDTO.cs" />
+    <Compile Include="iih.ci.rcm\contagionrecordop\i\IContagionRecordQryService.cs" />
+    <Compile Include="iih.ci.rcm\contagionrecordop\s\IContagionRecordQryServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagion\dto\d\Contagiondto.cs" />
+    <Compile Include="iih.ci.rcm\contagion\dto\d\ContagiondtoAggDTO.cs" />
+    <Compile Include="iih.ci.rcm\contagion\dto\d\EntDto.cs" />
+    <Compile Include="iih.ci.rcm\contagion\d\AidsDO.cs" />
+    <Compile Include="iih.ci.rcm\contagion\d\CondylomaDO.cs" />
+    <Compile Include="iih.ci.rcm\contagion\d\ContagionAggDO.cs" />
+    <Compile Include="iih.ci.rcm\contagion\d\ContagionDO.cs" />
+    <Compile Include="iih.ci.rcm\contagion\d\ContagionMainCardPrintDto.cs" />
+    <Compile Include="iih.ci.rcm\contagion\d\HepatitisBDO.cs" />
+    <Compile Include="iih.ci.rcm\contagion\d\HFMDO.cs" />
+    <Compile Include="iih.ci.rcm\contagion\d\StdDO.cs" />
+    <Compile Include="iih.ci.rcm\contagion\d\SyphilisDO.cs" />
+    <Compile Include="iih.ci.rcm\contagion\i\IAidsDOCrudService.cs" />
+    <Compile Include="iih.ci.rcm\contagion\i\ICondylomaDOCrudService.cs" />
+    <Compile Include="iih.ci.rcm\contagion\i\IContagionCrudService.cs" />
+    <Compile Include="iih.ci.rcm\contagion\i\IContagionCrudServiceExt.cs" />
+    <Compile Include="iih.ci.rcm\contagion\i\IContagionMDOCrudService.cs" />
+    <Compile Include="iih.ci.rcm\contagion\i\IHepatitisBDOCrudService.cs" />
+    <Compile Include="iih.ci.rcm\contagion\i\IHFMDOCrudService.cs" />
+    <Compile Include="iih.ci.rcm\contagion\i\IStdDOCrudService.cs" />
+    <Compile Include="iih.ci.rcm\contagion\i\ISyphilisDOCrudService.cs" />
+    <Compile Include="iih.ci.rcm\contagion\s\IAidsDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagion\s\ICondylomaDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagion\s\IContagionCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagion\s\IContagionCrudServiceExtImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagion\s\IContagionMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagion\s\IHepatitisBDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagion\s\IHFMDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagion\s\IStdDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\contagion\s\ISyphilisDOCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\drugsinfo\d\DrugSensitiInfoDO.cs" />
+    <Compile Include="iih.ci.rcm\drugsinfo\i\IDrugsensitiinfoCrudService.cs" />
+    <Compile Include="iih.ci.rcm\drugsinfo\s\IDrugsensitiinfoCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\hosmiddle\d\HOSMIDDLEDO.cs" />
+    <Compile Include="iih.ci.rcm\hosmiddle\i\IHosmiddleCrudService.cs" />
+    <Compile Include="iih.ci.rcm\hosmiddle\s\IHosmiddleCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\hospentdto\d\HospEntDTO.cs" />
+    <Compile Include="iih.ci.rcm\hospentdto\i\IHospService.cs" />
+    <Compile Include="iih.ci.rcm\hospentdto\s\IHospServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\hospitalcontagiondto\d\HospitalContagionDTO.cs" />
+    <Compile Include="iih.ci.rcm\hospitalinfecteddto\d\HospitalInfectedDTO.cs" />
+    <Compile Include="iih.ci.rcm\hospitalinfectiondto\d\HospitalInfectionDTO.cs" />
+    <Compile Include="iih.ci.rcm\hospitalinfectiondto\i\IHospInfectionService.cs" />
+    <Compile Include="iih.ci.rcm\hospitalinfectiondto\s\IHospInfectionServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\hospitalreport\d\HospitalReportDO.cs" />
+    <Compile Include="iih.ci.rcm\hospitalreport\i\IHospitalreportCrudService.cs" />
+    <Compile Include="iih.ci.rcm\hospitalreport\s\IHospitalreportCrudServiceImpl.cs" />
+    <Compile Include="iih.ci.rcm\operinciinfect\d\OperIncInfectDO.cs" />
+    <Compile Include="iih.ci.rcm\operinciinfect\i\IOperinciinfectCrudService.cs" />
+    <Compile Include="iih.ci.rcm\operinciinfect\s\IOperinciinfectCrudServiceImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="iih.ci.cp\" />
+    <Folder Include="iih.ci.mrqry\mrusagerate\i\" />
+    <Folder Include="iih.ci.mrqry\mrusagerate\s\" />
+    <Folder Include="iih.ci.mr\mrdto\d\" />
+    <Folder Include="iih.ci.ord\pipvinfo\d\" />
+    <Folder Include="iih.ci.qa\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iih.ci.ord\ciorcof\i\ISrvvssheetCudService.java" />
+    <Content Include="iih.ci.ord\ciorcof\i\ISrvvssheetRService.java" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

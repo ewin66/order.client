@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <!-- 门诊相关配置 -->
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>
+
+    <!-- 与配置文件中其他类进行交互类 -->
+    <Clazz id="EntHistoryContentEnvet" classname="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryContentEnvet" dllname="iih.ci.ord" />
+    <!-- 住院病历 -->
+    <Clazz id="MrSelectPhaseView" classname="iih.ci.mr_pub.outpmr.view.MrSelectPhaseView" dllname="iih.ci.mr_pub"/>
+    <!-- 住院诊断 -->
+    <Clazz id ="EntHistoryCiDiag" classname="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryCiDiag" dllname="iih.ci.ord" />
+    <!-- 医嘱列表 -->
+    <Clazz id ="EntHistoryOrderItem" classname="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryOrderItem" dllname="iih.ci.ord" />
+    
+
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init" />
+  </States>
+  <Content>
+    <XLayoutPanel>
+      <Top Width="73">
+      </Top>
+      <Center>
+        <Control ref="MrSelectPhaseView"/>
+      </Center>
+      <Bottom Width="184">
+        <XLayoutPanel>          
+          <Center>
+            <Control ref="EntHistoryCiDiag"/>
+          </Center>
+          <Bottom Width="140">
+            <Control ref="EntHistoryOrderItem"/>
+          </Bottom>
+        </XLayoutPanel>
+      </Bottom>
+    </XLayoutPanel>
+  </Content>
+</Funclet>
+

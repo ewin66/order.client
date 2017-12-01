@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Class id="EntHistory" classname ="iih.ci.ord.opemergency.assi.enthistory.view.EntHistory" dllname="iih.ci.ord"/>
+    <Class id="EntHistoryContent" classname ="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryContent" dllname="iih.ci.ord" />
+    <Class id="EntHistoryBtn" classname ="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryBtn" dllname="iih.ci.ord" />
+    <!--<Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>-->
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init" />
+  </States>
+  <Content>
+    <XLayoutPanel> 
+      <Center>
+        <XLayoutPanel>
+          <Left Width="300" LeftBorder="1" Padding="0,0,4,0">
+            <Control ref="EntHistory" />
+          </Left>
+          <Center Padding="4,0,0,0">
+            <Control ref="EntHistoryContent" />
+          </Center>
+        </XLayoutPanel>
+      </Center>
+      <Bottom Width="46">
+        <Control ref="EntHistoryBtn" />
+      </Bottom>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

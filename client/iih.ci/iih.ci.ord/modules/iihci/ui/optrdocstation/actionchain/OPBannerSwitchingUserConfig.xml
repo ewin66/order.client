@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <!-- 切换患者：1.校验未签署医嘱；2.触发病历保存；3.触发就诊域待回诊-->
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Class id="CiOrCompleteCheckAction" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.CiOrCompleteCheckAction" dllname="iih.ci.ord" />
+    <Class id="EmrSaveView" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.EmrSaveView" dllname="iih.ci.ord" />    
+    <Class id="EnBannerSwitchingUserView" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.EnBannerSwitchingUserView" dllname="iih.ci.ord"/>    
+  </Clazzes>
+  <States>   
+  </States>
+  <Content>    
+  </Content>
+</Funclet>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <Clazz id="add_action" classname="xap.rui.engine.xactions.standard.AddAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.AddStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="edit_action" classname="xap.rui.engine.xactions.standard.EditAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.EditStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="delete_action" classname="xap.rui.engine.xactions.standard.DeleteAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.DeleteStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="save_action" classname="xap.rui.engine.xactions.standard.SaveAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.SaveStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="cancel_action" classname="xap.rui.engine.xactions.standard.CancelAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.CancelStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <Clazz id="goback_action" classname="xap.rui.engine.xactions.standard.GoBackAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.GoBackStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--分方-->
+    <Clazz id="cipres_action" classname="iih.ci.ord.ciorder.action.CipresAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.CipresStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--医嘱确认-->
+    <Clazz id="ciordconfirm_action" classname="iih.ci.ord.ciorder.action.OrdConfirmAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.OrdConfirmStateHandlr" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--提交-->
+    <Clazz id="CiSubmitAction_action" classname="iih.ci.ord.ciorder.action.CiSubmitAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.OrdConfirmStateHandlr" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--取消提交-->
+    <Clazz id="CiCancelSubmitAction_action" classname="iih.ci.ord.ciorder.action.CiCancelSubmitAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.OrdConfirmStateHandlr" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--停止-->
+    <Clazz id="CiStopAction_action" classname="iih.ci.ord.ciorder.action.CiStopAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.OrdConfirmStateHandlr" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--撤销-->
+    <Clazz id="CiBackAction_action" classname="iih.ci.ord.ciorder.action.CiBackAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.OrdConfirmStateHandlr" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--诊毕-->
+    <Clazz id="EnOverAction_action" classname="iih.ci.ord.ciorder.action.EnOverAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.OrdConfirmStateHandlr" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--复制新增-->
+    <Clazz id="CiCopyAndAddAction_action" classname="iih.ci.ord.ciorder.action.CiCopyAndAddAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.OrdConfirmStateHandlr" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--急诊留观-->
+    <Clazz id="CiEnStay_action" classname="iih.ci.ord.ciorder.action.EnStayAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.EnStayStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+
+
+    <!--<Clazz id="Banner" classname="xap.rui.bizcontrol.bannerview.bannerpatient_2" dllname="xap.rui.bizcontrol" singleton="true"/>-->
+
+    <!--控件-->
+    <Clazz id="LayoutXTabPanelControl" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine" singleton="true"/>
+    <Clazz id="panelmanager" classname="xap.rui.engine.xlayouts.LayoutPanelManager" dllname="xap.rui.engine" singleton="true">
+      <StateHandler classname="iih.ci.ord.ciorder.statehandler.PanelManagerStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="emrorderlist_view" classname="iih.ci.ord.ciorder.view.OrderSrvListView" dllname="iih.ci.ord"/>
+    <Clazz id="emrorderitem_view" classname="iih.ci.ord.ciorder.view.OrderItemView" dllname="iih.ci.ord"/>
+    <Clazz id="emrordercard_view" classname="iih.ci.ord.ciorder.view.OrderCardView" dllname="iih.ci.ord"/>
+    <Clazz id="emrorderconfirm_view" classname="iih.ci.ord.ciorder.view.OrderConfirmView" dllname="iih.ci.ord"/>
+
+    <Clazz id="0101" classname="iih.ci.ord.ciorder.cards.OrderDrugsView" dllname="iih.ci.ord"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+    <State old="NodeSelected" event="Add" new="Edit"/>
+    <State old="Init" event="SelectRow" new="RowSelected"/>
+    <State old="Init" event="SelectNode" new="NodeSelected"/>
+    <State old="Init" event="ShowTwoTreeForm" new="Init"/>
+    <State old="NodeSelected" event="SelectRow" new="RowSelected"/>
+    <State old="RowSelected" event="Add" new="Edit"/>
+    <State old="RowSelected" event="Edit" new="Edit"/>
+    <State old="RowSelected" event="View" new="View"/>
+    <State old="RowSelected" event="SelectNode" new="NodeSelected"/>
+    <State old="Edit" event="Save" new="Init"/>
+    <State old="Init" event="Edit" new="Edit"/>
+    <State old="Edit" event="SaveSuccess" new="Init"/>
+    <State old="Edit" event="SaveAdd" new="Init"/>
+    <State old="Edit" event="Cancel" new="RowSelected"/>
+    <State old="View" event="GoBack" new="RowSelected"/>
+    <State old="Edit" event="GoBack" new="Init"/>
+  </States>
+  <Menu>
+    <!--<MenuItem ref="add_action"/>
+    <MenuItem ref="edit_action"/>
+    <MenuItem ref="delete_action"/>
+    <MenuItem ref="save_action"/>
+    <MenuItem ref="cancel_action"/>-->
+
+
+    <!--提交-->
+    <MenuItem ref="CiSubmitAction_action"/>
+    <!--取消提交-->
+    <MenuItem ref="CiCancelSubmitAction_action"/>
+    <!--停止-->
+    <MenuItem ref="CiStopAction_action"/>
+    <!--撤销-->
+    <MenuItem ref="CiBackAction_action"/>
+    <!--复制新增-->
+    <MenuItem ref="CiCopyAndAddAction_action"/>
+    <!--医嘱确认-->
+    <MenuItem ref="ciordconfirm_action"/>
+    <!--返回-->
+    <MenuItem ref="goback_action"/>
+    <!--分方-->
+    <MenuItem ref="cipres_action"/>
+    <!--诊毕-->
+    <!--<MenuItem ref="EnOverAction_action"/>-->
+    <!--急诊留观-->
+    <MenuItem ref="CiEnStay_action"/>
+  </Menu>
+
+
+  <Content>
+    <PanelManager ref="panelmanager">
+      <ManagedPanels>
+        <ManagedPanel id="1" lazy="false">
+          <!--<SplitContainer Orientation="Horizontal" SplitterDistance="15">
+      <SplitterPanel>
+        <Control ref="Banner"/>
+      </SplitterPanel>-->
+          <!--<SplitterPanel>-->
+          <SplitContainer Horizontal="true" SplitterDistance="80" Name="Split_ord1" >
+            <SplitterPanel>
+              <Control ref="emrorderitem_view"/>
+            </SplitterPanel>
+            <SplitterPanel>
+              <!--<SplitContainer Orientation="Horizontal"  SplitterDistance="90">
+          <SplitterPanel>-->
+              <SplitContainer Orientation="Horizontal" SplitterDistance="10" Name="Split_ord2">
+                <SplitterPanel>
+                  <Control ref="emrorderlist_view"/>
+                </SplitterPanel>
+                <SplitterPanel>
+                  <Control ref="emrordercard_view"/>
+                </SplitterPanel>
+              </SplitContainer>
+              <!--</SplitterPanel>
+          <SplitterPanel>
+          
+          </SplitterPanel>
+        </SplitContainer>-->
+            </SplitterPanel>
+          </SplitContainer>
+          <!--</SplitterPanel>
+    </SplitContainer>-->
+        </ManagedPanel>
+        <ManagedPanel id="2" lazy="true">
+          <Control ref="emrorderconfirm_view"/>
+        </ManagedPanel>
+      </ManagedPanels>
+    </PanelManager>
+  </Content>
+</Funclet>

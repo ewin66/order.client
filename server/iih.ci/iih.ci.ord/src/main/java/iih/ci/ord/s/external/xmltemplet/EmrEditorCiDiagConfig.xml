@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 诊断签名，signName签名医生， signTime 签名时间-->
+  <dig signName="" signTime="">
+    <!--诊断数据结构配置文件 -->
+    <!--zdtx 诊断体系常量 -->
+    <!-- 中医诊断体系:CiDictCodeConst.ID_CI_DISYS_ZYZDTX : "0001AA10000000076SMM"-->
+    <!-- 西医诊断体系:CiDictCodeConst.ID_CI_DISYS_XYZDTX : "0001AA10000000076SML"-->
+    <!--digName 诊断分类名称-->
+    <!--disPlaySignleDigName 当仅有一种分类时，是否显示分类名称，默认是false,仅一种分类不显示-->
+    <!--name 诊断分类的名称，病历编辑器显示内容，此处不配置 -->
+    <!--format 子诊断前是否加空格，0：否，1：是；sequenceNumber 是否加序号，0：否，1是 -->
+    <digType zdtx="0001AA10000000076SMM" displaySignleDigName="false"  name="中医诊断" format="0" sequenceNumber="0">
+      <!-- 主诊断 name为病历编辑器显示内容，注意name中最终显示的内容是按displayColumn字段替换name中对应{}中属性的值  -->
+      <!-- 主诊断 displayDigColumn为拼接结果包含的属性名 -->
+      <dig name="{Didef_name}{Fg_suspdi} " displayColumn="Didef_name;Fg_suspdi|Y:?,N:''">
+        <!--子节点 显示症候整内容-->
+        <cdig name="{Id_didef_syn_name}" displayColumn="Id_didef_syn_name"></cdig>
+      </dig>
+    </digType>
+    <digType zdtx="0001AA10000000076SML" disPlaySignleDigName="false"  name="西医诊断" format="0" sequenceNumber="1">
+      <!-- 主诊断 name为病历编辑器显示内容，注意name中最终显示的内容是按displayColumn字段替换name中对应{}中属性的值  -->
+      <!-- 主诊断 displayDigColumn为拼接结果包含的属性名 -->
+      <dig name="{Didef_name}{Fg_suspdi} " displayColumn="Didef_name;Fg_suspdi|Y:?,N:''">
+        <!--子节点 显示西医诊断的描述内容-->
+        <cdig name="{Supplement}" displayColumn="Supplement"></cdig>
+      </dig>
+    </digType>
+  </dig>
+</root>

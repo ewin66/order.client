@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <!--控制器要单独定义-->
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+
+  <Clazzes>
+    <Clazz id="topView" classname="iih.ci.ord.opemergency.proofofdiag.viewprint.DiProvePrinTypeView" dllname="iih.ci.ord" singleton="true"/>
+    <Clszz id="bottomView" classname="iih.ci.ord.opemergency.proofofdiag.viewprint.DiProvePrintPreView" dllname="iih.ci.ord" singleton="true"/>
+  </Clazzes>
+
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+
+  <Content>
+    <XLayoutPanel>
+      <Top Width="60">
+        <Control ref="topView"/>
+      </Top>
+      <Center>
+        <Control ref="bottomView"/>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

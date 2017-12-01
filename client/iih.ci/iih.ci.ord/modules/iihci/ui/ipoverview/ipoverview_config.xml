@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Clazz id ="add_action" classname="xap.rui.engine.xactions.standard.AddAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.diag.cidiag.statehandler.SaveStateHandler" dllname="iih.ci.diag"/>
+    </Clazz>
+           <Clazz id="ipoverview" classname="iih.ci.ord.ciorder.view.ipoverview" dllname="iih.ci.ord"/>  
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init" />
+  </States>
+  <Content>
+   <BorderLayoutPanel>
+      <Center>
+        <Control ref="ipoverview"/>
+      </Center>
+	 </BorderLayoutPanel> 
+  </Content>
+</Funclet>

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <!--UID-->
+    <Clazz id="assistRender" classname="xap.rui.bizcontrol.assistRender.AssistRenderGroup" dllname="xap.rui.bizcontrol">
+    </Clazz>
+    <!--病历保存-->
+    <Clazz id="EmrSaveAction" classname="iih.ci.ord.opemergency.action.EmrSaveAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 删除病历 -->
+    <Clazz id="EmrDeleteAction" classname="iih.ci.ord.opemergency.action.EmrDeleteAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 同步诊断/处置到病历 -->
+    <Clazz id="EmrSyncCidiCiordAction" classname="iih.ci.ord.opemergency.action.EmrSyncCidiCiordAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 处置回写到病历 -->
+    <Clazz id="EmrSyncCiordAction" classname="iih.ci.ord.opemergency.action.EmrSyncCiordAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.EmrSyncCiordHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!-- 诊断回写到病历 -->
+    <Clazz id="EmrSyncCidiAction" classname="iih.ci.ord.opemergency.action.EmrSyncCidiAction" dllname="iih.ci.ord">
+    </Clazz>
+
+    <!--处置删除-->
+    <Clazz id="OpOrderDeleteAction" classname="iih.ci.ord.opemergency.action.OpOrderDeleteAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--处置签署-->
+    <Clazz id="OpOrderSignAction" classname="iih.ci.ord.opemergency.action.OpOrderSignAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.SignActionStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--处置作废-->
+    <Clazz id="OpOrderCancelAction" classname="iih.ci.ord.opemergency.action.OpOrderCancelAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpOrderCancelHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--处置作废重开-->
+    <Clazz id="OpOrderCancelCopyAction" classname="iih.ci.ord.opemergency.action.OpOrderCancelCopyAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpOrderCancelCopyHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--处置撤回-->
+    <Clazz id="OpOrderRevertSignAction" classname="iih.ci.ord.opemergency.action.OpOrderRevertSignAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpRevertSignStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--另存为模板-->
+    <Clazz id="OpOrderSaveasAction" classname="iih.ci.ord.opemergency.action.OpOrderSaveasAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpOrderSaveasStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--当前医嘱删除-->
+    <Clazz id="OpCurrOrderDeleteAction" classname="iih.ci.ord.opemergency.action.OpCurrOrderDeleteAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpCurrOrderDeleteHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--当前医嘱签署-->
+    <Clazz id="OpCurrOrderSignAction" classname="iih.ci.ord.opemergency.action.OpCurrOrderSignAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpCurrOrderSignHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--当前医嘱作废-->
+    <Clazz id="OpCurrOrderCancelAction" classname="iih.ci.ord.opemergency.action.OpCurrOrderCancelAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpCurrOrderCancelHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--当前医嘱作废复制-->
+    <Clazz id="OpCurrOrderCancelCopyAction" classname="iih.ci.ord.opemergency.action.OpCurrOrderCancelCopyAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpCurrOrderCancelCopyHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--当前医嘱撤回-->
+    <Clazz id="OpCurrOrderRevertAction" classname="iih.ci.ord.opemergency.action.OpCurrOrderRevertAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpCurrOrderRevertHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--全部医嘱删除-->
+    <Clazz id="OpAllOrderDeleteAction" classname="iih.ci.ord.opemergency.action.OpAllOrderDeleteAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpAllOrderDeleteHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--全部医嘱签署-->
+    <Clazz id="OpAllOrderSignAction" classname="iih.ci.ord.opemergency.action.OpAllOrderSignAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpAllOrderSignHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--全部医嘱作废-->
+    <Clazz id="OpAllOrderCancelAction" classname="iih.ci.ord.opemergency.action.OpAllOrderCancelAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpAllOrderCancelHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--全部医嘱作废复制-->
+    <Clazz id="OpAllOrderCancelCopyAction" classname="iih.ci.ord.opemergency.action.OpAllOrderCancelCopyAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpAllOrderCancelCopyHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--全部医嘱撤回-->
+    <Clazz id="OpAllOrderRevertAction" classname="iih.ci.ord.opemergency.action.OpAllOrderRevertAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpAllOrderRevertHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--全部另存为模板-->
+    <Clazz id="OpAllOrderSaveasAction" classname="iih.ci.ord.opemergency.action.OpAllOrderSaveasAction" dllname="iih.ci.ord">
+      <!--<StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpRevertSignStateHandler" dllname="iih.ci.ord"/>-->
+    </Clazz>
+    
+    <!--预交金-->
+    <Clazz id="OpPreCalcFeeAction" classname="iih.ci.ord.opemergency.action.OpPreCalcFeeAction" dllname="iih.ci.ord">
+      <!--<StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpPreCalcFeeActionStateHandler" dllname="iih.ci.ord"/>-->
+    </Clazz>
+    <!--取消记账-->
+    <Clazz id="OpPresCancelFeeAction" classname="iih.ci.ord.opemergency.action.OpPresCancelFeeAction" dllname="iih.ci.ord">
+      <!--<StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpPresCancelFeeActionStateHandler" dllname="iih.ci.ord"/>-->
+    </Clazz>
+      <!--打印-->
+    <Clazz id="OpPrintAction" classname="iih.ci.ord.opemergency.action.OpPrintAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 打印病历按钮 -->
+    <Clazz id="EmrPrintAction" classname="iih.ci.ord.opemergency.action.EmrPrintAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 病历打印预览按钮 -->
+    <Clazz id="EmrPrintViewAction" classname="iih.ci.ord.opemergency.action.EmrPrintViewAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 医嘱处方西药打印按钮 -->
+    <Clazz id="OrdPresPrintAction" classname="iih.ci.ord.opemergency.action.OrdPresPrintAction" dllname="iih.ci.ord"/>
+    <!--<Clazz id="OrdWestPresPrintAction" classname="iih.ci.ord.opemergency.action.OrdWestDrugPresPrintAction" dllname="iih.ci.ord"/>-->
+    <!--打印end-->
+
+    <!-- 待回诊 -->
+    <Clazz id="OpSuspendAction" classname="iih.ci.ord.opemergency.action.OpSuspendAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 诊毕 -->
+    <Clazz id="OpCompleteAction" classname="iih.ci.ord.opemergency.action.OpCompleteAction" dllname="iih.ci.ord">
+    </Clazz>
+
+    <!--叫号按钮-->
+    <Clazz id="callNumAction" classname="iih.en.que.opdoccommon.actions.CallNumAction" dllname="iih.en.que">
+    </Clazz>
+    <!--叫下一个按钮-->
+    <Clazz id="callNextAction" classname="iih.en.que.opdoccommon.actions.CallNextAction" dllname="iih.en.que">
+    </Clazz>
+    <!--挂号接诊-->
+    <Clazz id="registAcptAction" classname="iih.en.que.opdoccommon.actions.RegAcptAction" dllname="iih.en.que">
+    </Clazz>
+    <!--诊间加号-->
+    <Clazz id="opAddTicketsAction" classname="iih.ci.ord.opemergency.action.OpAddTicketsAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 工作表单 -->
+    <Clazz id="OpEmrDocAction" classname="iih.ci.ord.opemergency.action.OpEmrDocAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--患者列表-->
+    <Clazz id="OpPatListAction" classname="iih.ci.ord.opemergency.action.OpPatListAction" dllname="iih.ci.ord"/>
+    <!--<Clazz id="OpVacationProofFileAction" classname="iih.ci.ord.opemergency.action.OpVacationProofFileAction" dllname="iih.ci.ord"/>-->
+    <!--<Clazz id="OpDiProofFileAction" classname="iih.ci.ord.opemergency.action.OpDiProofFileAction" dllname="iih.ci.ord"/>-->
+    <!-- 会诊 -->
+    <Clazz id="ConsReportAction" classname="iih.ci.ord.opemergency.action.ConsReportAction" dllname="iih.ci.ord"/>
+    <!-- 医保转诊单 -->
+    <Clazz id="OpHpTransformEnFileAction" classname="iih.ci.ord.opemergency.action.OpHpTransformEnFileAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpHpTransformEnFileStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="OpPeriodontalCheckFileAction" classname="iih.ci.ord.opemergency.action.OpPeriodontalCheckFileAction" dllname="iih.ci.ord"/>
+    <!-- 其他 -->
+    <Clazz id="OpOtherAction" classname="iih.ci.ord.opemergency.action.OpOtherAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 门诊刷新 -->
+    <Clazz id="OpRefreshAllAction" classname="iih.ci.ord.opemergency.action.OpRefreshAllAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 取消诊断-->
+    <Clazz id="OpCancelDiAction" classname="iih.ci.ord.opemergency.action.OpCancelDiAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--传染病登记-->
+    <!--<Clazz id="InfectiousDiseaseAction" classname="iih.ci.ord.opemergency.action.InfectiousDiseaseAction" dllname="iih.ci.ord">
+    </Clazz>-->
+    <!--住院通知-->
+    <Clazz id="HospitalNoticeAction" classname="iih.ci.ord.opemergency.action.HospitalNoticeAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--诊断证明-->
+    <Clazz id="OPProofOfDiagnosisAction" classname="iih.ci.ord.opemergency.action.OPProofOfDiagnosisAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 牙周检查-->
+    <Clazz id="OpEmrPerAction" classname="iih.ci.ord.opemergency.action.OpEmrPerAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--诊毕并下一个-->
+    <Clazz id="OpCompleteAndNextAction" classname="iih.ci.ord.opemergency.action.OpCompleteAndNextAction" dllname="iih.ci.ord">
+    </Clazz>
+
+    <!--诊间预约-->
+    <Clazz id="entAppointmentAction" classname="iih.ci.ord.opemergency.action.entAppointmentAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--诊间预约取消 -->
+    <Clazz id="EntAppointCancelAction" classname="iih.ci.ord.opemergency.action.EntAppointCancelAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--换号-->
+    <Clazz id="changeNumberAction" classname="iih.ci.ord.opemergency.action.changeNumberAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--作废病历-->
+    <Clazz id="InvalidMedicalRecord" classname="iih.ci.ord.opemergency.action.InvalidMedicalRecord" dllname="iih.ci.ord">
+    </Clazz>
+    <!--退费-->
+    <Clazz id="RefundAction" classname="iih.ci.ord.opemergency.action.RefundAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--撤回-->
+    <Clazz id="OpRevokeEnAction" classname="iih.ci.ord.opemergency.action.OpRevokeEnAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpRevokeEnStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+
+    <!--重新分方-->
+    <Clazz id="OpAgainPresAction" classname="iih.ci.ord.opemergency.action.OpAgainPresAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpAgainPresStatushandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <!--医保的共享历史数据-->
+    <Clazz id="HistorymedicalsharingDataAction" classname="iih.ci.ord.opemergency.action.HistorymedicalsharingDataAction" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.opemergency.action.statehandler.OpAgainPresStatushandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    
+    <!-- 检验申请 -->
+    <Clazz id="LisApplyPrintAction" classname="iih.ci.ord.opemergency.action.LisApplyPrintAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 检查申请 -->
+    <Clazz id="RisApplyPrintAction" classname="iih.ci.ord.opemergency.action.RisApplyPrintAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 诊疗 -->
+    <Clazz id="TreatApplyPrintAction" classname="iih.ci.ord.opemergency.action.TreatApplyPrintAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 草药 -->
+    <Clazz id="HerbalPresPrintAction" classname="iih.ci.ord.opemergency.action.HerbalPresPrintAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 手术申请 -->
+    <Clazz id="OpsApplyPrintActioin" classname="iih.ci.ord.opemergency.action.OpsApplyPrintActioin" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 用血申请 -->
+    <Clazz id="ApbuApplyPrintAction" classname="iih.ci.ord.opemergency.action.ApbuApplyPrintAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 毒麻处方 -->
+    <Clazz id="PoisHempPresPrintAction" classname="iih.ci.ord.opemergency.action.PoisHempPresPrintAction" dllname="iih.ci.ord">
+    </Clazz>
+
+    <!-- 数据中心 -->
+    <Clazz id="DataCenterAction" classname="iih.ci.ord.opemergency.action.DataCenterAction" dllname="iih.ci.ord">
+    </Clazz>
+
+    <!-- 报告查看 -->
+    <Clazz id="ReportViewAction" classname="iih.ci.ord.opemergency.action.ReportViewAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 检验报告 -->
+    <Clazz id="LisHistoryReportAction" classname="iih.ci.ord.opemergency.action.LisHistoryReportAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!-- 检查报告 -->
+    <Clazz id="RisHistoryReportAction" classname="iih.ci.ord.opemergency.action.RisHistoryReportAction" dllname="iih.ci.ord">
+    </Clazz>
+    
+
+    <!--门急诊HotKey-->
+    <Clazz id="EmsOrderListRefreshAction" classname="iih.ci.ord.opemergency.action.ems.EmsOrderListRefreshAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="EmsAppendApbuAction" classname="iih.ci.ord.opemergency.action.ems.EmsAppendApbuAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="EmsSaveExpAction" classname="iih.ci.ord.opemergency.action.ems.EmsSaveExpAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="EmsDeleteExpAction" classname="iih.ci.ord.opemergency.action.ems.EmsDeleteExpAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="EmsAppendExpAction" classname="iih.ci.ord.opemergency.action.ems.EmsAppendExpAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="EmsCancelAction" classname="iih.ci.ord.opemergency.action.ems.EmsCancelAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="EmsDeleteItemAction" classname="iih.ci.ord.opemergency.action.ems.EmsDeleteItemAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="EmsAppendItemAction" classname="iih.ci.ord.opemergency.action.ems.EmsAppendItemAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="EmsSaveAction" classname="iih.ci.ord.opemergency.action.ems.EmsSaveAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="OpAddNewOrderAction" classname="iih.ci.ord.opemergency.action.OpAddNewOrderAction" dllname="iih.ci.ord">
+    </Clazz>
+    <Clazz id="OpOrdDrugUsageAction" classname="iih.ci.ord.opemergency.action.OpOrdDrugUsageAction" dllname="iih.ci.ord">
+    </Clazz>
+
+
+
+    <!--此门诊医生站专用Banner-->
+    <Clazz id="banner" classname="xap.rui.bizcontrol.bannerview.bannerOpdocstation" dllname="xap.rui.bizcontrol" ModelStyle="@@@@AA1000000005U822" UseSearchPanel ="True" SearchPanelDllName ="iih.en.que.dll" UseSearchPanelAuto="false" SearchPanelClassname ="iih.en.que.optrdocstation.bannerview.OpSiteBannerSearchView"/>
+    <!--门诊医生站初始化使用，隐藏界面-->
+    <Clazz id="queSiteInfoView" classname="iih.en.que.optrdocstation.view.OptrdocstationInfoView" dllname="iih.en.que" />
+    <!--诊断按钮区域-->
+    <Clazz id="DiBannerView" classname="iih.ci.ord.opemergency.view.DiBannerView" dllname="iih.ci.ord"/>
+    <Clazz id="DiListView" classname="iih.ci.ord.opemergency.orddi.DiListView" dllname="iih.ci.ord" UseInnerButton="true"/>
+
+
+    <!--助手按钮区域-->
+  <!-- <Clazz id="AssButtonView" classname="iih.ci.ord.opemergency.view.AssButtonView" dllname="iih.ci.ord"/>-->
+   <Clazz id="AssButtonOpView" classname="iih.ci.ord.opemergency.assi.assistantinit.AssButtonOpView" dllname="iih.ci.ord"/>
+    <!--初复诊等单选按钮区域-->
+    <Clazz id="EntDiStatusView" classname="iih.ci.ord.opemergency.view.EntDiStatusView" dllname="iih.ci.ord"/>
+    <!-- 病历切换控件 -->
+    <Clazz id="OutMrListView" classname="iih.ci.mr_pub.outpmr.outmrlist.view.OutMrListView" dllname="iih.ci.mr_pub"/>
+
+    <!--医疗单辅助录入容器-->
+    <Clazz id="OrdEditorView" classname="iih.ci.ord.opemergency.view.OrdEditorView" dllname="iih.ci.ord"/>
+    
+    <!--医嘱列表区域-->
+    <Clazz id="OrdListView" classname="iih.ci.ord.opemergency.orderlist.view.OrdGridView" dllname="iih.ci.ord" PageControlMode="7"/>
+    <!--<Clazz id="OrdListView" classname="iih.ci.ord.opemergency.view.OrdListView" dllname="iih.ci.ord" PageControlMode="7"/>-->
+    <Clazz id="SpltPrescriptionView" classname="iih.ci.ord.opemergency.spltpres.SpltPrescriptionView" dllname="iih.ci.ord"/>
+    <Clazz id="OrdFeeBillView" classname="iih.ci.ord.opemergency.view.ordfeebill.OrdFeeBillView" dllname="iih.ci.ord"/>
+    <Clazz id="tabLayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>   
+    <!--病历区域-->
+    <Clazz id="emrView" classname="iih.ci.mr_pub.view.PubMrWriteableCardView" dllname="iih.ci.mr_pub"/>
+
+
+    <!--助手区域-->
+
+    <Clazz id="OpMedSrvCatgCommand" classname="iih.ci.ord.opemergency.command.OpMedSrvCatgCommand" dllname="iih.ci.ord"/>
+    <!--门诊组套 按钮命令执行器， 继承接口 ICiCommand-->
+    <Clazz id="MedclingrpAppCommand" classname="iih.mkr.ms.medclingrpapp.command.MedclingrpAppCommand" dllname="iih.mkr.ms"/>
+    <Clazz id="MkrMsAssiEventView" classname="iih.ci.ord.opemergency.assi.mkrms.view.MkrMsAssiEventView" dllname="iih.ci.ord"/>
+
+    <!--病历模板 按钮命令执行器， 继承接口 ICiCommand-->
+    <Clazz id="tplcommand" classname="iih.ci.mr_pub.outpmr.command.tplcommand" dllname="iih.ci.mr_pub"/>
+
+    <!--医嘱模板 按钮命令执行器， 继承接口 ICiCommand-->
+    <Clazz id="OrderTemplateCommand" classname="iih.ci.ord.opemergency.command.OrderTemplateCommand" dllname="iih.ci.ord"/>
+    <!--医技常规 按钮命令执行器， 继承接口 ICiCommand-->
+    <Clazz id="OpMedicalTechmologyCommand" classname="iih.ci.ord.opemergency.command.OpMedicalTechmologyCommand" dllname="iih.ci.ord"/>
+    <!--患者常用 按钮命令执行器， 继承接口 ICiCommand-->
+    <Clazz id="OpPatCommonUseCommand" classname="iih.ci.ord.opemergency.command.OpPatCommonUseCommand" dllname="iih.ci.ord"/>
+    <!--临床指南 按钮命令执行器， 继承接口 ICiCommand 先屏蔽，等有具体实现在恢复-->
+    <!--<Clazz id="OpClinicalGuideCommand" classname="iih.ci.ord.opemergency.command.OpClinicalGuideCommand" dllname="iih.ci.ord"/>-->
+
+    <!-- 病历录入区域显示触发类-->
+    <Clazz id="emrEditorInitEvent" classname="iih.ci.ord.opemergency.emreditor.view.EmrEditorInitEvent" dllname="iih.ci.ord"/>
+    <!-- 病历辅助录入 -->
+    <Clazz id="ciorderEmrTermEvent" classname="iih.bd.srv.emrterm.emrtermcomp.view.emrtermevent.CiorderEmrTermEvent" dllname="iih.bd.srv"/>
+    <!-- 就诊历史辅助录入 -->
+    <Clazz id="EntHistoryInitEvent" classname="iih.ci.ord.opemergency.assi.enthistory.view.EntHistoryInitEvent" dllname="iih.ci.ord"/>
+    <!-- Lis 系统检查报告 -->   
+    <!-- 报告查看，与第三通过url方式查看页面 -->
+    <Clazz id="ReportViewInit" classname="iih.ci.ord.opemergency.thirdparty.view.ReportViewInit" dllname="iih.ci.ord"/>
+    
+
+    <!--表单资源-->
+    <Clazz id="EmsFromResource" classname="iih.ci.ord.opemergency.resource.EmsFromResource" dllname="iih.ci.ord" GFID="20160604060824491H0C" WFID="20160611013726494FRI" HFID="20160525101311355Q7L" LFID="201605270653339539SJ" RFID="20160525105607747PBN" TFID="201606070751084765ID" BFID="20160611043735428S0H" UFID="201606170739370417D1" OFID="201606130356497205ZD" PFID="20160607085117889PIY" CFID="20160616082030628KFU" EFID="20160629070241175OMW"/>
+
+    <!-- 合理用药 -->
+    <Clazz id="RationalDrugViewFactory" classname="iih.ci.ord.opemergency.assi.rationaldrug.view.RationalDrugViewFactory" dllname="iih.ci.ord"/>
+    <Clazz id="RationalDrugView" classname="iih.ci.ord.opemergency.assi.rationaldrug.view.datong.RationalDrugDTView" dllname="iih.ci.ord"/>
+
+    <!-- 按钮事件处理链 默认加载、诊毕、撤回-->
+    <Clazz id="OpActionChainHandler" classname="iih.ci.ord.opemergency.operateaction.baseoperate.OpActionChainHandler" dllname="iih.ci.ord"/>
+    <!-- 按钮状态处理 -->
+    <Clazz id="OpActionsStatusHandler" classname="iih.ci.ord.opemergency.action.statehandler.OpActionsStatusHandler" dllname="iih.ci.ord"/>
+    <!--医嘱模板快捷键触发按钮-->
+    <Clazz id="ShortcutOpOrdTemplat" classname="iih.ci.ord.opemergency.action.ShortcutOpOrdTemplatAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--就诊历史快捷键触发按钮-->
+    <Clazz id="ShortcutOpEntpHistory" classname="iih.ci.ord.opemergency.action.ShortcutOpEntpHistoryAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--门诊组套快捷键触发按钮-->
+    <Clazz id="ShortcutOpMedclingrpApp" classname="iih.ci.ord.opemergency.action.ShortcutOpMedclingrpAppAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--病历模板快捷键触发按钮-->
+    <Clazz id="ShortcutOpTplcommand" classname="iih.ci.ord.opemergency.action.ShortcutOpTplcommandAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--医技常规快捷键触发按钮-->
+    <Clazz id="ShortcutOpMedicalTechmology" classname="iih.ci.ord.opemergency.action.ShortcutOpMedicalTechmologyAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--服务分类快捷键触发按钮-->
+    <Clazz id="ShortcutOpMedSrvCatg" classname="iih.ci.ord.opemergency.action.ShortcutOpMedSrvCatgAction" dllname="iih.ci.ord">
+    </Clazz>
+
+    <!-- 获取容器对象使用-->
+    <Clazz id="layoutPanelRight" classname="xap.cli.sdk.controls.XLayoutPanel" dllname="xap.cli.sdk"/>
+    <Clazz id="layoutPanelLeft" classname="xap.cli.sdk.controls.XLayoutPanel" dllname="xap.cli.sdk"/>
+    <Clazz id="emsFeesControl" classname="iih.ci.ord.opemergency.controls.EmsFeesControl" dllname="iih.ci.ord"/>
+
+    <!--另存为医嘱模板消息发送-->
+    <Clazz id="OrTpmlSaveasEvent" classname="iih.bd.srv.srvortmpl.view.ortmplsaveas.OrTpmlSaveasEvent" dllname="iih.bd.srv"/>
+    
+    <Clazz id="ClearCacheSettingApp" classname="iih.ci.ord.opemergency.setting.ClearCacheSettingApp" dllname="iih.ci.ord"/>
+
+    <Clazz id="PrinterSettingApp" classname="iih.ci.ord.opemergency.setting.printersetting.PrinterSettingApp" dllname="iih.ci.ord"/>
+  </Clazzes>
+  <!--用户个性化设置-->
+  <Setting>
+
+    <SettingItem ref="ClearCacheSettingApp"/>
+    <SettingItem ref="PrinterSettingApp"/>
+  </Setting>
+
+
+  <!--工作站 顶部 按钮菜单区域-->
+  <Menu>
+    <!-- 保存病历 -->
+    <MenuItem ref="EmrSaveAction" >
+      <!-- 同步诊断/处置到病历 -->
+      <!--<MenuItem ref="EmrSyncCidiCiordAction"/>-->
+      <!-- 处置回写到病历 -->
+      <!--<MenuItem ref="EmrSyncCiordAction"/>-->
+      <!-- 诊断回写到病历 -->
+      <!--<MenuItem ref="EmrSyncCidiAction"/>-->
+      <!-- 删除病历-->
+      <MenuItem ref="EmrDeleteAction" />
+    </MenuItem>
+
+
+    <!-- 处置签署 -->
+    <MenuItem ref="OpOrderSignAction" >
+      <!-- 处置删除 -->
+      <MenuItem ref="OpOrderDeleteAction" />
+      <!--处置撤回-->
+      <MenuItem ref="OpOrderRevertSignAction" />
+      <!--处置作废-->
+      <MenuItem ref="OpOrderCancelAction" />
+      <!--作废重开-->
+      <MenuItem ref="OpOrderCancelCopyAction" />
+      <!--重新分方-->
+      <MenuItem ref ="OpAgainPresAction" />
+      <!--另存为模板-->
+      <MenuItem ref="OpOrderSaveasAction"/>
+    </MenuItem>
+    <!-- 预交金 -->
+    <MenuItem ref="OpPreCalcFeeAction">
+      <!--取消记账-->
+      <MenuItem ref="OpPresCancelFeeAction"/>
+    </MenuItem>
+
+    <!-- 打印 -->
+    <MenuItem ref="OpPrintAction" >
+      <!-- 打印病历-->
+      <!--<MenuItem ref="EmrPrintAction" shortCut="Alt+F2"/>-->
+      <!-- 病历打印预览-->
+      <MenuItem ref="EmrPrintViewAction" />
+      <!-- 处方打印-->
+      <MenuItem ref="OrdPresPrintAction" />
+      <!--<MenuItem ref="OrdWestPresPrintAction"/>-->
+      <!-- 检验申请 -->
+      <!--<MenuItem ref="LisApplyPrintAction" />-->
+      <!-- 检查申请 -->
+      <!--<MenuItem ref="RisApplyPrintAction" />-->
+      <!-- 诊疗 -->
+      <!--<MenuItem ref="TreatApplyPrintAction" />-->
+      <!-- 草药 -->
+      <!--<MenuItem ref="HerbalPresPrintAction" />-->
+      <!-- 手术申请 -->
+      <!--<MenuItem ref="OpsApplyPrintActioin" />-->
+      <!-- 用血申请 -->
+      <!--<MenuItem ref="ApbuApplyPrintAction" />-->
+      <!-- 毒麻处方 -->
+      <!--<MenuItem ref="PoisHempPresPrintAction" />-->
+    </MenuItem>
+
+    <!-- 叫号 -->
+    <MenuItem ref="callNumAction" shortCut="Alt+N" >
+      <!-- 叫下一个 -->
+      <MenuItem ref="callNextAction" />
+    </MenuItem>
+
+    <!-- 诊毕 -->
+    <MenuItem ref="OpCompleteAction"  >
+      <!-- 诊毕 -->
+      <!--<MenuItem ref="OpCompleteAction" shortCut="Alt+C"/>-->
+      <!-- 待回诊 -->
+      <MenuItem ref="OpSuspendAction" />
+      <!-- 完成并下一个-->
+      <MenuItem ref="OpCompleteAndNextAction" />
+      <!-- 取消诊断 -->
+      <MenuItem ref="OpCancelDiAction" />
+    </MenuItem>
+
+    <!-- 数据中心-->
+    <MenuItem ref="DataCenterAction"/>
+
+    <!-- 工作表单 -->
+    <MenuItem ref="OpEmrDocAction" style ="1">
+
+      <!--<MenuItem ref="InfectiousDiseaseAction"/>-->
+      <!-- 住院通知-->
+      <MenuItem ref="HospitalNoticeAction" />
+      <!-- 诊断证明-->
+      <MenuItem ref="OPProofOfDiagnosisAction" />
+      <!-- 医保转诊单-->
+      <MenuItem ref="OpHpTransformEnFileAction" />
+      <!-- 牙周组织检查表-->
+      <MenuItem ref="OpEmrPerAction" />
+      <!-- 会诊 -->
+      <MenuItem ref="ConsReportAction" />
+    </MenuItem>
+    <!-- 患者列表 -->
+    <MenuItem ref="OpPatListAction" >
+      <!--<MenuItem ref="OpVacationProofFileAction"/>-->
+      <!--<MenuItem ref="OpDiProofFileAction" />-->
+
+      <!--<MenuItem ref="OpPeriodontalCheckFileAction" />-->      
+    </MenuItem>
+
+    <!-- 报告查看 -->
+    <MenuItem ref="ReportViewAction" style ="1">
+      <!-- 检验报告-->
+      <MenuItem ref="LisHistoryReportAction" />
+      <!-- 检查报告 -->
+      <MenuItem ref="RisHistoryReportAction"/>
+    </MenuItem>
+
+    <!-- 其他 -->
+    <MenuItem ref="OpOtherAction" style ="1">
+      <!-- 诊间预约-->
+      <MenuItem ref="entAppointmentAction" />
+      <!-- 诊间预约取消 -->
+      <MenuItem ref="EntAppointCancelAction"/>
+      <!-- 诊间加号-->
+      <MenuItem ref="opAddTicketsAction" />
+      <!--挂号接诊-->
+      <MenuItem ref="registAcptAction" />
+      <!--<MenuItem ref="changeNumberAction"/>
+      <MenuItem ref="InvalidMedicalRecord"/>
+      <MenuItem ref="RefundAction"/>-->
+      <!-- 就诊撤回 -->
+      <!--<MenuItem ref="OpRevokeEnAction" shortCut="Alt+Control+E"/>-->
+      <!--医保的共享的历史数据 -->
+      <MenuItem ref="HistorymedicalsharingDataAction"/>
+    </MenuItem>
+
+    <!-- 门诊刷新 -->
+    <MenuItem ref="OpRefreshAllAction"/>
+  </Menu>
+  <!--UTD-->
+  <IMenuControl ref="assistRender" Width="85" Height="28"/>
+  <RightMenu>
+    <!--<Group>-->
+    <!--删除当前医嘱-->
+    <MenuItem ref="OpCurrOrderDeleteAction"/>
+    <!--签署当前医嘱-->
+    <MenuItem ref="OpCurrOrderSignAction"/>
+    <!--作废当前医嘱-->
+    <MenuItem ref="OpCurrOrderCancelAction"/>
+    <!--撤回当前医嘱-->
+    <MenuItem ref="OpCurrOrderRevertAction"/>
+    <!--撤回当前医嘱-->
+    <MenuItem ref="OpCurrOrderCancelCopyAction"/>
+    <!--</Group>-->
+
+    <!--<Group>-->
+    <!--删除全部医嘱-->
+    <MenuItem ref="OpAllOrderDeleteAction"/>
+    <!--签署全部医嘱-->
+    <MenuItem ref="OpAllOrderSignAction"/>
+    <!--作废全部医嘱-->
+    <MenuItem ref="OpAllOrderCancelAction"/>
+    <!--撤回全部医嘱-->
+    <MenuItem ref="OpAllOrderRevertAction"/>
+    <!--撤回全部医嘱-->
+    <MenuItem ref="OpAllOrderCancelCopyAction"/>
+    <!--重新分方-->
+    <MenuItem ref="OpAgainPresAction"/>
+    <!--打印-->
+    <MenuItem ref="OpPrintAction"/>
+    <!--全部另存为模板-->
+    <MenuItem ref="OpAllOrderSaveasAction"/>
+    <!--处置回写到病历-->
+    <MenuItem ref="EmrSyncCiordAction"/>
+    <!--</Group>-->
+  </RightMenu>
+
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+
+  <Content>
+    <XLayoutPanel>
+      <Top Width="73">
+        <XLayoutPanel>
+          <Center>
+            <Control ref="banner" />
+          </Center>
+          <Bottom Width="0">
+            <Control ref="queSiteInfoView" />
+          </Bottom>
+        </XLayoutPanel>
+      </Top>
+      <Center>
+        <XLayoutPanel>
+          <Left Width="512">
+            <XLayoutPanel>
+              <Center>
+                <XLayoutPanel ref="layoutPanelLeft">
+                  <Top Width="26">
+
+                    <XLayoutPanel>
+                      <Left Width="210">
+                        <Control ref="EntDiStatusView"/>
+                      </Left>
+                      <Center Padding="0,2,0,0">
+                        <Control ref="OutMrListView"/>
+                      </Center>
+                    </XLayoutPanel>
+                    
+                  </Top>
+                  <Center>
+
+                    <Control ref="emrView"/>
+
+                  </Center>
+                </XLayoutPanel>
+              </Center>
+              <Right Width="38">
+                <Control ref="AssButtonOpView"/>
+              </Right>
+            </XLayoutPanel>
+          </Left>
+
+          <Center >
+            <XLayoutPanel  ref="layoutPanelRight">
+              <Top Width="30" Padding="0,4,4,0">
+                <Control ref="emsFeesControl"/>
+              </Top>
+              <Center Padding="0,4,4,4">
+                <Control ref="OrdListView"/>
+              </Center>
+
+              <Bottom  Width="270" Padding="0,4,4,4">
+                <Control ref="OrdEditorView"/>
+              </Bottom>
+
+            </XLayoutPanel>
+          </Center>
+        </XLayoutPanel>
+      </Center>
+    </XLayoutPanel>
+
+  </Content>
+</Funclet>

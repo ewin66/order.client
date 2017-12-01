@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Clazz id="cividuo_action" classname="iih.ci.ord.ciorder.action.CiTrendAction" dllname="iih.ci.ord">
+    </Clazz>
+    <!--刷新-->
+    <Clazz id="refresh_action" classname="xap.rui.engine.xactions.standard.RefreshAction" dllname="xap.rui.engine">
+      </Clazz>
+     <Clazz id="CiLabTreeView" classname="iih.ci.ord.cilab.view.LabTree" dllname="iih.ci.ord" singleton="true"/>
+    <Clazz id="CiRptLabTreeDateView" classname="iih.ci.ord.cilab.view.LabDateTree" dllname="iih.ci.ord" singleton="true"/>
+      <Clazz id="CiRptLabView" classname="iih.ci.ord.cilab.view.CiRptLabView" dllname="iih.ci.ord" singleton="true"/>
+    <Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init" />
+</States>
+
+  <Menu>
+   
+      <MenuItem ref="cividuo_action"/>
+      <MenuItem ref="refresh_action"/>
+    
+  </Menu>
+  <Content>
+  
+          <!--<SplitContainer Orientation="Vertical" SplitterDistance="33">
+            <SplitterPanel>
+              <XTabPanelControl alignment="Top" ref="tablayout">
+                <XTabPages>
+                  <XTabPage id="1" text="分类" visible="true" lazy="false">
+                    <Control ref="CiLabTreeView" />
+                  </XTabPage>
+                  <XTabPage id="2" text="日期" visible="true" lazy="false">
+                    <Control ref="CiRptLabTreeDateView" />
+                  </XTabPage>
+                </XTabPages>
+              </XTabPanelControl>
+            </SplitterPanel>
+            <SplitterPanel>
+              <Control ref="CiRptLabView" />
+            </SplitterPanel>
+          </SplitContainer>-->
+
+    <XLayoutPanel>
+      <Left Width="266">
+        <XLayoutPanel>
+          <Center Padding="4,4,4,4">
+            <XTabPanelControl alignment="Top" ref="tablayout">
+              <XTabPages>
+                <XTabPage id="1" text="分类" visible="true" lazy="false">
+                  <Control ref="CiLabTreeView" />
+                </XTabPage>
+                <XTabPage id="2" text="日期" visible="true" lazy="false">
+                  <Control ref="CiRptLabTreeDateView" />
+                </XTabPage>
+              </XTabPages>
+            </XTabPanelControl>
+          </Center>
+        </XLayoutPanel>
+      </Left>
+
+      <Center >
+        <XLayoutPanel>
+          <Center Padding="4,4,4,4">
+            <Control ref="CiRptLabView" />
+          </Center>
+        </XLayoutPanel>
+      </Center>
+    </XLayoutPanel>
+  </Content>
+</Funclet>

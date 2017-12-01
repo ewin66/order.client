@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <Clazz id="submit_action" classname="xap.rui.engine.xactions.standard.SubmitAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciconsresponse.statehandler.SubmitStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="save_action" classname="xap.rui.engine.xactions.standard.SaveAction" dllname="xap.rui.engine">
+      <StateHandler classname="iih.ci.ord.ciconsresponse.statehandler.SaveStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="com_action" classname="iih.ci.ord.ciconsresponse.action.CompleteCons" dllname="iih.ci.ord">
+      <StateHandler classname="iih.ci.ord.ciconsresponse.statehandler.CompleteStateHandler" dllname="iih.ci.ord"/>
+    </Clazz>
+    <Clazz id="print_action" classname="iih.ci.ord.ciconsresponse.action.ConsPrint" dllname="iih.ci.ord">
+      <!--<StateHandler classname="iih.ci.ord.ciconsresponse.statehandler.CompleteStateHandler" dllname="iih.ci.ord"/>-->
+    </Clazz>
+    <Clazz id="tree_view" classname="iih.ci.ord.ciconsresponse.view.ConsRptTreeView" dllname="iih.ci.ord"/>
+    <Clazz id="grid_view" classname="iih.ci.ord.ciconsresponse.view.ConsRptView" dllname="iih.ci.ord"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+    
+  </States>
+  <Menu>
+    <MenuItem ref="save_action"/>
+    <MenuItem ref="submit_action"/>
+    <MenuItem ref="com_action"/>
+    <MenuItem ref="print_action"/>
+   </Menu>
+  <Content>
+    <SplitContainer Orientation="Vertical"  SplitterDistance="30">
+      <SplitterPanel>
+        <Control ref="tree_view"/>
+      </SplitterPanel>
+      <SplitterPanel>
+        <Control ref="grid_view"/>
+      </SplitterPanel>
+    </SplitContainer>
+  </Content>
+</Funclet>

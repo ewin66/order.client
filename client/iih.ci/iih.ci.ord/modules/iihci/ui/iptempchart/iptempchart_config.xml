@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>
+    <Clazz id="refresh_action" classname="xap.rui.engine.xactions.standard.RefreshAction" dllname="xap.rui.engine"/>
+    <Clazz id="print_action" classname="xap.rui.engine.xactions.standard.PrintAction" dllname="xap.rui.engine"/>
+    <Clazz id="first_action" classname="iih.mp.nr.temperaturechart.action.FirstPageAction" dllname="iih.mp.nr"/>
+    <Clazz id="previous_action" classname="iih.mp.nr.temperaturechart.action.PrevAction" dllname="iih.mp.nr"/>
+    <Clazz id="next_action" classname="iih.mp.nr.temperaturechart.action.NextPageAction" dllname="iih.mp.nr"/>
+    <Clazz id="last_action" classname="iih.mp.nr.temperaturechart.action.LastPageAction" dllname="iih.mp.nr"/>
+    <Clazz id="zoom_action" classname="iih.mp.nr.temperaturechart.action.ZoomActualAction" dllname="iih.mp.nr"/>
+    <Clazz id="zoomin_action" classname="iih.mp.nr.temperaturechart.action.ZoomInAction" dllname="iih.mp.nr"/>
+    <Clazz id="zoomout_action" classname="iih.mp.nr.temperaturechart.action.ZoomOutAction" dllname="iih.mp.nr"/>
+
+    <Clazz id="chart_view" classname="iih.mp.nr.temperaturechart.view.TemperatureChartView" dllname="iih.mp.nr"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+  <Menu>
+    <MenuItem ref="refresh_action" />
+    <MenuItem ref="print_action" />
+    <MenuItem ref="first_action" />
+    <MenuItem ref="previous_action" />
+    <MenuItem ref="next_action" />
+    <MenuItem ref="last_action" />
+    <MenuItem ref="zoom_action" />
+    <MenuItem ref="zoomin_action" />
+    <MenuItem ref="zoomout_action" />
+  </Menu>
+  <Content>
+    <BorderLayoutPanel>
+      <Center>
+        <Control ref="chart_view" />
+      </Center>
+    </BorderLayoutPanel>
+
+  </Content>
+</Funclet>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+    <Clazz id="SaveAction" classname="iih.en.pv.entdiprove.actions.SaveAction" dllname="iih.en.pv">
+    </Clazz>
+    <Clazz id="PrintAction" classname="iih.en.pv.entdiprove.actions.PrintAction" dllname="iih.en.pv">
+    </Clazz>
+
+    <!--控件-->
+    
+    <Clazz id="EntDIPorveView" classname="iih.en.pv.entdiprove.view.EntDIPorveView" dllname="iih.en.pv"/>
+  </Clazzes>
+  <States>
+    <State old="Begin" event="Load" new="Init"/>
+  </States>
+  <Menu>
+    <MenuItem ref="SaveAction"/>
+    <MenuItem ref="PrintAction"/>
+  </Menu>
+     <Content>
+    <BorderLayoutPanel>
+      <Center>
+        <Control ref="EntDIPorveView"/>
+      </Center>
+	 </BorderLayoutPanel> 
+  </Content>
+</Funclet>

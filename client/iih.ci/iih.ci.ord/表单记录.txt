@@ -1,0 +1,26 @@
+﻿西药品医疗单	drugitem	阿莫西林
+IV药医疗单	drugitem	青霉素、氯霉素
+草药医疗单	drugitem	草药
+服务录入	orScItem	
+医嘱列表	orderitem 	
+服务查询弹窗	srvlist	
+皮试提示	skintest	
+药品选择弹窗	mmref	
+检查医疗单	orobs	胸透
+检验医疗单	ordaplab	林间检查
+医嘱确认	ordcfm	
+输血医疗单	orderbt	紧急输血
+手术医疗单	orderop	床边手术
+病理医疗单	ordpathgy	体液细胞
+简洁医疗单	ordcommon	普通治疗
+会诊医疗单	ordcons	主任医师会诊
+检验报告单	obsreport	
+会诊科室应答	consdepres	
+院内联合会诊	consdepres	
+会诊安排	ordcons	
+会诊报告与记录	ordrptcons	
+诊断证明	entdiprove	
+用血	ciorubgrid	
+用血	ciordu	
+
+插件表单集合 ciorsheet

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Funclet>
+  <!-- 点击待回诊按钮触发逻辑：1.触发病历保存；2.触发就诊域待回诊-->
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine" />
+  <Clazzes>    
+    <Class id="EmrSaveView" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.EmrSaveView" dllname="iih.ci.ord" />    
+    <Class id="EnOpSuspendView" classname ="iih.ci.ord.opemergency.operateaction.opcomplete.view.EnOpSuspendView" dllname="iih.ci.ord" />
+  </Clazzes>
+  <States>   
+  </States>
+  <Content>    
+  </Content>
+</Funclet>

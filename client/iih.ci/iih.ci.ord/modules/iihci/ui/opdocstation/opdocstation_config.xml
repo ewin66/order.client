@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Clazzes>
+    <Clazz id="panelmanager" classname="xap.rui.bizcontrol.workstation.layout.PanelSwitchManager" dllname="xap.rui.bizcontrol"/>
+    <Clazz id="NavBarControl" classname="xap.cli.sdk.controls.navbar.NavBarControl" dllname="xap.cli.sdk"/>
+    <Clazz id="patientTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+    <Clazz id="tempmanagerTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+    <Clazz id="worksmanagerTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+    <Clazz id="comprehensivequeryTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+    <Clazz id="messageTree_View" classname="xap.rui.bizcontrol.workstation.view.TreeView" dllname="xap.rui.bizcontrol"/>
+    <Clazz id="patientSmallCard_View" classname="xap.rui.bizcontrol.workstation.view.PatientSmallCardView" dllname="xap.rui.bizcontrol"/>
+    <!--<Clazz id="opPatientListView" classname="xap.rui.engine.XUserControl" dllname="xap.rui.engine" singleton="true"/>-->
+    <!-- <Clazz id="banner2" classname="xap.rui.bizcontrol.bannerview.bannerpatient_9" dllname="xap.rui.bizcontrol" singleton="true"/>-->
+    <Clazz id="banner2" classname="xap.rui.bizcontrol.bannerview.banner" dllname="xap.rui.bizcontrol" ModelStyle="0001AA1000000005U827" singleton="true"/>
+    <!--<Clazz id="banner2" classname="xap.rui.bizcontrol.bannerview.banner" dllname="xap.rui.bizcontrol" ModelStyle="Banner模式4" />-->
+    <Clazz id="naviTree" classname="xap.rui.bizcontrol.workstation.control.MenuTreeNavigateControl" dllname="xap.rui.bizcontrol" singleton="true"/>
+    <Clazz id="clinicalRecordControl" classname="xap.rui.bizcontrol.workstation.control.ClinicalRecordControl" dllname="xap.rui.bizcontrol" singleton="true"/>
+    <!--<Clazz id="naviForm" classname="xap.cli.sdk.controls.SuspendForm.SuspendForm" dllname="xap.cli.sdk"/>-->
+    <!--<Clazz id="naviForm" classname="xap.rui.bizcontrol.workstation.view.FloatForm" dllname="xap.rui.bizcontrol" singleton="true"/>-->
+    <!--<Clazz id="naviMenu" classname="xap.rui.bizcontrol.workstation.NaviMenuBtn" dllname="xap.rui.bizcontrol"/>-->
+  </Clazzes>
+  <!--	<SuspendForm ref="naviForm"></SuspendForm>-->
+  <!--<NaviMenu ref="naviMenu"></NaviMenu>-->
+  <Content>
+    <PanelManager ref="panelmanager">
+      <ManagedPanels>
+        <ManagedPanel id="patientlist_managedpanel" lazy="false">
+          <!--<XLayoutPanel>-->
+          <SPanel Type="left:248">
+            <Left Width="248">
+              <NavBarControl ref="NavBarControl">
+                <MenuItem Caption="患者列表">
+                  <Control ref="patientTree_View"/>
+                  <Icon NormalIcon="患者列表-01.png" SelectedIcon="患者列表-02.png" TitleIcon="患者列表-03.png"/>
+                </MenuItem>
+                <MenuItem Caption="模板管理">
+                  <Control ref="tempmanagerTree_View"/>
+                  <Icon NormalIcon="模板管理-01.png" SelectedIcon="模板管理-02.png" TitleIcon="模板管理-03.png"/>
+                </MenuItem>
+                <MenuItem Caption="工作管理">
+                  <Control ref="worksmanagerTree_View"/>
+                  <Icon NormalIcon="工作管理-01.png" SelectedIcon="工作管理-02.png" TitleIcon="工作管理-03.png"/>
+                </MenuItem>
+                <MenuItem Caption="综合查询">
+                  <Control ref="comprehensivequeryTree_View"/>
+                  <Icon NormalIcon="综合查询-01.png" SelectedIcon="综合查询-02.png" TitleIcon="综合查询-03.png"/>
+                </MenuItem>
+                <MenuItem Caption="消息">
+                  <Control ref="messageTree_View"/>
+                  <Icon NormalIcon="消息-01.png" SelectedIcon="消息-02.png" TitleIcon="消息-03.png"/>
+                </MenuItem>
+              </NavBarControl>
+            </Left>
+            <Center>
+              <Control ref="patientSmallCard_View"/>
+            </Center>
+          </SPanel>
+          <!--</XLayoutPanel>-->
+          <!--<SplitContainer Orientation="Vertical" SplitterDistance="30">
+						<SplitterPanel>
+							<NavBarControl ref="NavBarControl">
+								<MenuItem Caption="门诊工作站">
+									<Control ref="patientTree_View"/>
+								</MenuItem>
+								<MenuItem Caption="高级设置">
+									<Control ref="patientTree_View"/>
+								</MenuItem>
+							</NavBarControl>
+						</SplitterPanel>
+						<SplitterPanel>
+							<Control ref="patientSmallCard_View"/>
+						</SplitterPanel>
+					</SplitContainer>
+					<SuspendForm ref="naviForm"></SuspendForm>-->
+        </ManagedPanel>
+        <ManagedPanel id="clinicalrecord_managedpanel" lazy="false">
+          <SPanel Type="top:42;left:128">
+            <Top Width="42">
+              <Control ref="banner2"/>
+            </Top>
+            <Left Width="128">
+              <Control ref="naviTree"/>
+            </Left>
+            <Center>
+              <Control ref="clinicalRecordControl"/>
+            </Center>
+          </SPanel>
+          <!--<XLayoutPanel>
+            <Top Width="42">
+              <Control ref="banner2"/>
+            </Top>
+            <Left Width="128">
+              <Control ref="naviTree"/>
+            </Left>
+            <Center>
+              <Control ref="clinicalRecordControl"/>
+            </Center>
+          </XLayoutPanel>-->
+          <!--<SplitContainer Orientation="Horizontal" SizeType="Absolute" SplitterDistance="40" SplitterFixed="true">
+						<SplitterPanel>
+							<Control ref="banner2"/>
+						</SplitterPanel>
+						<SplitterPanel>
+              <SplitContainer Orientation="Vertical" SizeType="Absolute" SplitterDistance="128">
+								<SplitterPanel>
+									<Control ref="naviTree"/>
+								</SplitterPanel>
+								<SplitterPanel>
+									<Control ref="clinicalRecordControl"/>
+								</SplitterPanel>
+							</SplitContainer>
+						</SplitterPanel>
+					</SplitContainer>-->
+        </ManagedPanel>
+      </ManagedPanels>
+    </PanelManager>
+  </Content>
+</Funclet>

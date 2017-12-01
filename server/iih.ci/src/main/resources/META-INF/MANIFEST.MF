@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+XAP-Component-Version: 0.2.0-medicare-SNAPSHOT
+XAP-Component-Namespace: iih.ci
+XAP-Component-Name: iih.ci
+XAP-Component-Dependencies: iih_pub/iih_pub/0.2.0-medicare-SNAPSHOT,ii
+ h.bd/iih.bd/0.2.0-medicare-SNAPSHOT
+

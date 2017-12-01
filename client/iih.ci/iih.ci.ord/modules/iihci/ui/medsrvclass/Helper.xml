@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Funclet>
+  <Controller classname="xap.rui.engine.BaseController" dllname="xap.rui.engine"/>
+  <Clazzes>
+
+ 
+    <Clazz id="OpmedSrvRadioView" classname="iih.ci.ord.opemergency.assi.medsrvclass.view.OpmedSrvRadioView" dllname="iih.ci.ord"/>
+    <Clazz id="OpmedSrvTreeView" classname="iih.ci.ord.opemergency.assi.medsrvclass.view.OpmedSrvTreeView" dllname="iih.ci.ord"/>
+
+    <!--按钮-->
+    <Clazz id="OpMedSrvClassButton" classname="iih.ci.ord.opemergency.assi.medsrvclass.OpMedSrvClassButton" dllname="iih.ci.ord"/>
+   
+    <Clazz id="tablayout" classname="xap.rui.engine.xlayouts.LayoutXTabPanelControl" dllname="xap.rui.engine"/>
+    <!--普通类是否需要直接注册-->
+  </Clazzes>
+
+  <States>
+    <State old="Begin" event="Load"  new="Init"/>
+    <State old="Init" event="SelectNode" new="NodeSelected"/>
+  </States>
+
+  <Content>
+
+    <XLayoutPanel>
+      <Center>
+        <XLayoutPanel>
+          <Left Width="200">
+            <Control ref="OpmedSrvTreeView" />
+          </Left>
+          <Center>
+            <Control ref="OpmedSrvRadioView" />
+          </Center>
+        </XLayoutPanel>
+      </Center>
+      <Bottom Width="46">
+        <Control ref="OpMedSrvClassButton" />
+      </Bottom>
+    </XLayoutPanel>
+    
+    <!--<XLayoutPanel>
+      <Center>
+        <XTabPanelControl alignment="Top" ref="tablayout">
+          <XTabPages>
+            <XTabPage id="1" text="医疗服务分类" visible="true" lazy="false">
+              <SplitContainer Orientation="Vertical"  SplitterDistance="100">
+                <SplitterPanel>
+                  <Control ref="OpmedSrvTreeView" />
+                </SplitterPanel>
+                <SplitterPanel>
+                  <Control ref="OpmedSrvRadioView" />
+                </SplitterPanel>
+              </SplitContainer>
+              --><!--<XLayoutPanel>
+                <Left Width="290">
+                  <Control ref="NewOrderTemplateTreeView"/>
+                </Left>
+                <Center>
+                  <XLayoutPanel>
+                    <Center>
+                      <Control ref="NewOrderTemplateListView"/>
+                    </Center>
+                  </XLayoutPanel>
+                </Center>
+              </XLayoutPanel>--><!--
+            </XTabPage>
+
+          </XTabPages>
+        </XTabPanelControl>
+      </Center>
+    </XLayoutPanel>-->
+  </Content>
+</Funclet>
