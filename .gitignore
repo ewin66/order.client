@@ -18,6 +18,8 @@ iih.mp_stub
 iih.nm_stub
 iih.pi_stub
 iih.sc_stub
+.vs
+log
 iih.sc_pub
 iih.pi_pub
 iih.nm_pub
